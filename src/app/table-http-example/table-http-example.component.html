@@ -1,107 +1,190 @@
-<div class="example-container mat-elevation-z8">
-  <div
-    class="example-loading-shade"
-    *ngIf="isLoadingResults || isRateLimitReached"
-  >
-    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-    <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
-      GitHub's API rate limit has been reached. It will be reset in one minute.
-    </div>
-  </div>
-
-  <div class="example-table-container">
-    <table
-      mat-table
-      [dataSource]="filteredAndPagedIssues"
-      class="example-table"
-      matSort
-      matSortActive="created"
-      matSortDisableClear
-      matSortDirection="desc"
-      (matSortChange)="resetPaging()"
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <button
+      type="button"
+      mat-button
+      mat-raised-button
+      (click)="drawer.toggle(); showFiller = !showFiller"
     >
-      <!-- Number Column -->
-      <ng-container matColumnDef="thumbImageUrlConverted">
-        <td mat-cell *matCellDef="let row">
-          <mat-grid-list cols="9" rowHeight="2:1">
-            <mat-grid-tile [colspan]="2" [rowspan]="5">
-              <img
-                src="{{ row.thumbImageUrlConverted }}"
-                alt="{{ row.name }}"
-              />
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="4" [rowspan]="5">
-              <mat-card>
-                <mat-card-header>
-                  <div mat-card-avatar></div>
-                  <mat-card-title>{{
-                    row.name
-                  }}</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                  {{ row.feedbackCount }} отзывов
-                </mat-card-content>
-                <mat-card-content> Добавить в сравнение </mat-card-content>
-                <mat-card-content *ngFor="let parameter of row.parameters">
-                  {{ parameter.name }}
-                  {{ parameter.value }}
-                </mat-card-content>
-              </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="3" [rowspan]="5">
-              <mat-card>
-                <mat-card-header>
-                  <div mat-card-avatar></div>
-                  <mat-card-title>{{
-                    row.regionProduct.price | number: "1.1-1"
-                  }}</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>
-                    <button mat-raised-button color="primary">Купить</button>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <section>
-                    <button
-                      mat-button
-                      *ngFor="
-                        let deliveryMethod of row.regionProduct.deliveryMethods
-                      "
-                    >
-                      {{ deliveryMethod.type }}
-                    </button>
-                  </section>
-                </mat-card-actions>
-              </mat-card>
-            </mat-grid-tile>
-          </mat-grid-list>
-        </td>
-      </ng-container>
+      Фильтры
+    </button>
+    <button type="button" mat-button mat-raised-button>Популярности</button>
+    <button type="button" mat-button mat-raised-button>Цене</button>
+    <div *ngIf="showFiller" [formGroup]="filterForm">
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel *ngFor="let f of filters; index as k">
+          <mat-expansion-panel-header>
+            <mat-panel-title> {{ filters[k].name }} </mat-panel-title>
+          </mat-expansion-panel-header>
 
-      <!-- Number Column -->
-      <!-- <ng-container matColumnDef="number">
+          <ul
+            *ngIf="filters[k].type === 'common'"
+            [formArrayName]="filters[k].key"
+          >
+            <li
+              *ngFor="
+                let subtask of getFormArray(filters[k].key).controls;
+                index as i
+              "
+            >
+              <mat-checkbox [formControlName]="i">
+                {{ getOption(k, i, "name") }}
+              </mat-checkbox>
+            </li>
+          </ul>
+
+          <ul
+            *ngIf="filters[k].type === 'color'"
+            [formArrayName]="filters[k].key"
+          >
+            <li
+              *ngFor="
+                let item of getFormArray(filters[k].key).controls;
+                index as i
+              "
+            >
+              <mat-checkbox [formControlName]="i">
+                {{ getOption(k, i, "name") }}
+              </mat-checkbox>
+            </li>
+          </ul>
+
+          <bm-range-slider
+            *ngIf="filters[k].type === 'range'"
+            ngDefaultControl
+            [formControlName]="filters[k].key"
+            [value]="filters[k].min || 0"
+            [highValue]="filters[k].max || 100"
+            [options]="{
+              floor: 0,
+              ceil: 25,
+              animate: true,
+              hideLimitLabels: true,
+              hidePointerLabels: true
+            }"
+          >
+          </bm-range-slider>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <code>{{ filterForm.value | json }}</code>
+      <pre>{{ filters | json }}</pre>
+    </div>
+  </mat-drawer>
+  <button
+    *ngIf="!showFiller"
+    type="button"
+    mat-button
+    mat-raised-button
+    (click)="drawer.toggle(); showFiller = !showFiller"
+  >
+    Фильтры
+  </button>
+  <div class="example-container mat-elevation-z8">
+    <div
+      class="example-loading-shade"
+      *ngIf="isLoadingResults || isRateLimitReached"
+    >
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+      <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
+        GitHub's API rate limit has been reached. It will be reset in one
+        minute.
+      </div>
+    </div>
+
+    <div class="example-table-container">
+      <table
+        mat-table
+        [dataSource]="productListApi"
+        class="example-table"
+        matSort
+        matSortActive="created"
+        matSortDisableClear
+        matSortDirection="desc"
+        (matSortChange)="resetPaging()"
+      >
+        <!-- Number Column -->
+        <ng-container matColumnDef="thumbImageUrlConverted">
+          <td mat-cell *matCellDef="let row">
+            <mat-grid-list cols="9" rowHeight="2:1">
+              <mat-grid-tile [colspan]="2" [rowspan]="5">
+                <img
+                  src="{{ row.thumbImageUrlConverted }}"
+                  alt="{{ row.name }}"
+                />
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="4" [rowspan]="5">
+                <mat-card>
+                  <mat-card-header>
+                    <div mat-card-avatar></div>
+                    <mat-card-title>{{ row.name }}</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>
+                    {{ row.feedbackCount }} отзывов
+                  </mat-card-content>
+                  <mat-card-content> Добавить в сравнение </mat-card-content>
+                  <mat-card-content *ngFor="let parameter of row.parameters">
+                    {{ parameter.name }}
+                    {{ parameter.value }}
+                  </mat-card-content>
+                </mat-card>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="5">
+                <mat-card>
+                  <mat-card-header>
+                    <div mat-card-avatar></div>
+                    <mat-card-title>{{
+                      row.regionProduct.price | number: "1.1-1"
+                    }}</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                      <button mat-raised-button color="primary">Купить</button>
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <section>
+                      <button
+                        mat-button
+                        *ngFor="
+                          let deliveryMethod of row.regionProduct
+                            .deliveryMethods
+                        "
+                      >
+                        {{ deliveryMethod.type }}
+                      </button>
+                    </section>
+                  </mat-card-actions>
+                </mat-card>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </td>
+        </ng-container>
+
+        <!-- Number Column -->
+        <!-- <ng-container matColumnDef="number">
         <td mat-cell *matCellDef="let row">{{ row.number }}</td>
       </ng-container> -->
 
-      <!-- Title Column -->
-      <!-- <ng-container matColumnDef="title">
+        <!-- Title Column -->
+        <!-- <ng-container matColumnDef="title">
         <td mat-cell *matCellDef="let row">{{ row.title }}</td>
       </ng-container> -->
 
-      <!-- State Column -->
-      <!-- <ng-container matColumnDef="state">
+        <!-- State Column -->
+        <!-- <ng-container matColumnDef="state">
         <td mat-cell *matCellDef="let row">{{ row.state }}</td>
       </ng-container> -->
 
-      <!-- Created Column -->
-      <!-- <ng-container matColumnDef="created">
+        <!-- Created Column -->
+        <!-- <ng-container matColumnDef="created">
         <td mat-cell *matCellDef="let row">{{ row.created_at | date }}</td>
       </ng-container> -->
 
-      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
-  </div>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
 
-  <mat-paginator [length]="resultsLength" [pageSize]="30"></mat-paginator>
-</div>
+    <mat-paginator [length]="resultsLength" [pageSize]="30"></mat-paginator>
+  </div>
+</mat-drawer-container>

@@ -7,6 +7,8 @@ import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableHttpExampleComponent } from './table-http-example/table-http-example.component';
+import { RangeSliderModule } from '@brewermap/range-slider';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, TableHttpExampleComponent],
@@ -16,6 +18,9 @@ import { TableHttpExampleComponent } from './table-http-example/table-http-examp
     BrowserAnimationsModule,
     AppMaterialModule,
     HttpClientModule,
+    RangeSliderModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     {

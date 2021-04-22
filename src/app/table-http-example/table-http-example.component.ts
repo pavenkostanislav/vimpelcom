@@ -1,10 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import * as _ from 'lodash';
 import { merge, Observable, of as observableOf } from 'rxjs';
 import { catchError, map, startWith, switchMap } from 'rxjs/operators';
+import { FormGroup, FormControl, FormArray } from '@angular/forms';
 
 @Component({
   selector: 'app-table-http-example',
@@ -14,14 +16,33 @@ import { catchError, map, startWith, switchMap } from 'rxjs/operators';
 export class TableHttpExampleComponent implements AfterViewInit {
   displayedColumns: string[] = ['thumbImageUrlConverted']; // ['created', 'state', 'number', 'title'];
   exampleDatabase: ExampleHttpDatabase | null | undefined;
-  filteredAndPagedIssues: Observable<Array<ProductListApi>> | [] = [];
+  productListApi: Observable<Array<ProductListApi>> | [] = [];
+  filters: Array<Filter> | [] = [];
 
   resultsLength = 0;
   isLoadingResults = true;
   isRateLimitReached = false;
 
+  showFiller = false;
+
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
   @ViewChild(MatSort) sort: MatSort | undefined;
+  @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
+
+  filterForm = new FormGroup({
+    price: new FormControl([0, 16]),
+    actions: new FormArray([new FormControl(false)]),
+    colors: new FormArray([new FormControl(false)]),
+    rams: new FormArray([new FormControl(false)]),
+  });
+
+  getFormArray(key: string): FormArray {
+    return this.filterForm.get(key) as FormArray;
+  }
+
+  getOption(k: number, i: number, key: string) {
+    return (this.filters[k] as any).options[i][key].toString();
+  }
 
   constructor(private _httpClient: HttpClient) {}
 
@@ -32,14 +53,14 @@ export class TableHttpExampleComponent implements AfterViewInit {
       if (this.paginator === undefined || this.sort === undefined) {
         return;
       }
-      this.filteredAndPagedIssues = merge(
+      this.productListApi = merge(
         this.sort.sortChange,
         this.paginator.page
       ).pipe(
         startWith({}),
         switchMap(() => {
           this.isLoadingResults = true;
-          return this.exampleDatabase!.getRepoIssues(
+          return this.exampleDatabase!.getMetaApi(
             this.sort?.active,
             this.sort?.direction,
             this.paginator?.pageIndex
@@ -49,9 +70,9 @@ export class TableHttpExampleComponent implements AfterViewInit {
           // Flip flag to show that loading has finished.
           this.isLoadingResults = false;
           this.isRateLimitReached = false;
-          this.resultsLength = data.paging.totalCount;
-
-          return data.list;
+          this.resultsLength = data.body.products.paging.totalCount;
+          this.filters = data.body.filters;
+          return data.body.products.list;
         }),
         catchError(() => {
           this.isLoadingResults = false;
@@ -71,21 +92,38 @@ export class TableHttpExampleComponent implements AfterViewInit {
   }
 }
 
-export interface GithubApi {
-  items: GithubIssue[];
-  total_count: number;
+export interface Filter {
+  name: string;
+  key: string;
+  slug: string;
+  type: string;
+  isOpen: boolean;
+  options: Array<FilterOption> | null;
+  isSeoUrlAllowed: boolean;
+
+  //selector
+  intagId?: string;
+
+  //slider
+  valueFrom?: null;
+  valueTo?: null;
+  min?: number;
+  max?: number;
 }
 
-export interface GithubIssue {
-  created_at: string;
-  number: string;
-  state: string;
-  title: string;
+export interface FilterOption {
+  name: string;
+  color: string | null;
+  slug: string;
+  isChecked: boolean;
+  isDisabled: boolean;
+  productsCount: number;
 }
 
 export interface MetaApi {
   body: {
     products: ProductApi;
+    filters: Array<Filter>;
   };
 }
 
@@ -218,22 +256,19 @@ export interface ParameterApi {
 export class ExampleHttpDatabase {
   constructor(private _httpClient: HttpClient) {}
 
-  getRepoIssues(
+  getMetaApi(
     sort?: string,
     order?: string,
     page?: number
-  ): Observable<ProductApi> {
-    const href = 'https://api.github.com/search/issues';
+  ): Observable<MetaApi> {
+    const href = './assets/meta.json';
     const params = _.merge(
       { q: 'repo:angular/components' },
       sort ? { sort } : undefined,
       order ? { order } : undefined,
       page ? { page: (page++).toString() } : undefined
     );
-    return this._httpClient
-      .get<MetaApi>('./assets/meta.json')
-      .pipe(map((data) => data.body.products));
 
-    // return this._httpClient.get<GithubApi>(href, { params });
+    return this._httpClient.get<MetaApi>(href);
   }
 }
