@@ -6,7 +6,12 @@ import { MatSort } from '@angular/material/sort';
 import * as _ from 'lodash';
 import { merge, Observable, of as observableOf } from 'rxjs';
 import { catchError, map, startWith, switchMap } from 'rxjs/operators';
-import { FormGroup, FormControl, FormArray } from '@angular/forms';
+import {
+  FormGroup,
+  FormControl,
+  FormArray,
+  AbstractControl,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-table-http-example',
@@ -29,12 +34,7 @@ export class TableHttpExampleComponent implements AfterViewInit {
   @ViewChild(MatSort) sort: MatSort | undefined;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
 
-  filterForm = new FormGroup({
-    price: new FormControl([0, 16]),
-    actions: new FormArray([new FormControl(false)]),
-    colors: new FormArray([new FormControl(false)]),
-    rams: new FormArray([new FormControl(false)]),
-  });
+  filterForm = new FormGroup({});
 
   getFormArray(key: string): FormArray {
     return this.filterForm.get(key) as FormArray;
@@ -72,6 +72,36 @@ export class TableHttpExampleComponent implements AfterViewInit {
           this.isRateLimitReached = false;
           this.resultsLength = data.body.products.paging.totalCount;
           this.filters = data.body.filters;
+          const f = this.filters.reduce((acc: Object, curr: Filter) => {
+            const key = curr.key;
+            switch (curr.type) {
+              case 'range':
+                return (
+                  (acc[key] = new FormControl([
+                    curr.valueFrom || 0,
+                    curr.valueTo || 100,
+                  ])),
+                  acc
+                );
+              case 'common':
+              case 'color':
+                return (
+                  (acc[key] = new FormArray(
+                    curr.options.map((o) => new FormControl(o.isChecked))
+                  )),
+                  acc
+                );
+              default:
+                return (acc[key] = ''), acc;
+            }
+          }, {}) as { [key: string]: AbstractControl };
+          this.filterForm = new FormGroup(f);
+          // this.filterForm = new FormGroup({
+          //   price: new FormControl([0, 16]),
+          //   actions: new FormArray([new FormControl(false)]),
+          //   colors: new FormArray([new FormControl(false)]),
+          //   rams: new FormArray([new FormControl(false)]),
+          // });
           return data.body.products.list;
         }),
         catchError(() => {
