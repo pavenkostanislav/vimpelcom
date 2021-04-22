@@ -12,7 +12,10 @@
     <button type="button" mat-button mat-raised-button>Цене</button>
     <div *ngIf="showFiller" [formGroup]="filterForm">
       <mat-accordion class="example-headers-align" multi>
-        <mat-expansion-panel *ngFor="let f of filters; index as k">
+        <mat-expansion-panel
+          *ngFor="let f of filters; index as k"
+          [expanded]="filters[k].isOpen"
+        >
           <mat-expansion-panel-header>
             <mat-panel-title> {{ filters[k].name }} </mat-panel-title>
           </mat-expansion-panel-header>
@@ -23,7 +26,7 @@
           >
             <li
               *ngFor="
-                let subtask of getFormArray(filters[k].key).controls;
+                let item of getFormArray(filters[k].key).controls;
                 index as i
               "
             >

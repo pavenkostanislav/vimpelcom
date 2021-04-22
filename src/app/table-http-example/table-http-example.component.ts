@@ -12,6 +12,7 @@ import {
   FormArray,
   AbstractControl,
 } from '@angular/forms';
+import { filter } from 'lodash';
 
 @Component({
   selector: 'app-table-http-example',
@@ -63,7 +64,8 @@ export class TableHttpExampleComponent implements AfterViewInit {
           return this.exampleDatabase!.getMetaApi(
             this.sort?.active,
             this.sort?.direction,
-            this.paginator?.pageIndex
+            this.paginator?.pageIndex,
+            this.filterForm.value
           );
         }),
         map((data) => {
@@ -72,36 +74,33 @@ export class TableHttpExampleComponent implements AfterViewInit {
           this.isRateLimitReached = false;
           this.resultsLength = data.body.products.paging.totalCount;
           this.filters = data.body.filters;
-          const f = this.filters.reduce((acc: Object, curr: Filter) => {
-            const key = curr.key;
-            switch (curr.type) {
-              case 'range':
-                return (
-                  (acc[key] = new FormControl([
-                    curr.valueFrom || 0,
-                    curr.valueTo || 100,
-                  ])),
-                  acc
-                );
-              case 'common':
-              case 'color':
-                return (
-                  (acc[key] = new FormArray(
-                    curr.options.map((o) => new FormControl(o.isChecked))
-                  )),
-                  acc
-                );
-              default:
-                return (acc[key] = ''), acc;
-            }
-          }, {}) as { [key: string]: AbstractControl };
-          this.filterForm = new FormGroup(f);
-          // this.filterForm = new FormGroup({
-          //   price: new FormControl([0, 16]),
-          //   actions: new FormArray([new FormControl(false)]),
-          //   colors: new FormArray([new FormControl(false)]),
-          //   rams: new FormArray([new FormControl(false)]),
-          // });
+          const filtersReduce = this.filters.reduce(
+            (acc: Object, curr: Filter) => {
+              const key = curr.key;
+              switch (curr.type) {
+                case 'range':
+                  return (
+                    (acc[key] = new FormControl([
+                      curr.valueFrom || 0,
+                      curr.valueTo || 100,
+                    ])),
+                    acc
+                  );
+                case 'common':
+                case 'color':
+                  return (
+                    (acc[key] = new FormArray(
+                      curr.options.map((o) => new FormControl(o.isChecked))
+                    )),
+                    acc
+                  );
+                default:
+                  return (acc[key] = ''), acc;
+              }
+            },
+            {}
+          ) as { [key: string]: AbstractControl };
+          this.filterForm = new FormGroup(filtersReduce);
           return data.body.products.list;
         }),
         catchError(() => {
@@ -289,14 +288,15 @@ export class ExampleHttpDatabase {
   getMetaApi(
     sort?: string,
     order?: string,
-    page?: number
+    page?: number,
+    filterForm?: Object
   ): Observable<MetaApi> {
     const href = './assets/meta.json';
     const params = _.merge(
-      { q: 'repo:angular/components' },
       sort ? { sort } : undefined,
       order ? { order } : undefined,
-      page ? { page: (page++).toString() } : undefined
+      page ? { page: (page++).toString() } : undefined,
+      { filter: filterForm }
     );
 
     return this._httpClient.get<MetaApi>(href);
