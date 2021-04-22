@@ -90,7 +90,13 @@ export class TableHttpExampleComponent implements AfterViewInit {
                 case 'color':
                   return (
                     (acc[key] = new FormArray(
-                      curr.options.map((o) => new FormControl(o.isChecked))
+                      curr.options.map(
+                        (o) =>
+                          new FormControl({
+                            value: o.isChecked,
+                            disabled: o.isDisabled,
+                          })
+                      )
                     )),
                     acc
                   );
