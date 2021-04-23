@@ -45,8 +45,8 @@ export class TableHttpExampleComponent implements AfterViewInit {
     return this.filterForm.get(key) as FormControl;
   }
 
-  getOption(k: number, i: number) {
-    return (this.filters[k] as any).options[i];
+  getOption(k: number, i: number, key: string) {
+    return (this.filters[k] as any).options[i][key] as string;
   }
 
   constructor(private _httpClient: HttpClient) {}

@@ -31,9 +31,9 @@
               "
             >
               <mat-checkbox [formControlName]="i">
-                {{ getOption(k, i)["name"] }}
+                {{ getOption(k, i, "name") }}
                 <span style="color: gray"
-                  >({{ getOption(k, i)["productsCount"] }})</span
+                  >({{ getOption(k, i, "productsCount") }})</span
                 >
               </mat-checkbox>
             </li>
@@ -50,10 +50,13 @@
               "
             >
               <mat-checkbox [formControlName]="i">
-                {{ getOption(k, i)["name"] }}
-                <span style="color: gray"
-                  >({{ getOption(k, i)["productsCount"] }})</span
+                <mat-icon [ngStyle]="{ color: getOption(k, i, 'color') }"
+                  >palette</mat-icon
                 >
+                {{ getOption(k, i, "name") }}
+                <span style="color: gray">
+                  ({{ getOption(k, i, "productsCount") }})
+                </span>
               </mat-checkbox>
             </li>
           </ul>
