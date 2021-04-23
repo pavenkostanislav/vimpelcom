@@ -7,7 +7,6 @@ import {
   ViewChild,
 } from '@angular/core';
 import { MatAccordion } from '@angular/material/expansion';
-import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import * as _ from 'lodash';
 import { merge, Observable, of as observableOf } from 'rxjs';
@@ -29,22 +28,20 @@ import { DecimalPipe } from '@angular/common';
 export class TableHttpExampleComponent implements AfterViewInit {
   displayedColumns: string[] = ['thumbImageUrlConverted']; // ['created', 'state', 'number', 'title'];
   exampleDatabase: ExampleHttpDatabase | null | undefined;
-  productListApi: Observable<Array<ProductListApi>> | [] = [];
+  productListApi: Array<ProductListApi> | undefined;
   filters: Array<Filter> | [] = [];
 
-  resultsLength = 0;
+  pagingConfig = {};
   isLoadingResults = true;
   isRateLimitReached = false;
 
   showFiller = false;
 
-  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
-  @ViewChild('paginator', { read: ElementRef })
-  paginatorElementRef: ElementRef;
   @ViewChild(MatSort) sort: MatSort | undefined;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
 
   filterForm = new FormGroup({});
+  page: number;
 
   getFormArray(key: string): FormArray {
     return this.filterForm.get(key) as FormArray;
@@ -61,45 +58,26 @@ export class TableHttpExampleComponent implements AfterViewInit {
   constructor(private _httpClient: HttpClient, private _renderer: Renderer2) {}
   decimalPipe = new DecimalPipe(navigator.language);
   ngAfterViewInit(): void {
-    this.paginator._intl.getRangeLabel = () => '';
-
-    // this._renderer.insertBefore(
-    //   this.paginatorElementRef.nativeElement.querySelector(
-    //     '.mat-paginator-navigation-next.mat-icon-button'
-    //   ).parentNode,
-    //   this.paginatorElementRef.nativeElement.querySelector(
-    //     '.mat-paginator-range-label'
-    //   ),
-    //   this.paginatorElementRef.nativeElement.querySelector(
-    //     '.mat-paginator-navigation-next.mat-icon-button'
-    //   )
-    // );
-
     this.exampleDatabase = new ExampleHttpDatabase(this._httpClient);
-
-    setTimeout(() => {
-      if (this.paginator === undefined || this.sort === undefined) {
-        return;
-      }
-      this.productListApi = merge(
-        this.sort.sortChange,
-        this.paginator.page
-      ).pipe(
-        startWith({}),
-        switchMap(() => {
-          this.isLoadingResults = true;
-          return this.exampleDatabase!.getMetaApi(
-            this.sort?.active,
-            this.sort?.direction,
-            this.paginator?.pageIndex,
-            this.filterForm.value
-          );
-        }),
+    this.isLoadingResults = true;
+    this.exampleDatabase
+      .getMetaApi(
+        this.sort?.active,
+        this.sort?.direction,
+        this.page,
+        this.filterForm.value
+      )
+      .pipe(
         map((data) => {
           // Flip flag to show that loading has finished.
           this.isLoadingResults = false;
           this.isRateLimitReached = false;
-          this.resultsLength = data.body.products.paging.totalCount;
+          this.pagingConfig = {
+            id: 'server',
+            itemsPerPage: data.body.products.paging.perPage,
+            currentPage: data.body.products.paging.currentPage,
+            totalItems: data.body.products.paging.totalCount,
+          };
           this.filters = data.body.filters;
           const filtersReduce = this.filters.reduce(
             (acc: Object, curr: Filter) => {
@@ -134,7 +112,8 @@ export class TableHttpExampleComponent implements AfterViewInit {
             {}
           ) as { [key: string]: AbstractControl };
           this.filterForm = new FormGroup(filtersReduce);
-          return data.body.products.list;
+          this.productListApi = data.body.products.list;
+          return this.productListApi;
         }),
         catchError(() => {
           this.isLoadingResults = false;
@@ -142,15 +121,12 @@ export class TableHttpExampleComponent implements AfterViewInit {
           this.isRateLimitReached = true;
           return observableOf([]);
         })
-      );
-    });
+      )
+      .subscribe();
   }
 
-  resetPaging(): void {
-    if (this.paginator === undefined) {
-      return;
-    }
-    this.paginator.pageIndex = 0;
+  setPage(index?: number): void {
+    this.page = index || 0;
   }
 }
 
@@ -324,7 +300,8 @@ export class ExampleHttpDatabase {
     page?: number,
     filterForm?: Object
   ): Observable<MetaApi> {
-    const href = 'http://localhost:3000/api/list'; // './assets/meta.json';
+    //const href = 'http://localhost:3000/api/list'; // './assets/meta.json';
+    const href = './assets/meta.json';
     const body = _.merge(
       sort ? { sort } : undefined,
       order ? { order } : undefined,
@@ -332,6 +309,6 @@ export class ExampleHttpDatabase {
       { filter: filterForm }
     );
 
-    return this._httpClient.post<MetaApi>(href, body);
+    return this._httpClient.get<MetaApi>(href);
   }
 }

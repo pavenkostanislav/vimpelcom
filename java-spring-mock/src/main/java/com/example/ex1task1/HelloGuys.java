@@ -16,6 +16,6 @@ public class HelloGuys {
     @RequestMapping("/list")
     public String list()
     {
-        return "Hello, guys!";
+        return "Hello, list!";
     }
 }
