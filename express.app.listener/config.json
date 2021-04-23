@@ -1,0 +1,109 @@
+{
+    "application": {
+        "additionalInfo": "error/test${req.params[0]}",
+        "application": "test",
+        "applicationExample": [
+            "test",
+            "error/test"
+        ],
+        "prefilling": "test${req.params.t}",
+        "statistic": {
+            "marker": "test"
+        },
+        "status": "testEmptyResultCode",
+        "statusExample": [
+            "test_REQUEST_ADDITIONAL_INFO",
+            "testA",
+            "testE",
+            "testEmptyBody",
+            "testEmptyResultCode",
+            "testN",
+            "testT",
+            "testU",
+            "testY",
+            "error/test"
+        ]
+    },
+    "dictionary": {
+        "brand": "test",
+        "businessType": "test",
+        "education": "test",
+        "marriageStatus": "test",
+        "model": "test",
+        "positionType": "test",
+        "residencePlaceType": "test",
+        "secondDocumentType": "test",
+        "sex": "test",
+        "socialStatus": "test"
+    },
+    "internal": {
+        "sms": "test"
+    },
+    "rb": "test${req.params[0]}",
+    "rbExample": [
+        "test",
+        "test1",
+        "test2"
+    ],
+    "user": {
+        "checkApplication": "test",
+        "checkApplicationExample": [
+            "test",
+            "error/test"
+        ],
+        "id": "test",
+        "idExample": [
+            "test",
+            "error/test"
+        ],
+        "loginByHash": "test",
+        "user": {
+            "get": "completeData",
+            "post": "postTest",
+            "put": "putTest"
+        },
+        "userGetExample": [
+            "completeData",
+            "consentCombination1",
+            "consentCombination2",
+            "consentCombination3",
+            "consentValueIsDate",
+            "withoutConsent",
+            "withoutPasport",
+            "withoutPassportAndConsent",
+            "error/unauthorized"
+        ],
+        "visitInformation": "test",
+        "visitInformationExamle": [
+            "test",
+            "error/test"
+        ]
+    },
+    "redirect": {
+        "hostname": "http://localhost:5555/#/",
+        "modalOrPage": "questionnaire",
+        "modalExample": {
+            "condiditons": "login/esia/accessCreditStorySignaturePassport",
+            "link-acounts": "login/esia/accessEsiaData"
+        },
+        "pageExample": [
+            "questionnaire"
+        ]
+    },
+    "utm": {
+        "utm_source": "source",
+        "utm_medium": "medium",
+        "utm_campaign": "campaign",
+        "utm_term": "term",
+        "email": "test@test.com",
+        "phoneMobile": "1111111112",
+        "firstName": "Петров",
+        "lastName": "Петр",
+        "patronymic": "Петрович",
+        "creditSum": "1259036,52",
+        "loanTerm": 24,
+        "carPrice": "1000000,01",
+        "modelId": 6939,
+        "utm_content": "content"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "login": {
+        "registration": {
+            "lastName": "Тестов",
+            "firstName": "Тест",
+            "patronymic": "Тестовский",
+            "birthday": "31.01.1990",
+            "phoneMobile": "9104308447",
+            "email": "test123@test.test"
+        }
+    },
+    "questionnaire": {
+        "brand": {
+            "usedCarFlag":  true,
+            "manufactureYear": 2006,
+            "brandId": 108,
+            "modelId": 2926,
+            "price": "500000.00",
+            "firstPayment": "50000.00",
+            "loanTerm": 60
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "patronymic": "Петрович",
+    "email": "ibzjjaol@zeroe.ml",
+    "birthday": "08.10.1981",
+    "account_id": "97244",
+    "first_name" : "Максим",
+    "last_name" : "Енотов",
+    "phone_mobile" : "9662882670",
+    "doc_department" : "ОТДЕЛОМ УФМС РОССИИ ПО РЕСП. МАРИЙ ЭЛ В Г. ЙОШКАР-ОЛЕ",
+    "doc_department_code" : "120-001",
+    "doc_issue_date" : "01.02.2020",
+    "doc_number" : "121111",
+    "doc_serial" : "22 22",
+    "consent_process_pers_data_lite" : "08.10.2020",
+    "consent_use_simple_signature" : false,
+    "consent_process_pers_data_b1" : false,
+    "consent_bki_request_b1": false
+  }

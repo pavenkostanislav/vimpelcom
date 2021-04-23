@@ -1,0 +1,5 @@
+{
+    "resultCode": "REQUEST_ADDITIONAL_INFO",
+    "resultMessage": "/application/status string request additional info",
+    "resultMessageFormatted": "/application/status formatted string request additional info"
+}
