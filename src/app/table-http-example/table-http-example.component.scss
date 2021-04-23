@@ -4,16 +4,6 @@
   min-height: 1024px;
 }
 
-.example-table-container {
-  position: relative;
-  height: 1024px;
-  overflow: auto;
-}
-
-table {
-  width: 100%;
-}
-
 .example-loading-shade {
   position: absolute;
   top: 0;
@@ -31,16 +21,6 @@ table {
   color: #980000;
   max-width: 360px;
   text-align: center;
-}
-
-/* Column Widths */
-.mat-column-number,
-.mat-column-state {
-  max-width: 64px;
-}
-
-.mat-column-created {
-  max-width: 124px;
 }
 
 mat-paginator {

@@ -1,24 +1,17 @@
+import { DecimalPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { AfterViewInit, Component, Renderer2, ViewChild } from '@angular/core';
 import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  Renderer2,
-  ViewChild,
-} from '@angular/core';
+  AbstractControl,
+  FormArray,
+  FormControl,
+  FormGroup,
+} from '@angular/forms';
 import { MatAccordion } from '@angular/material/expansion';
 import { MatSort } from '@angular/material/sort';
 import * as _ from 'lodash';
-import { merge, Observable, of as observableOf } from 'rxjs';
-import { catchError, map, startWith, switchMap } from 'rxjs/operators';
-import {
-  FormGroup,
-  FormControl,
-  FormArray,
-  AbstractControl,
-} from '@angular/forms';
-import { filter } from 'lodash';
-import { DecimalPipe } from '@angular/common';
+import { Observable, of as observableOf } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-table-http-example',

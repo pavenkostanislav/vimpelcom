@@ -131,58 +131,53 @@
       </div>
     </div>
 
-
-          <mat-grid-list cols="9" *ngFor="let row of productListApi | paginate: pagingConfig">
-            <mat-grid-tile [colspan]="2" [rowspan]="5">
-              <img
-                src="{{ row.thumbImageUrlConverted }}"
-                alt="{{ row.name }}"
-              />
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="4" [rowspan]="5">
-              <mat-card>
-                <mat-card-header>
-                  <div mat-card-avatar></div>
-                  <mat-card-title>{{ row.name }}</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                  {{ row.feedbackCount }} отзывов
-                </mat-card-content>
-                <mat-card-content> Добавить в сравнение </mat-card-content>
-                <mat-card-content *ngFor="let parameter of row.parameters">
-                  {{ parameter.name }}
-                  {{ parameter.value }}
-                </mat-card-content>
-              </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="3" [rowspan]="5">
-              <mat-card>
-                <mat-card-header>
-                  <div mat-card-avatar></div>
-                  <mat-card-title>{{
-                    row.regionProduct.price | number: "1.1-1"
-                  }}</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>
-                    <button mat-raised-button color="primary">Купить</button>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <section>
-                    <button
-                      mat-button
-                      *ngFor="
-                        let deliveryMethod of row.regionProduct.deliveryMethods
-                      "
-                    >
-                      {{ deliveryMethod.type }}
-                    </button>
-                  </section>
-                </mat-card-actions>
-              </mat-card>
-            </mat-grid-tile>
-          </mat-grid-list>
+    <mat-grid-list
+      cols="9"
+      *ngFor="let row of productListApi | paginate: pagingConfig"
+    >
+      <mat-grid-tile [colspan]="2" [rowspan]="5">
+        <img src="{{ row.thumbImageUrlConverted }}" alt="{{ row.name }}" />
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="4" [rowspan]="5">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar></div>
+            <mat-card-title>{{ row.name }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content> {{ row.feedbackCount }} отзывов </mat-card-content>
+          <mat-card-content> Добавить в сравнение </mat-card-content>
+          <mat-card-content *ngFor="let parameter of row.parameters">
+            {{ parameter.name }}
+            {{ parameter.value }}
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="3" [rowspan]="5">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar></div>
+            <mat-card-title>{{
+              row.regionProduct.price | number: "1.1-1"
+            }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              <button mat-raised-button color="primary">Купить</button>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <section>
+              <button
+                mat-button
+                *ngFor="let deliveryMethod of row.regionProduct.deliveryMethods"
+              >
+                {{ deliveryMethod.type }}
+              </button>
+            </section>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
 
     <pagination-controls
       (pageChange)="setPage($event)"

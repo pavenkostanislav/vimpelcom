@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableHttpExampleComponent } from './table-http-example/table-http-example.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     RangeSliderModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [
     {
