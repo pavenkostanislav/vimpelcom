@@ -301,14 +301,14 @@ export class ExampleHttpDatabase {
     page?: number,
     filterForm?: Object
   ): Observable<MetaApi> {
-    const href = './assets/meta.json';
-    const params = _.merge(
+    const href = 'http://localhost:3000/api/list'; // './assets/meta.json';
+    const body = _.merge(
       sort ? { sort } : undefined,
       order ? { order } : undefined,
       page ? { page: (page++).toString() } : undefined,
       { filter: filterForm }
     );
 
-    return this._httpClient.get<MetaApi>(href);
+    return this._httpClient.post<MetaApi>(href, body);
   }
 }
