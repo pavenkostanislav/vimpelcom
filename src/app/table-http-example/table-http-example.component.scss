@@ -42,3 +42,8 @@ table {
 .mat-column-created {
   max-width: 124px;
 }
+
+mat-paginator {
+  display: flex;
+  justify-content: center;
+}

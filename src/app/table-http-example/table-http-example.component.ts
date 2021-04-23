@@ -1,5 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { MatAccordion } from '@angular/material/expansion';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -13,6 +19,7 @@ import {
   AbstractControl,
 } from '@angular/forms';
 import { filter } from 'lodash';
+import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-table-http-example',
@@ -32,6 +39,8 @@ export class TableHttpExampleComponent implements AfterViewInit {
   showFiller = false;
 
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
+  @ViewChild('paginator', { read: ElementRef })
+  paginatorElementRef: ElementRef;
   @ViewChild(MatSort) sort: MatSort | undefined;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
 
@@ -49,9 +58,23 @@ export class TableHttpExampleComponent implements AfterViewInit {
     return (this.filters[k] as any).options[i][key] as string;
   }
 
-  constructor(private _httpClient: HttpClient) {}
+  constructor(private _httpClient: HttpClient, private _renderer: Renderer2) {}
+  decimalPipe = new DecimalPipe(navigator.language);
+  ngAfterViewInit(): void {
+    this.paginator._intl.getRangeLabel = () => '';
 
-  ngAfterViewInit() {
+    // this._renderer.insertBefore(
+    //   this.paginatorElementRef.nativeElement.querySelector(
+    //     '.mat-paginator-navigation-next.mat-icon-button'
+    //   ).parentNode,
+    //   this.paginatorElementRef.nativeElement.querySelector(
+    //     '.mat-paginator-range-label'
+    //   ),
+    //   this.paginatorElementRef.nativeElement.querySelector(
+    //     '.mat-paginator-navigation-next.mat-icon-button'
+    //   )
+    // );
+
     this.exampleDatabase = new ExampleHttpDatabase(this._httpClient);
 
     setTimeout(() => {
