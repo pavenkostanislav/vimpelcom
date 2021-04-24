@@ -1,3 +1,4 @@
+<code>{{ paging$ | async }}</code>
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <button
@@ -64,10 +65,10 @@
             ngDefaultControl
             [formControlName]="filters[k].key"
             [value]="filters[k].min || 0"
-            [highValue]="filters[k].max || 100"
+            [highValue]="filters[k].max || 100000"
             [options]="{
-              floor: 0,
-              ceil: 25,
+              floor: filters[k].min || 0,
+              ceil: filters[k].max || 100000,
               animate: true,
               hideLimitLabels: true,
               hidePointerLabels: true
@@ -133,7 +134,11 @@
 
     <mat-grid-list
       cols="9"
-      *ngFor="let row of productListApi | paginate: pagingConfig"
+      *ngFor="
+        let row of productList$
+          | async
+          | paginate: (paging$ | async) || pagingConfig
+      "
     >
       <mat-grid-tile [colspan]="2" [rowspan]="5">
         <img src="{{ row.thumbImageUrlConverted }}" alt="{{ row.name }}" />

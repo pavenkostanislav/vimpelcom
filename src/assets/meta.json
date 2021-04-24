@@ -6743,10 +6743,7 @@
           "esim": { "hasESim": false }
         }
       ],
-      "updateMethodUrl": "/shop/getproductslistbyfilters/",
-      "paging": { "perPage": 24, "currentPage": 1, "totalCount": 443 },
-      "requestUnexpectedErrorMessage": "Что-то пошло не так, фильтрация не применена",
-      "requestEmptyListErrorMessage": "Нет товаров, удовлетворяющих условиям поиска"
+      "paging": { "perPage": 24, "currentPage": 1, "totalCount": 443 }
     }
   }
 }

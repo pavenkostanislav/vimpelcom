@@ -1,6 +1,5 @@
-import { DecimalPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, Renderer2, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {
   AbstractControl,
   FormArray,
@@ -9,22 +8,109 @@ import {
 } from '@angular/forms';
 import { MatAccordion } from '@angular/material/expansion';
 import { MatSort } from '@angular/material/sort';
-import * as _ from 'lodash';
+import { Store } from '@ngrx/store';
+import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable, of as observableOf } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
+import { Filter, ProductListApi } from '../meta.interface';
+import { MockDboAction } from '../mock-dbo.actions';
+import {
+  selectFilters,
+  selectPaging,
+  selectProductList,
+} from '../mock-dbo.selectors';
+import { MockDboService } from '../mock-dbo.service';
+import { smartphonesState } from '../reducers/list.reducer';
 
 @Component({
   selector: 'app-table-http-example',
   templateUrl: './table-http-example.component.html',
   styleUrls: ['./table-http-example.component.scss'],
 })
-export class TableHttpExampleComponent implements AfterViewInit {
-  displayedColumns: string[] = ['thumbImageUrlConverted']; // ['created', 'state', 'number', 'title'];
-  exampleDatabase: ExampleHttpDatabase | null | undefined;
+export class TableHttpExampleComponent implements OnInit {
+  productList$: Observable<Array<ProductListApi>> = this.store$
+    .select(selectProductList)
+    .pipe(
+      tap((data) => {
+        this.isLoadingResults = false;
+        this.isRateLimitReached = false;
+        this.productListApi = data;
+      }),
+      catchError(() => {
+        this.isLoadingResults = false;
+        this.isRateLimitReached = true;
+        return observableOf([]);
+      })
+    );
+
+  filters$: Observable<Array<Filter>> = this.store$.select(selectFilters).pipe(
+    tap((data) => {
+      this.isLoadingResults = false;
+      this.isRateLimitReached = false;
+      this.filters = data;
+      const filtersReduce = this.filters.reduce((acc: Object, curr: Filter) => {
+        const key = curr.key;
+        switch (curr.type) {
+          case 'range':
+            return (
+              (acc[key] = new FormControl([
+                curr.valueFrom || 0,
+                curr.valueTo || 100,
+              ])),
+              acc
+            );
+          case 'common':
+          case 'color':
+            return (
+              (acc[key] = new FormArray(
+                curr.options.map(
+                  (o) =>
+                    new FormControl({
+                      value: o.isChecked,
+                      disabled: o.isDisabled,
+                    })
+                )
+              )),
+              acc
+            );
+          default:
+            return (acc[key] = ''), acc;
+        }
+      }, {}) as { [key: string]: AbstractControl };
+      this.filterForm = new FormGroup(filtersReduce);
+      return this.productListApi;
+    }),
+    catchError(() => {
+      this.isLoadingResults = false;
+      this.isRateLimitReached = true;
+      return observableOf([]);
+    })
+  );
+
+  paging$: Observable<PaginatePipeArgs> = this.store$.select(selectPaging).pipe(
+    tap((data) => {
+      this.isLoadingResults = false;
+      this.isRateLimitReached = false;
+      this.pagingConfig = {
+        ...this.pagingConfig,
+        ...data,
+      };
+    }),
+    catchError((er) => {
+      this.isLoadingResults = false;
+      this.isRateLimitReached = true;
+      return observableOf(er);
+    })
+  );
+
   productListApi: Array<ProductListApi> | undefined;
   filters: Array<Filter> | [] = [];
 
-  pagingConfig = {};
+  pagingConfig: PaginatePipeArgs = {
+    itemsPerPage: 24,
+    currentPage: 2,
+    totalItems: 443,
+  };
   isLoadingResults = true;
   isRateLimitReached = false;
 
@@ -34,7 +120,6 @@ export class TableHttpExampleComponent implements AfterViewInit {
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
 
   filterForm = new FormGroup({});
-  page: number;
 
   getFormArray(key: string): FormArray {
     return this.filterForm.get(key) as FormArray;
@@ -48,260 +133,27 @@ export class TableHttpExampleComponent implements AfterViewInit {
     return (this.filters[k] as any).options[i][key] as string;
   }
 
-  constructor(private _httpClient: HttpClient, private _renderer: Renderer2) {}
-  decimalPipe = new DecimalPipe(navigator.language);
-  ngAfterViewInit(): void {
-    this.exampleDatabase = new ExampleHttpDatabase(this._httpClient);
+  constructor(
+    private store$: Store<smartphonesState>,
+    private _httpClient: HttpClient
+  ) {}
+  ngOnInit(): void {
     this.isLoadingResults = true;
-    this.exampleDatabase
-      .getMetaApi(
-        this.sort?.active,
-        this.sort?.direction,
-        this.page,
-        this.filterForm.value
-      )
-      .pipe(
-        map((data) => {
-          // Flip flag to show that loading has finished.
-          this.isLoadingResults = false;
-          this.isRateLimitReached = false;
-          this.pagingConfig = {
-            id: 'server',
-            itemsPerPage: data.body.products.paging.perPage,
-            currentPage: data.body.products.paging.currentPage,
-            totalItems: data.body.products.paging.totalCount,
-          };
-          this.filters = data.body.filters;
-          const filtersReduce = this.filters.reduce(
-            (acc: Object, curr: Filter) => {
-              const key = curr.key;
-              switch (curr.type) {
-                case 'range':
-                  return (
-                    (acc[key] = new FormControl([
-                      curr.valueFrom || 0,
-                      curr.valueTo || 100,
-                    ])),
-                    acc
-                  );
-                case 'common':
-                case 'color':
-                  return (
-                    (acc[key] = new FormArray(
-                      curr.options.map(
-                        (o) =>
-                          new FormControl({
-                            value: o.isChecked,
-                            disabled: o.isDisabled,
-                          })
-                      )
-                    )),
-                    acc
-                  );
-                default:
-                  return (acc[key] = ''), acc;
-              }
-            },
-            {}
-          ) as { [key: string]: AbstractControl };
-          this.filterForm = new FormGroup(filtersReduce);
-          this.productListApi = data.body.products.list;
-          return this.productListApi;
-        }),
-        catchError(() => {
-          this.isLoadingResults = false;
-          // Catch if the GitHub API has reached its rate limit. Return empty data.
-          this.isRateLimitReached = true;
-          return observableOf([]);
-        })
-      )
-      .subscribe();
+    this.store$.dispatch(
+      new MockDboAction({ paging: this.pagingConfig, filters: this.filters })
+    );
+    this.productList$.subscribe();
+    this.filters$.subscribe();
+    this.paging$.subscribe();
   }
 
   setPage(index?: number): void {
-    this.page = index || 0;
-  }
-}
-
-export interface Filter {
-  name: string;
-  key: string;
-  slug: string;
-  type: string;
-  isOpen: boolean;
-  options: Array<FilterOption> | null;
-  isSeoUrlAllowed: boolean;
-
-  //selector
-  intagId?: string;
-
-  //slider
-  valueFrom?: null;
-  valueTo?: null;
-  min?: number;
-  max?: number;
-}
-
-export interface FilterOption {
-  name: string;
-  color: string | null;
-  slug: string;
-  isChecked: boolean;
-  isDisabled: boolean;
-  productsCount: number;
-}
-
-export interface MetaApi {
-  body: {
-    products: ProductApi;
-    filters: Array<Filter>;
-  };
-}
-
-export interface ProductApi {
-  list: Array<ProductListApi>;
-  updateMethodUrl: string;
-  paging: {
-    perPage: number;
-    currentPage: number;
-    totalCount: number;
-  };
-  requestUnexpectedErrorMessage: string;
-  requestEmptyListErrorMessage: string;
-}
-
-export interface ProductListApi {
-  hasLeasing: true;
-  id: number;
-  isTariff: boolean;
-  dpcId: number;
-  name: string;
-  article: string;
-  brandName: string;
-  thumbImageUrlConverted: string;
-  oldPriceIfBundle: number;
-  oldPriceIfBundleFormatted: string;
-  isPromoPriceMoreThanLimit: boolean;
-  regionProduct: {
-    price: number;
-    soc: string;
-    oldPrice: null;
-    remain: number;
-    remainOp: boolean;
-    label: null;
-    marketingTag: null;
-    promotionId: number;
-    deliveryMethods: Array<MethodApi>;
-    dpcId: number;
-    discount: number;
-    discountFormatted: string;
-    hideOldPrice: false;
-    hasOldPrice: false;
-    shopActionIsAuthorized: null;
-    shopActionRelatedIds: null;
-    shopRelatedServices: null;
-    shopActionCampaigns: null;
-    bonusCount: number;
-    regionId: number;
-  };
-  isPreorder: boolean;
-  contentPromotion: null;
-  benefits: Array<any>;
-  urlSlug: string;
-  hasPreorderAnnouncement: boolean;
-  preorderAnnouncement: null;
-  showPreorderDate: boolean;
-  showPreorderPriceOnView: boolean;
-  preorderStartDate: string;
-  parameters: Array<ParameterApi>;
-  showPreorderDateOnly: boolean;
-  badges: Array<any>;
-  rate: number;
-  feedbackCount: number;
-  hasRemainsShop: boolean;
-  hasRemainsOffice: boolean;
-  isPromotionBundle: boolean;
-  productPromotion: null;
-  mainEquipmentBundleNote: string;
-  additionalEquipmentBundleNote: null;
-  isOutOfStock: boolean;
-  outOfStockReasonSlug: null;
-  outOfStockMessageTemplate: null;
-  isMultiCard: boolean;
-  multiProductId: number;
-  partnerSlug: null;
-  delivery: {
-    methods: Array<MethodApi>;
-    useMethods: boolean;
-    pickupUrl: string;
-    courierUrl: string;
-  };
-  esim: {
-    hasESim: boolean;
-  };
-}
-
-export interface deliveryMethods {
-  type: string;
-  price: number;
-  delay: null;
-  startTime: null;
-  endTime: null;
-}
-
-export interface MethodApi {
-  type: string;
-  price: number;
-  delay: null;
-  startTime: null;
-  endTime: null;
-}
-
-export interface ParameterApi {
-  id: string;
-  detailsSlugOrId: number;
-  productName: null;
-  productId: number;
-  shopProductId: number;
-  value: string;
-  link: null;
-  weight: null;
-  childValues: null;
-  isMultiple: false;
-  filterKind: number;
-  intagSlug: string;
-  intagWeight: number;
-  isColor: boolean;
-  isUnlimited: boolean;
-  unitDisplay: null;
-  numValue: null;
-  hint: string; //html
-  name: string;
-  seoKeywords: null;
-  seoDescriptions: null;
-  seoTitle: null;
-  isIndexing: boolean;
-}
-
-/** An example database that the data source uses to retrieve data for the table. */
-export class ExampleHttpDatabase {
-  constructor(private _httpClient: HttpClient) {}
-
-  getMetaApi(
-    sort?: string,
-    order?: string,
-    page?: number,
-    filterForm?: Object
-  ): Observable<MetaApi> {
-    //const href = 'http://localhost:3000/api/list'; // './assets/meta.json';
-    const href = './assets/meta.json';
-    const body = _.merge(
-      sort ? { sort } : undefined,
-      order ? { order } : undefined,
-      page ? { page: (page++).toString() } : undefined,
-      { filter: filterForm }
+    this.pagingConfig = {
+      ...this.pagingConfig,
+      currentPage: index || 0,
+    };
+    this.store$.dispatch(
+      new MockDboAction({ paging: this.pagingConfig, filters: this.filters })
     );
-
-    return this._httpClient.get<MetaApi>(href);
   }
 }
