@@ -24,7 +24,6 @@ import { TableHttpExampleComponent } from './table-http-example/table-http-examp
     AppMaterialModule,
     HttpClientModule,
     RangeSliderModule,
-    FormsModule,
     ReactiveFormsModule,
     NgxPaginationModule,
     StoreModule.forRoot(REDUCERS_TOKEN, {

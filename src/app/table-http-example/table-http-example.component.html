@@ -6,36 +6,47 @@
           expanded = {{ filters[k].isOpen }}
           {{ filters[k].name }}
 
-          <ul
+          <div
             *ngIf="filters[k].type === 'common'"
             [formArrayName]="filters[k].key"
           >
-            <li
+            <div
+              class="form-check"
               *ngFor="
                 let item of getFormArray(filters[k].key).controls;
                 index as i
               "
             >
-              <mat-checkbox [formControlName]="i">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                [formControlName]="i"
+              />
+              <label class="form-check-label">
                 {{ getOption(k, i, "name") }}
                 <span style="color: gray"
                   >({{ getOption(k, i, "productsCount") }})</span
                 >
-              </mat-checkbox>
-            </li>
-          </ul>
-
-          <ul
+              </label>
+            </div>
+          </div>
+          <div
             *ngIf="filters[k].type === 'color'"
             [formArrayName]="filters[k].key"
           >
-            <li
+            <div
+              class="form-check"
               *ngFor="
                 let item of getFormArray(filters[k].key).controls;
                 index as i
               "
             >
-              <mat-checkbox [formControlName]="i">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                [formControlName]="i"
+              />
+              <label class="form-check-label">
                 <mat-icon [ngStyle]="{ color: getOption(k, i, 'color') }"
                   >palette</mat-icon
                 >
@@ -43,54 +54,66 @@
                 <span style="color: gray">
                   ({{ getOption(k, i, "productsCount") }})
                 </span>
-              </mat-checkbox>
-            </li>
-          </ul>
+              </label>
+            </div>
+          </div>
 
-          <bm-range-slider
-            *ngIf="filters[k].type === 'range'"
-            ngDefaultControl
-            [formControlName]="filters[k].key"
-            [value]="filters[k].min || 0"
-            [highValue]="filters[k].max || 100000"
-            [options]="{
-              floor: filters[k].min || 0,
-              ceil: filters[k].max || 100000,
-              animate: true,
-              hideLimitLabels: true,
-              hidePointerLabels: true
-            }"
-          >
-          </bm-range-slider>
-          <mat-form-field *ngIf="filters[k].type === 'range'">
-            <input
-              matInput
-              [ngModel]="getFormControl(filters[k].key).value[0]"
-              (ngModelChange)="
-                getFormControl(filters[k].key).setValue([
-                  $event,
-                  getFormControl(filters[k].key).value[1]
-                ])
-              "
-              [ngModelOptions]="{ standalone: true }"
-            />
-          </mat-form-field>
-          <mat-icon *ngIf="filters[k].type === 'range'"
-            >horizontal_rule</mat-icon
-          >
-          <mat-form-field *ngIf="filters[k].type === 'range'">
-            <input
-              matInput
-              [ngModel]="getFormControl(filters[k].key).value[1]"
-              (ngModelChange)="
-                getFormControl(filters[k].key).setValue([
-                  getFormControl(filters[k].key).value[0],
-                  $event
-                ])
-              "
-              [ngModelOptions]="{ standalone: true }"
-            />
-          </mat-form-field>
+          <div *ngIf="filters[k].type === 'range'">
+            <bm-range-slider
+              ngDefaultControl
+              [formControlName]="filters[k].key"
+              [value]="filters[k].min || 0"
+              [highValue]="filters[k].max || 100000"
+              [options]="{
+                floor: filters[k].min || 0,
+                ceil: filters[k].max || 100000,
+                animate: true,
+                hideLimitLabels: true,
+                hidePointerLabels: true
+              }"
+            >
+            </bm-range-slider>
+            <div
+              class="input-group text-warning d-flex justify-content-between"
+            >
+              <input
+                class="form-control text-warning"
+                [value]="getFormControl(filters[k].key).value[0]"
+                (focusout)="
+                  getFormControl(filters[k].key).setValue([
+                    $event.target['value'],
+                    getFormControl(filters[k].key).value[1]
+                  ])
+                "
+                (keydown.enter)="
+                  getFormControl(filters[k].key).setValue([
+                    $event.target['value'],
+                    getFormControl(filters[k].key).value[1]
+                  ])
+                "
+              />
+              <span class="input-group-text text-warning">
+                <mat-icon>horizontal_rule</mat-icon>
+              </span>
+              <input
+                class="form-control text-warning"
+                [value]="getFormControl(filters[k].key).value[1]"
+                (focusout)="
+                  getFormControl(filters[k].key).setValue([
+                    getFormControl(filters[k].key).value[0],
+                    $event.target['value']
+                  ])
+                "
+                (keydown.enter)="
+                  getFormControl(filters[k].key).setValue([
+                    getFormControl(filters[k].key).value[0],
+                    $event.target['value']
+                  ])
+                "
+              />
+              <span class="input-group-text text-warning">₽</span>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -98,17 +121,23 @@
       <div class="btn-toolbar btn-group-sm" role="toolbar">
         <button
           type="button"
-          class="btn btn-warning"
+          class="btn btn-outline-warning"
           (click)="showGrid = false"
         >
           <mat-icon>format_list_bulleted</mat-icon>
         </button>
-        <button type="button" class="btn btn-warning" (click)="showGrid = true">
+        <button
+          type="button"
+          class="btn btn-outline-warning"
+          (click)="showGrid = true"
+        >
           <mat-icon>grid_on</mat-icon>
         </button>
         <span>Cортировать по</span>
-        <button type="button" class="btn btn-warning">Популярности</button>
-        <button type="button" class="btn btn-warning">
+        <button type="button" class="btn btn-outline-warning">
+          Популярности
+        </button>
+        <button type="button" class="btn btn-outline-warning">
           <mat-icon>sort</mat-icon>Цене
         </button>
       </div>
@@ -168,7 +197,7 @@
                       {{ row.regionProduct.price | number: "1.1-1" }}
                     </h1>
                     <div class="col w-100 d-flex justify-content-between">
-                      <button type="button" class="btn btn-warning">
+                      <button type="button" class="btn btn-outline-warning">
                         Купить
                       </button>
                       <button type="button" class="btn btn-link">
@@ -222,7 +251,7 @@
                     {{ row.regionProduct.price | number: "1.1-1" }}
                   </h1>
                   <div class="col w-100 d-flex justify-content-between">
-                    <button type="button" class="btn btn-warning">
+                    <button type="button" class="btn btn-outline-warning">
                       Купить
                     </button>
                     <button type="button" class="btn btn-link">

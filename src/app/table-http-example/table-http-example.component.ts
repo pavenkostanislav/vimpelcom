@@ -53,8 +53,8 @@ export class TableHttpExampleComponent implements OnInit {
           case 'range':
             return (
               (acc[key] = new FormControl([
-                curr.valueFrom || 0,
-                curr.valueTo || 100,
+                curr.min || 0,
+                curr.max || 100,
               ])),
               acc
             );
