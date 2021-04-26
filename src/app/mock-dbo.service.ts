@@ -26,13 +26,13 @@ export class MockDboService {
           totalCount: +paging.totalItems,
         };
 
-        data.body.products.list = data.body.products.list.filter((item) =>
-          // (!filters[0]?.min ||
-          //   (filters[0].min && item.regionProduct.price >= filters[0].min)) &&
-          // (!filters[0]?.max ||
-          //   (filters[0].max && item.regionProduct.price <= filters[0].max))
-          filters[3].options.some((opt) => true)
-        );
+        //data.body.products.list = data.body.products.list.filter((item) =>
+        // (!filters[0]?.min ||
+        //   (filters[0].min && item.regionProduct.price >= filters[0].min)) &&
+        // (!filters[0]?.max ||
+        //   (filters[0].max && item.regionProduct.price <= filters[0].max))
+        //filters[3].options.some((opt) => true)
+        //);
         return data;
       })
     );

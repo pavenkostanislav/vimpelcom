@@ -19,7 +19,6 @@ import {
   selectPaging,
   selectProductList,
 } from '../mock-dbo.selectors';
-import { MockDboService } from '../mock-dbo.service';
 import { smartphonesState } from '../reducers/list.reducer';
 
 @Component({
@@ -115,6 +114,7 @@ export class TableHttpExampleComponent implements OnInit {
   isRateLimitReached = false;
 
   showFiller = false;
+  showGrid = true;
 
   @ViewChild(MatSort) sort: MatSort | undefined;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;

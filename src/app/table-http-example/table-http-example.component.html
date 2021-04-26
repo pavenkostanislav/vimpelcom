@@ -1,23 +1,10 @@
-<code>{{ paging$ | async }}</code>
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <button
-      type="button"
-      mat-button
-      mat-raised-button
-      (click)="drawer.toggle(); showFiller = !showFiller"
-    >
-      Фильтры
-    </button>
-    <div *ngIf="showFiller" [formGroup]="filterForm">
-      <mat-accordion class="example-headers-align" multi>
-        <mat-expansion-panel
-          *ngFor="let f of filters; index as k"
-          [expanded]="filters[k].isOpen"
-        >
-          <mat-expansion-panel-header>
-            <mat-panel-title> {{ filters[k].name }} </mat-panel-title>
-          </mat-expansion-panel-header>
+<div class="container-fluid">
+  <div class="row row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-3 bd-sidebar" [formGroup]="filterForm">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let f of filters; index as k">
+          expanded = {{ filters[k].isOpen }}
+          {{ filters[k].name }}
 
           <ul
             *ngIf="filters[k].type === 'common'"
@@ -104,89 +91,165 @@
               [ngModelOptions]="{ standalone: true }"
             />
           </mat-form-field>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <!-- <code>{{ filterForm.value | json }}</code> -->
+        </li>
+      </ul>
     </div>
-  </mat-drawer>
-  <button
-    *ngIf="!showFiller"
-    type="button"
-    mat-button
-    mat-raised-button
-    (click)="drawer.toggle(); showFiller = !showFiller"
-  >
-    Фильтры
-  </button>
-  <button type="button" mat-button mat-raised-button>Популярности</button>
-  <button type="button" mat-button mat-raised-button>Цене</button>
-
-  <div class="example-container mat-elevation-z8">
-    <div
-      class="example-loading-shade"
-      *ngIf="isLoadingResults || isRateLimitReached"
-    >
-      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-      <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
-        Something went wrong....
+    <main class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
+      <div class="btn-toolbar btn-group-sm" role="toolbar">
+        <button
+          type="button"
+          class="btn btn-warning"
+          (click)="showGrid = false"
+        >
+          <mat-icon>format_list_bulleted</mat-icon>
+        </button>
+        <button type="button" class="btn btn-warning" (click)="showGrid = true">
+          <mat-icon>grid_on</mat-icon>
+        </button>
+        <span>Cортировать по</span>
+        <button type="button" class="btn btn-warning">Популярности</button>
+        <button type="button" class="btn btn-warning">
+          <mat-icon>sort</mat-icon>Цене
+        </button>
       </div>
-    </div>
 
-    <mat-grid-list
-      cols="9"
-      *ngFor="
-        let row of productList$
-          | async
-          | paginate: (paging$ | async) || pagingConfig
-      "
-    >
-      <mat-grid-tile [colspan]="2" [rowspan]="5">
-        <img src="{{ row.thumbImageUrlConverted }}" alt="{{ row.name }}" />
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="4" [rowspan]="5">
-        <mat-card>
-          <mat-card-header>
-            <div mat-card-avatar></div>
-            <mat-card-title>{{ row.name }}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content> {{ row.feedbackCount }} отзывов </mat-card-content>
-          <mat-card-content> Добавить в сравнение </mat-card-content>
-          <mat-card-content *ngFor="let parameter of row.parameters">
-            {{ parameter.name }}
-            {{ parameter.value }}
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="3" [rowspan]="5">
-        <mat-card>
-          <mat-card-header>
-            <div mat-card-avatar></div>
-            <mat-card-title>{{
-              row.regionProduct.price | number: "1.1-1"
-            }}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p>
-              <button mat-raised-button color="primary">Купить</button>
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <section>
-              <button
-                mat-button
-                *ngFor="let deliveryMethod of row.regionProduct.deliveryMethods"
-              >
-                {{ deliveryMethod.type }}
-              </button>
-            </section>
-          </mat-card-actions>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
+      <div *ngIf="isLoadingResults || isRateLimitReached">
+        <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+        <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
+          Something went wrong....
+        </div>
+      </div>
 
-    <pagination-controls
-      (pageChange)="setPage($event)"
-      id="server"
-    ></pagination-controls>
+      <div *ngIf="!showGrid" class="list-group list-group-flush">
+        <a
+          class="list-group-item list-group-item-action d-flex justify-content-between"
+          *ngFor="
+            let row of productList$
+              | async
+              | paginate: (paging$ | async) || pagingConfig
+          "
+        >
+          <form>
+            <div class="form-group">
+              <div class="row w-100 d-block d-sm-none d-md-none">
+                <div class="col">
+                  <h3 class="card-title">{{ row.name }}</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="{{ row.thumbImageUrlConverted }}"
+                    class="rounded mx-auto d-block float-left"
+                    alt="{{ row.name }}"
+                  />
+                </div>
+                <div class="col d-none d-sm-block d-md-block">
+                  <div class="card-body">
+                    <h3 class="card-title">{{ row.name }}</h3>
+                    <div class="col w-100">
+                      <button type="button" class="btn btn-link">
+                        <mat-icon>assessment</mat-icon> Добавить в сравнение
+                      </button>
+                    </div>
+                    <table class="table">
+                      <tbody>
+                        <tr *ngFor="let parameter of row.parameters">
+                          <th scope="row">{{ parameter.name }}</th>
+                          <td>{{ parameter.value }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <h1 class="card-title">
+                      {{ row.regionProduct.price | number: "1.1-1" }}
+                    </h1>
+                    <div class="col w-100 d-flex justify-content-between">
+                      <button type="button" class="btn btn-warning">
+                        Купить
+                      </button>
+                      <button type="button" class="btn btn-link">
+                        Быстрый заказ
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button
+                        class="btn btn-link"
+                        *ngFor="
+                          let deliveryMethod of row.regionProduct
+                            .deliveryMethods
+                        "
+                      >
+                        {{ deliveryMethod.type }}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </a>
+      </div>
+
+      <div class="row" *ngIf="showGrid">
+        <div
+          class="row list-group-item list-group-item-action"
+          *ngFor="
+            let row of productList$
+              | async
+              | paginate: (paging$ | async) || pagingConfig
+          "
+          style="width: 18rem"
+        >
+          <form>
+            <div class="form-group">
+              <div class="col w-100">
+                <h3 class="card-title">{{ row.name }}</h3>
+              </div>
+              <div class="col w-100">
+                <img
+                  src="{{ row.thumbImageUrlConverted }}"
+                  class="rounded mx-auto d-block float-left"
+                  alt="{{ row.name }}"
+                />
+              </div>
+              <div class="col w-100">
+                <div class="card-body">
+                  <h1 class="card-title">
+                    {{ row.regionProduct.price | number: "1.1-1" }}
+                  </h1>
+                  <div class="col w-100 d-flex justify-content-between">
+                    <button type="button" class="btn btn-warning">
+                      Купить
+                    </button>
+                    <button type="button" class="btn btn-link">
+                      Быстрый заказ
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn btn-link"
+                      *ngFor="
+                        let deliveryMethod of row.regionProduct.deliveryMethods
+                      "
+                    >
+                      {{ deliveryMethod.type }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <pagination-controls
+        (pageChange)="setPage($event)"
+        id="server"
+      ></pagination-controls>
+    </main>
   </div>
-</mat-drawer-container>
+</div>
