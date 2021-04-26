@@ -4,8 +4,9 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Фильтры<mat-icon>tune</mat-icon></li>
         <li class="list-group-item" *ngFor="let f of filters; index as k">
+          <code>{{ filterForm.value[filters[k].key] | json }}</code>
+          <span class="bottom-dashed">{{ filters[k].name }}</span>
           expanded = {{ filters[k].isOpen }}
-          {{ filters[k].name }}
           <div
             *ngIf="filters[k].type === 'common' || filters[k].type === 'color'"
             [formArrayName]="filters[k].key"
@@ -158,7 +159,7 @@
                   <div class="card-body">
                     <h3 class="card-title">{{ row.name }}</h3>
                     <div class="col w-100">
-                      <button type="button" class="btn btn-link">
+                      <button type="button" class="btn link-dashed">
                         <mat-icon>assessment</mat-icon> Добавить в сравнение
                       </button>
                     </div>
@@ -178,7 +179,7 @@
                       {{ row.regionProduct.price | number: "1.1-1" }}
                     </h1>
                     <div class="col w-100 d-flex justify-content-between">
-                      <button type="button" class="btn btn-outline-warning">
+                      <button type="button" class="btn buttom-warning">
                         Купить
                       </button>
                       <button type="button" class="btn btn-link">
@@ -232,10 +233,10 @@
                     {{ row.regionProduct.price | number: "1.1-1" }}
                   </h1>
                   <div class="col w-100 d-flex justify-content-between">
-                    <button type="button" class="btn btn-outline-warning">
+                    <button type="button" class="btn buttom-warning">
                       Купить
                     </button>
-                    <button type="button" class="btn btn-link">
+                    <button type="button" class="btn link-dashed">
                       Быстрый заказ
                     </button>
                   </div>

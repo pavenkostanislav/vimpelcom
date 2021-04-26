@@ -8,3 +8,37 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+span,
+label,
+button {
+  font-family: "Officina Serif" !important;
+}
+
+.bottom-dashed {
+  border-bottom: 1px dashed #767676;
+}
+
+.buttom-warning {
+  -webkit-transition: -webkit-box-shadow 0.1s, -webkit-transform 0.1s;
+  transition: -webkit-box-shadow 0.1s, -webkit-transform 0.1s;
+  transition: box-shadow 0.1s, transform 0.1s;
+  transition: box-shadow 0.1s, transform 0.1s, -webkit-box-shadow 0.1s,
+    -webkit-transform 0.1s;
+  background: #fad485;
+  -webkit-box-shadow: 0 3px 0 0 #ebb16f, 0 4px 0 0 #d99a59,
+    0 4px 8px 0 rgb(102 55 0 / 40%);
+  box-shadow: 0 3px 0 0 #ebb16f, 0 4px 0 0 #d99a59,
+    0 4px 8px 0 rgb(102 55 0 / 40%);
+}
+
+.link-dashed {
+  border-bottom: 1px dashed #767676;
+  font-family: Officina Serif;
+  font-size: 16.5px;
+  letter-spacing: 0.3px;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.15s;
+}

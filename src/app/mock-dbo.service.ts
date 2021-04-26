@@ -16,7 +16,7 @@ export class MockDboService {
     filters?: Array<Filter>
   ): Observable<MetaApi> {
     console.log('getMetaApi');
-    const href = './assets/meta.json';
+    const href = './assets/meta_1.json';
     return this._httpClient.get<MetaApi>(href).pipe(
       tap((data) => console.log(data)),
       map((data) => {
