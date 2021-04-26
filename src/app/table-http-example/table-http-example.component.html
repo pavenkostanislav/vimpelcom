@@ -2,12 +2,12 @@
   <div class="row row flex-xl-nowrap">
     <div class="col-12 col-md-3 col-xl-3 bd-sidebar" [formGroup]="filterForm">
       <ul class="list-group list-group-flush">
+        <li class="list-group-item">Фильтры<mat-icon>tune</mat-icon></li>
         <li class="list-group-item" *ngFor="let f of filters; index as k">
           expanded = {{ filters[k].isOpen }}
           {{ filters[k].name }}
-
           <div
-            *ngIf="filters[k].type === 'common'"
+            *ngIf="filters[k].type === 'common' || filters[k].type === 'color'"
             [formArrayName]="filters[k].key"
           >
             <div
@@ -19,40 +19,20 @@
             >
               <input
                 type="checkbox"
-                class="form-check-input"
+                class="form-check-input btn-outline-warning"
                 [formControlName]="i"
               />
               <label class="form-check-label">
-                {{ getOption(k, i, "name") }}
-                <span style="color: gray"
-                  >({{ getOption(k, i, "productsCount") }})</span
-                >
-              </label>
-            </div>
-          </div>
-          <div
-            *ngIf="filters[k].type === 'color'"
-            [formArrayName]="filters[k].key"
-          >
-            <div
-              class="form-check"
-              *ngFor="
-                let item of getFormArray(filters[k].key).controls;
-                index as i
-              "
-            >
-              <input
-                type="checkbox"
-                class="form-check-input"
-                [formControlName]="i"
-              />
-              <label class="form-check-label">
-                <mat-icon [ngStyle]="{ color: getOption(k, i, 'color') }"
-                  >palette</mat-icon
-                >
-                {{ getOption(k, i, "name") }}
-                <span style="color: gray">
-                  ({{ getOption(k, i, "productsCount") }})
+                <span [ngStyle]="{ color: getOption(k, i, 'color') }">
+                  <mat-icon *ngIf="filters[k].type === 'color'">
+                    palette
+                  </mat-icon>
+                </span>
+                <span class="text-dark">
+                  {{ getOption(k, i, "name") }}
+                </span>
+                <span class="text-secondary">
+                  {{ getOption(k, i, "productsCount") }}
                 </span>
               </label>
             </div>
@@ -118,6 +98,7 @@
       </ul>
     </div>
     <main class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
+      Смартфоны
       <div class="btn-toolbar btn-group-sm" role="toolbar">
         <button
           type="button"
@@ -131,7 +112,7 @@
           class="btn btn-outline-warning"
           (click)="showGrid = true"
         >
-          <mat-icon>grid_on</mat-icon>
+          <mat-icon>apps</mat-icon>
         </button>
         <span>Cортировать по</span>
         <button type="button" class="btn btn-outline-warning">
