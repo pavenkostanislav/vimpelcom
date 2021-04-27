@@ -1,3 +1,4 @@
+<code>{{ filterForm.value | json }}</code>
 <div class="container-fluid">
   <div class="row row flex-xl-nowrap">
     <div class="col-12 col-md-3 col-xl-3 bd-sidebar" [formGroup]="filterForm">
@@ -55,45 +56,51 @@
               }"
             >
             </bm-range-slider>
+            <!-- (valueChange)="setFilter()"
+              (highValueChange)="setFilter()" -->
             <div
               class="input-group text-warning d-flex justify-content-between"
             >
               <input
+                type="number"
                 class="form-control text-warning"
                 [value]="getFormControl(filters[k].key).value[0]"
                 (focusout)="
                   getFormControl(filters[k].key).setValue([
                     $event.target['value'],
                     getFormControl(filters[k].key).value[1]
-                  ])
+                  ]);
+                  setFilter()
                 "
                 (keydown.enter)="
                   getFormControl(filters[k].key).setValue([
                     $event.target['value'],
                     getFormControl(filters[k].key).value[1]
-                  ])
+                  ]);
+                  setFilter()
                 "
-                (input)="setFilter()"
               />
               <span class="input-group-text text-warning">
                 <mat-icon>horizontal_rule</mat-icon>
               </span>
               <input
+                type="number"
                 class="form-control text-warning"
                 [value]="getFormControl(filters[k].key).value[1]"
                 (focusout)="
                   getFormControl(filters[k].key).setValue([
                     getFormControl(filters[k].key).value[0],
                     $event.target['value']
-                  ])
+                  ]);
+                  setFilter()
                 "
                 (keydown.enter)="
                   getFormControl(filters[k].key).setValue([
                     getFormControl(filters[k].key).value[0],
                     $event.target['value']
-                  ])
+                  ]);
+                  setFilter()
                 "
-                (input)="setFilter()"
               />
               <span class="input-group-text text-warning">₽</span>
             </div>

@@ -42,49 +42,7 @@ export class TableHttpExampleComponent implements OnInit {
       })
     );
 
-  filters$: Observable<Array<Filter>> = this.store$.select(selectFilters).pipe(
-    tap((data) => {
-      this.isLoadingResults = false;
-      this.isRateLimitReached = false;
-      this.filters = data;
-      const filtersReduce = this.filters.reduce((acc: Object, curr: Filter) => {
-        const key = curr.key;
-        switch (curr.type) {
-          case 'range':
-            return (
-              (acc[key] = new FormControl([
-                curr.valueFrom || curr.min || 0,
-                curr.valueTo || curr.max || 150000,
-              ])),
-              acc
-            );
-          case 'common':
-          case 'color':
-            return (
-              (acc[key] = new FormArray(
-                curr.options.map(
-                  (o) =>
-                    new FormControl({
-                      value: o.isChecked,
-                      disabled: o.isDisabled,
-                    })
-                )
-              )),
-              acc
-            );
-          default:
-            return (acc[key] = ''), acc;
-        }
-      }, {}) as { [key: string]: AbstractControl };
-      this.filterForm = new FormGroup(filtersReduce);
-      return this.productListApi;
-    }),
-    catchError(() => {
-      this.isLoadingResults = false;
-      this.isRateLimitReached = true;
-      return observableOf([]);
-    })
-  );
+  filters$: Observable<Array<Filter>> = this.store$.select(selectFilters);
 
   paging$: Observable<PaginatePipeArgs> = this.store$.select(selectPaging).pipe(
     tap((data) => {
@@ -129,7 +87,52 @@ export class TableHttpExampleComponent implements OnInit {
     this.isLoadingResults = true;
     this.setFilter();
     this.productList$.subscribe();
-    this.filters$.subscribe();
+    this.filters$.subscribe(
+      (data) => {
+        this.isLoadingResults = false;
+        this.isRateLimitReached = false;
+        this.filters = data;
+        const filtersReduce = this.filters.reduce(
+          (acc: Object, curr: Filter) => {
+            const key = curr.key;
+            switch (curr.type) {
+              case 'range':
+                return (
+                  (acc[key] = new FormControl([
+                    curr.valueFrom || curr.min || 0,
+                    curr.valueTo || curr.max || 150000,
+                  ])),
+                  acc
+                );
+              case 'common':
+              case 'color':
+                return (
+                  (acc[key] = new FormArray(
+                    curr.options.map(
+                      (o) =>
+                        new FormControl({
+                          value: o.isChecked,
+                          disabled: o.isDisabled,
+                        })
+                    )
+                  )),
+                  acc
+                );
+              default:
+                return (acc[key] = ''), acc;
+            }
+          },
+          {}
+        ) as { [key: string]: AbstractControl };
+        this.filterForm = new FormGroup(filtersReduce);
+        return this.productListApi;
+      },
+      () => {
+        this.isLoadingResults = false;
+        this.isRateLimitReached = true;
+        return observableOf([]);
+      }
+    );
     this.paging$.subscribe();
   }
 

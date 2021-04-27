@@ -3,34 +3,49 @@ import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { MetaApi, MockDboData } from './meta.interface';
+import { Filter, FilterForm, MetaApi, MockDboData } from './meta.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MockDboService {
+  findBy = (collention: Array<Filter>, name: string, key = 'key') =>
+    _.find(collention, (item) => item[key] === name);
   constructor(private _httpClient: HttpClient) {}
 
   getMetaApi(mockDboData: MockDboData): Observable<MetaApi> {
     console.log('getMetaApi');
-    const test_1 = './assets/test_1.json';
-    const test_1_1 = './assets/test_1_1.json';
-    const test_1_2 = './assets/test_1_2.json';
-    const test_1_3 = './assets/test_1_3.json';
-    const test_1_4 = './assets/test_1_4.json';
-    const test_1_5 = './assets/test_1_5.json';
-    let json = test_1;
-    if (
-      _.first(mockDboData.filterForm.price) === 100000 &&
-      _.last(mockDboData.filterForm.price) === 105000
-    ) {
-      json = test_1_2;
-    }
-    return this._httpClient.get<MetaApi>(test_1).pipe(
+    const json = this.getMockJsonUrl(mockDboData.filterForm);
+
+    return this._httpClient.get<MetaApi>(json).pipe(
       tap((data) => console.log(data)),
       map((data) => {
-        data.body.filters[0].valueFrom = _.first(mockDboData.filterForm.price);
-        data.body.filters[0].valueTo = _.last(mockDboData.filterForm.price);
+        if (
+          +_.first(mockDboData.filterForm.price) === 100000 &&
+          +_.last(mockDboData.filterForm.price) === 105000
+        ) {
+          this.findBy(data.body.filters, 'price').valueFrom = +_.first(
+            mockDboData.filterForm.price
+          );
+          this.findBy(data.body.filters, 'price').valueTo = +_.last(
+            mockDboData.filterForm.price
+          );
+        }
+
+        if (_.first(mockDboData.filterForm.actions)) {
+          this.findBy(
+            data.body.filters,
+            'actions'
+          ).options[0].isChecked = _.first(mockDboData.filterForm.actions);
+        }
+
+        // if (_.first(filterForm.colors)) {
+        //   return './assets/test_1_3.json';
+        // }
+
+        // if (_.first(filterForm.rams)) {
+        //   return './assets/test_1_4.json';
+        // }
 
         data.body.products.paging = {
           perPage: +mockDboData.paging.itemsPerPage,
@@ -48,5 +63,28 @@ export class MockDboService {
         return data;
       })
     );
+  }
+
+  private getMockJsonUrl(filterForm: FilterForm): string {
+    if (
+      +_.first(filterForm.price) === 100000 &&
+      +_.last(filterForm.price) === 105000
+    ) {
+      return './assets/test_1_2.json';
+    }
+
+    if (_.first(filterForm.actions)) {
+      return './assets/test_1_1.json';
+    }
+
+    if (_.first(filterForm.colors)) {
+      return './assets/test_1_3.json';
+    }
+
+    if (_.first(filterForm.rams)) {
+      return './assets/test_1_4.json';
+    }
+
+    return './assets/test_1.json';
   }
 }
