@@ -181,7 +181,11 @@
                     <h3 class="card-title">{{ row.name }}</h3>
                     <div class="col w-100">
                       <button type="button" class="btn link-dashed">
-                        <mat-icon>assessment</mat-icon> Добавить в сравнение
+                        <mat-icon class="link-warning">star</mat-icon
+                        ><mat-icon class="link-warning">star</mat-icon
+                        ><mat-icon class="link-warning">star</mat-icon
+                        ><mat-icon class="link-warning">star</mat-icon
+                        ><mat-icon class="link-warning">star</mat-icon>отзывов
                       </button>
                     </div>
                     <div class="col w-100">
@@ -273,7 +277,23 @@
                         let deliveryMethod of row.regionProduct.deliveryMethods
                       "
                     >
-                      {{ deliveryMethod.type }}
+                      <mat-icon
+                        *ngIf="deliveryMethod.type === 'Самовывоз'"
+                        class="btn-outline-warning"
+                      >
+                        location_on</mat-icon
+                      >
+                      <mat-icon
+                        *ngIf="deliveryMethod.type === 'Доставка за 2 часа'"
+                        class="btn-outline-warning"
+                      >
+                        local_shipping
+                      </mat-icon>
+                      <mat-icon
+                        *ngIf="deliveryMethod.type === 'Бесплатная доставка'"
+                        class="btn-outline-warning"
+                        >markunread_mailbox</mat-icon
+                      >{{ deliveryMethod.type }}
                     </button>
                   </div>
                 </div>
