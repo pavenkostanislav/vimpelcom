@@ -162,6 +162,12 @@
                   <h3 class="card-title">{{ row.name }}</h3>
                 </div>
               </div>
+              <span
+                *ngIf="row.badges.length > 0"
+                class="badge badge-secondary"
+                [ngStyle]="{ 'background-color': row.badges[0].color }"
+                >{{ row.badges[0].title }}</span
+              >
               <div class="row">
                 <div class="col-4">
                   <img
@@ -173,6 +179,11 @@
                 <div class="col-5 d-none d-sm-block d-md-block">
                   <div class="card-body">
                     <h3 class="card-title">{{ row.name }}</h3>
+                    <div class="col w-100">
+                      <button type="button" class="btn link-dashed">
+                        <mat-icon>assessment</mat-icon> Добавить в сравнение
+                      </button>
+                    </div>
                     <div class="col w-100">
                       <button type="button" class="btn link-dashed">
                         <mat-icon>assessment</mat-icon> Добавить в сравнение

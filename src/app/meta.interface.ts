@@ -69,6 +69,10 @@ export interface ProductListApi {
   feedbackCount: number;
   rate: number;
   parameters: Array<ParameterApi>;
+  badges: Array<{
+    title: string;
+    color: string;
+  }>;
 }
 
 export interface deliveryMethods {
