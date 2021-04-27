@@ -16,8 +16,13 @@ export class MockDboService {
     filters?: Array<Filter>
   ): Observable<MetaApi> {
     console.log('getMetaApi');
-    const href = './assets/meta_1_1.json';
-    return this._httpClient.get<MetaApi>(href).pipe(
+    const test_1 = './assets/test_1.json';
+    const test_1_1 = './assets/test_1_1.json';
+    const test_1_2 = './assets/test_1_2.json';
+    const test_1_3 = './assets/test_1_3.json';
+    const test_1_4 = './assets/test_1_4.json';
+    const test_1_5 = './assets/test_1_5.json';
+    return this._httpClient.get<MetaApi>(test_1).pipe(
       tap((data) => console.log(data)),
       map((data) => {
         data.body.products.paging = {

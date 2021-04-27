@@ -12,7 +12,7 @@ import { Store } from '@ngrx/store';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable, of as observableOf } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import { Filter, ProductListApi } from '../meta.interface';
+import { Filter, FilterForm, ProductListApi } from '../meta.interface';
 import { MockDboAction } from '../mock-dbo.actions';
 import {
   selectFilters,
@@ -53,8 +53,8 @@ export class TableHttpExampleComponent implements OnInit {
           case 'range':
             return (
               (acc[key] = new FormControl([
-                curr.min || 0,
-                curr.max || 100,
+                curr.valueFrom || curr.min || 0,
+                curr.valueTo || curr.max || 150000,
               ])),
               acc
             );
@@ -115,11 +115,26 @@ export class TableHttpExampleComponent implements OnInit {
 
   showFiller = false;
   showGrid = true;
+  filterForm = new FormGroup({});
 
   @ViewChild(MatSort) sort: MatSort | undefined;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
 
-  filterForm = new FormGroup({});
+  constructor(
+    private store$: Store<smartphonesState>,
+    private _httpClient: HttpClient
+  ) {}
+
+  ngOnInit(): void {
+    this.isLoadingResults = true;
+    const filterForm: FilterForm = this.filterForm.value;
+    this.store$.dispatch(
+      new MockDboAction({ paging: this.pagingConfig, filterForm })
+    );
+    this.productList$.subscribe();
+    this.filters$.subscribe();
+    this.paging$.subscribe();
+  }
 
   getFormArray(key: string): FormArray {
     return this.filterForm.get(key) as FormArray;
@@ -133,27 +148,19 @@ export class TableHttpExampleComponent implements OnInit {
     return (this.filters[k] as any).options[i][key] as string;
   }
 
-  constructor(
-    private store$: Store<smartphonesState>,
-    private _httpClient: HttpClient
-  ) {}
-  ngOnInit(): void {
-    this.isLoadingResults = true;
-    this.store$.dispatch(
-      new MockDboAction({ paging: this.pagingConfig, filters: this.filters })
-    );
-    this.productList$.subscribe();
-    this.filters$.subscribe();
-    this.paging$.subscribe();
-  }
-
   setPage(index?: number): void {
     this.pagingConfig = {
       ...this.pagingConfig,
       currentPage: index || 0,
     };
-    this.store$.dispatch(
-      new MockDboAction({ paging: this.pagingConfig, filters: this.filters })
-    );
+    const paging: PaginatePipeArgs = this.pagingConfig;
+    const filterForm: FilterForm = this.filterForm.value;
+    this.store$.dispatch(new MockDboAction({ paging, filterForm }));
+  }
+
+  setFilter(): void {
+    const paging: PaginatePipeArgs = this.pagingConfig;
+    const filterForm: FilterForm = this.filterForm.value;
+    this.store$.dispatch(new MockDboAction({ paging, filterForm }));
   }
 }

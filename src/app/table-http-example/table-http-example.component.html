@@ -4,9 +4,9 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Фильтры<mat-icon>tune</mat-icon></li>
         <li class="list-group-item" *ngFor="let f of filters; index as k">
-          <code>{{ filterForm.value[filters[k].key] | json }}</code>
+          <!-- <code>{{ filterForm.value[filters[k].key] | json }}</code> -->
+          <!-- <code>expanded = {{ filters[k].isOpen }}</code> -->
           <span class="bottom-dashed">{{ filters[k].name }}</span>
-          expanded = {{ filters[k].isOpen }}
           <div
             *ngIf="filters[k].type === 'common' || filters[k].type === 'color'"
             [formArrayName]="filters[k].key"
@@ -22,6 +22,8 @@
                 type="checkbox"
                 class="form-check-input btn-outline-warning"
                 [formControlName]="i"
+                (input)="setFilter()"
+                [disabled]="item.disabled"
               />
               <label class="form-check-label">
                 <span [ngStyle]="{ color: getOption(k, i, 'color') }">
@@ -72,6 +74,7 @@
                     getFormControl(filters[k].key).value[1]
                   ])
                 "
+                (input)="setFilter()"
               />
               <span class="input-group-text text-warning">
                 <mat-icon>horizontal_rule</mat-icon>
@@ -91,6 +94,7 @@
                     $event.target['value']
                   ])
                 "
+                (input)="setFilter()"
               />
               <span class="input-group-text text-warning">₽</span>
             </div>

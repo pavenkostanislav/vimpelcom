@@ -35,7 +35,7 @@
             "color": null,
             "slug": "skidka-10-pri-pokupke-s-tovarami-xiaomi",
             "isChecked": false,
-            "isDisabled": false,
+            "isDisabled": true,
             "productsCount": 8
           },
           {

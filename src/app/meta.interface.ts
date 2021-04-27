@@ -1,4 +1,9 @@
-import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
+export interface FilterForm {
+  price: number[];
+  actions: boolean[];
+  rams: boolean[];
+  colors: boolean[];
+}
 
 export interface Filter {
   name: string;

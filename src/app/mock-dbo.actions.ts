@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
-import { Filter, ProductListApi } from './meta.interface';
+import { Filter, FilterForm, ProductListApi } from './meta.interface';
 
 export enum MockDboActions {
   MetaApiLoad = '[Smartphones] GET ./assets/meta.json load',
@@ -11,7 +11,7 @@ export enum MockDboActions {
 export class MockDboAction implements Action {
   readonly type = MockDboActions.MetaApiLoad;
   constructor(
-    public payload: { paging: PaginatePipeArgs; filters: Array<Filter> }
+    public payload: { paging: PaginatePipeArgs; filterForm: FilterForm }
   ) {}
 }
 
