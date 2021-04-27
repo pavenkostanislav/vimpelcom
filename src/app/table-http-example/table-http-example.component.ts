@@ -12,7 +12,7 @@ import { Store } from '@ngrx/store';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable, of as observableOf } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import { Filter, FilterForm, ProductListApi } from '../meta.interface';
+import { Filter, FilterForm, ProductListApi, Sort } from '../meta.interface';
 import { MockDboAction } from '../mock-dbo.actions';
 import {
   selectFilters,
@@ -116,9 +116,9 @@ export class TableHttpExampleComponent implements OnInit {
   showFiller = false;
   showGrid = true;
   filterForm = new FormGroup({});
-
-  @ViewChild(MatSort) sort: MatSort | undefined;
-  @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
+  orderRate = true;
+  orderPrice = true;
+  sort: Sort = { key: 'rate', order: 'asc' };
 
   constructor(
     private store$: Store<smartphonesState>,
@@ -129,7 +129,11 @@ export class TableHttpExampleComponent implements OnInit {
     this.isLoadingResults = true;
     const filterForm: FilterForm = this.filterForm.value;
     this.store$.dispatch(
-      new MockDboAction({ paging: this.pagingConfig, filterForm })
+      new MockDboAction({
+        paging: this.pagingConfig,
+        filterForm,
+        sort: this.sort,
+      })
     );
     this.productList$.subscribe();
     this.filters$.subscribe();
@@ -153,14 +157,23 @@ export class TableHttpExampleComponent implements OnInit {
       ...this.pagingConfig,
       currentPage: index || 0,
     };
-    const paging: PaginatePipeArgs = this.pagingConfig;
-    const filterForm: FilterForm = this.filterForm.value;
-    this.store$.dispatch(new MockDboAction({ paging, filterForm }));
+    this.setFilter();
+  }
+
+  setSortRate() {
+    this.orderRate = !this.orderRate;
+    this.sort = { key: 'rate', order: this.orderRate ? 'asc' : 'desc' };
+  }
+
+  setSortPrice() {
+    this.orderPrice = !this.orderPrice;
+    this.sort = { key: 'price', order: this.orderPrice ? 'asc' : 'desc' };
   }
 
   setFilter(): void {
     const paging: PaginatePipeArgs = this.pagingConfig;
     const filterForm: FilterForm = this.filterForm.value;
-    this.store$.dispatch(new MockDboAction({ paging, filterForm }));
+    const sort: Sort = this.sort;
+    this.store$.dispatch(new MockDboAction({ paging, filterForm, sort }));
   }
 }

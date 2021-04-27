@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import * as _ from 'lodash';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { Filter, MetaApi } from './meta.interface';
+import { Filter, FilterForm, MetaApi, MockDboData } from './meta.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -12,8 +13,7 @@ export class MockDboService {
   constructor(private _httpClient: HttpClient) {}
 
   getMetaApi(
-    paging?: PaginatePipeArgs,
-    filters?: Array<Filter>
+    mockDboData: MockDboData
   ): Observable<MetaApi> {
     console.log('getMetaApi');
     const test_1 = './assets/test_1.json';
@@ -26,10 +26,12 @@ export class MockDboService {
       tap((data) => console.log(data)),
       map((data) => {
         data.body.products.paging = {
-          perPage: +paging.itemsPerPage,
-          currentPage: +paging.currentPage,
-          totalCount: +paging.totalItems,
+          perPage: +mockDboData.paging.itemsPerPage,
+          currentPage: +mockDboData.paging.currentPage,
+          totalCount: +mockDboData.paging.totalItems,
         };
+
+        data.body.filters = _.map(data.body.filters, (f) => f);
 
         //data.body.products.list = data.body.products.list.filter((item) =>
         // (!filters[0]?.min ||

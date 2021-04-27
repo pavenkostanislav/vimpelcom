@@ -120,12 +120,21 @@
           <mat-icon>apps</mat-icon>
         </button>
         <span>Cортировать по</span>
-        <button type="button" class="btn btn-outline-warning">
+        <button
+          type="button"
+          class="btn btn-outline-warning"
+          (click)="setSortRate()"
+        >
           Популярности
         </button>
-        <button type="button" class="btn btn-outline-warning">
+        <button
+          type="button"
+          class="btn btn-outline-warning"
+          (click)="setSortPrice()"
+        >
           <mat-icon>sort</mat-icon>Цене
         </button>
+        <!-- <code>{{ sort | json }}</code> -->
       </div>
 
       <div *ngIf="isLoadingResults || isRateLimitReached">

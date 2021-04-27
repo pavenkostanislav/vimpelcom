@@ -1,8 +1,21 @@
+import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
+
 export interface FilterForm {
   price: number[];
   actions: boolean[];
   rams: boolean[];
   colors: boolean[];
+}
+
+export interface Sort {
+  key: string;
+  order: 'asc' | 'desc';
+}
+
+export interface MockDboData {
+  paging: PaginatePipeArgs;
+  filterForm: FilterForm;
+  sort: Sort;
 }
 
 export interface Filter {
