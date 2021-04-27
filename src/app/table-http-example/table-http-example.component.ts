@@ -127,14 +127,7 @@ export class TableHttpExampleComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoadingResults = true;
-    const filterForm: FilterForm = this.filterForm.value;
-    this.store$.dispatch(
-      new MockDboAction({
-        paging: this.pagingConfig,
-        filterForm,
-        sort: this.sort,
-      })
-    );
+    this.setFilter();
     this.productList$.subscribe();
     this.filters$.subscribe();
     this.paging$.subscribe();

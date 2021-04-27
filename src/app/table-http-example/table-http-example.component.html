@@ -23,7 +23,6 @@
                 class="form-check-input btn-outline-warning"
                 [formControlName]="i"
                 (input)="setFilter()"
-                [disabled]="item.disabled"
               />
               <label class="form-check-label">
                 <span [ngStyle]="{ color: getOption(k, i, 'color') }">
