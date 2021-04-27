@@ -157,11 +157,13 @@ export class TableHttpExampleComponent implements OnInit {
   setSortRate() {
     this.orderRate = !this.orderRate;
     this.sort = { key: 'rate', order: this.orderRate ? 'asc' : 'desc' };
+    this.setFilter()
   }
 
   setSortPrice() {
     this.orderPrice = !this.orderPrice;
     this.sort = { key: 'price', order: this.orderPrice ? 'asc' : 'desc' };
+    this.setFilter()
   }
 
   setFilter(): void {

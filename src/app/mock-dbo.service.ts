@@ -15,7 +15,7 @@ export class MockDboService {
 
   getMetaApi(mockDboData: MockDboData): Observable<MetaApi> {
     console.log('getMetaApi');
-    const json = this.getMockJsonUrl(mockDboData.filterForm);
+    const json = this.getMockJsonUrl(mockDboData);
 
     return this._httpClient.get<MetaApi>(json).pipe(
       tap((data) => console.log(data)),
@@ -56,24 +56,36 @@ export class MockDboService {
     );
   }
 
-  private getMockJsonUrl(filterForm: FilterForm): string {
+  private getMockJsonUrl(mockDboData: MockDboData): string {
     if (
-      +_.first(filterForm.price) === 100000 &&
-      +_.last(filterForm.price) === 105000
+      +_.first(mockDboData.filterForm.price) === 100000 &&
+      +_.last(mockDboData.filterForm.price) === 105000
     ) {
       return './assets/test_1_2.json';
     }
 
-    if (_.first(filterForm.actions)) {
+    if (_.first(mockDboData.filterForm.actions)) {
       return './assets/test_1_1.json';
     }
 
-    if (_.first(filterForm.colors)) {
+    if (_.first(mockDboData.filterForm.colors)) {
       return './assets/test_1_3.json';
     }
 
-    if (_.first(filterForm.rams)) {
+    if (_.first(mockDboData.filterForm.rams)) {
       return './assets/test_1_4.json';
+    }
+
+    if (mockDboData.sort.key === 'price' && mockDboData.sort.order === 'asc') {
+      return './assets/test_1_6.json';
+    }
+
+    if (mockDboData.sort.key === 'price' && mockDboData.sort.order === 'desc') {
+      return './assets/test_1_7.json';
+    }
+
+    if (mockDboData.sort.key === 'rate') {
+      return './assets/test_1_5.json';
     }
 
     return './assets/test_1.json';
