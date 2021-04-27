@@ -585,21 +585,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -731,21 +731,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -753,8 +753,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -781,28 +781,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -934,28 +934,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -963,8 +963,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -991,21 +991,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1137,21 +1137,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1159,8 +1159,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1187,21 +1187,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1333,21 +1333,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1355,8 +1355,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1383,28 +1383,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1536,28 +1536,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1565,8 +1565,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1593,28 +1593,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1746,28 +1746,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1775,8 +1775,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1803,21 +1803,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1949,21 +1949,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1971,8 +1971,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1999,21 +1999,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2145,21 +2145,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2167,8 +2167,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2195,28 +2195,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2348,28 +2348,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2377,8 +2377,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2405,21 +2405,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2551,21 +2551,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2573,8 +2573,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2601,21 +2601,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2747,21 +2747,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2769,8 +2769,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2797,28 +2797,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2950,28 +2950,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2979,8 +2979,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3007,21 +3007,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3153,21 +3153,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3175,8 +3175,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3203,21 +3203,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3349,21 +3349,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3371,8 +3371,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3399,28 +3399,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3552,28 +3552,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3581,8 +3581,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3609,21 +3609,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3755,21 +3755,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3777,8 +3777,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3805,21 +3805,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3951,21 +3951,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3973,8 +3973,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4001,28 +4001,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4154,28 +4154,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4183,8 +4183,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4211,21 +4211,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4357,21 +4357,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4379,8 +4379,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4407,21 +4407,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4553,21 +4553,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4575,8 +4575,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4603,28 +4603,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4756,28 +4756,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4785,8 +4785,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4813,21 +4813,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4959,21 +4959,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4981,8 +4981,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -5009,21 +5009,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5155,21 +5155,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5177,8 +5177,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -5205,28 +5205,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5358,28 +5358,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5387,8 +5387,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         }

@@ -585,7 +585,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -726,7 +726,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -734,8 +734,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -762,7 +762,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -895,7 +895,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -903,8 +903,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -931,28 +931,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1085,28 +1085,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1114,8 +1114,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1142,21 +1142,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1280,21 +1280,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1302,8 +1302,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-512gb-zolotoi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-512gb-zolotoi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-512gb-zolotoi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-512gb-zolotoi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1330,7 +1330,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1454,7 +1454,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1462,8 +1462,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-256gb-tiomno-zelionyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-256gb-tiomno-zelionyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-256gb-tiomno-zelionyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-11-pro-max-256gb-tiomno-zelionyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -1490,7 +1490,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1631,7 +1631,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1639,8 +1639,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-silver/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-silver/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-silver/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-silver/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1667,28 +1667,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1821,28 +1821,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1850,8 +1850,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-silver/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-silver/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-silver/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-silver/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1878,7 +1878,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2011,7 +2011,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2019,8 +2019,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-silver/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-silver/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-silver/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-silver/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -2047,21 +2047,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2193,21 +2193,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2215,8 +2215,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2243,21 +2243,21 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2389,21 +2389,21 @@
           "delivery": {
             "methods": [
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2411,8 +2411,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
-            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+            "СамовывозUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2439,28 +2439,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2592,28 +2592,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2621,8 +2621,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2649,28 +2649,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2794,28 +2794,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2823,8 +2823,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-sinii/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-sinii/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-sinii/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-sinii/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -2851,28 +2851,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2996,28 +2996,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3025,8 +3025,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-grafitovyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-grafitovyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-grafitovyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-grafitovyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3053,28 +3053,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3198,28 +3198,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3227,8 +3227,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-serebristyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-serebristyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-serebristyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-serebristyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3255,28 +3255,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3400,28 +3400,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3429,8 +3429,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-zolotoi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-zolotoi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-zolotoi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-512gb-zolotoi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3457,28 +3457,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3602,28 +3602,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3631,8 +3631,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-sinii/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-sinii/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-sinii/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-sinii/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3659,28 +3659,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3804,28 +3804,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3833,8 +3833,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-grafitovyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-grafitovyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-grafitovyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-grafitovyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3861,7 +3861,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3985,7 +3985,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3993,8 +3993,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-serebristyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-serebristyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-serebristyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-serebristyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4021,28 +4021,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4166,28 +4166,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4195,8 +4195,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-zolotoi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-zolotoi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-zolotoi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-256gb-zolotoi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4223,28 +4223,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4368,28 +4368,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4397,8 +4397,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-sinii/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-sinii/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-sinii/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-sinii/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4425,28 +4425,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4570,28 +4570,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4599,8 +4599,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-grafitovyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-grafitovyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-grafitovyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-grafitovyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4627,28 +4627,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4772,28 +4772,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4801,8 +4801,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-serebristyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-serebristyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-serebristyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-serebristyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4829,28 +4829,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4974,28 +4974,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5003,8 +5003,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-zolotoi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-zolotoi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-zolotoi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-max-128gb-zolotoi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -5031,28 +5031,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5185,28 +5185,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5214,8 +5214,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-pro-512gb-grafitovyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-pro-512gb-grafitovyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-pro-512gb-grafitovyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-pro-512gb-grafitovyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         }

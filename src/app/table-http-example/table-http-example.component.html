@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <div *ngIf="filters[k].type === 'range'">
+          <div *ngIf="filters[k].type === 'range'" (blur)="setFilter()">
             <bm-range-slider
               ngDefaultControl
               [formControlName]="filters[k].key"
@@ -69,15 +69,13 @@
                   getFormControl(filters[k].key).setValue([
                     $event.target['value'],
                     getFormControl(filters[k].key).value[1]
-                  ]);
-                  setFilter()
+                  ])
                 "
                 (keydown.enter)="
                   getFormControl(filters[k].key).setValue([
                     $event.target['value'],
                     getFormControl(filters[k].key).value[1]
-                  ]);
-                  setFilter()
+                  ])
                 "
               />
               <span class="input-group-text text-warning">
@@ -91,15 +89,13 @@
                   getFormControl(filters[k].key).setValue([
                     getFormControl(filters[k].key).value[0],
                     $event.target['value']
-                  ]);
-                  setFilter()
+                  ])
                 "
                 (keydown.enter)="
                   getFormControl(filters[k].key).setValue([
                     getFormControl(filters[k].key).value[0],
                     $event.target['value']
-                  ]);
-                  setFilter()
+                  ])
                 "
               />
               <span class="input-group-text text-warning">₽</span>
@@ -201,13 +197,13 @@
                       <button type="button" class="btn buttom-warning">
                         Купить
                       </button>
-                      <button type="button" class="btn btn-link">
+                      <button type="button" class="btn link-dashed">
                         Быстрый заказ
                       </button>
                     </div>
                     <div class="col">
                       <button
-                        class="btn btn-link"
+                        class="btn link-dashed"
                         *ngFor="
                           let deliveryMethod of row.regionProduct
                             .deliveryMethods
@@ -261,7 +257,7 @@
                   </div>
                   <div class="col">
                     <button
-                      class="btn btn-link"
+                      class="btn link-dashed"
                       *ngFor="
                         let deliveryMethod of row.regionProduct.deliveryMethods
                       "

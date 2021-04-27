@@ -3899,7 +3899,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4030,7 +4030,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4073,7 +4073,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4225,7 +4225,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -6262,7 +6262,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -6498,7 +6498,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": "10:00",
@@ -6545,7 +6545,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -6609,7 +6609,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -6845,7 +6845,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": "10:00",
@@ -6892,7 +6892,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -6956,7 +6956,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -7192,7 +7192,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": "10:00",
@@ -7239,7 +7239,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -7303,7 +7303,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -7539,7 +7539,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": "10:00",
@@ -7586,7 +7586,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -7650,7 +7650,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -7819,7 +7819,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -7883,7 +7883,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8052,7 +8052,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8116,7 +8116,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8285,7 +8285,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8349,7 +8349,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8518,7 +8518,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8582,7 +8582,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8751,7 +8751,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8815,7 +8815,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -8963,7 +8963,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9006,7 +9006,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9154,7 +9154,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9197,7 +9197,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9345,7 +9345,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9388,7 +9388,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9557,7 +9557,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9621,7 +9621,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9790,7 +9790,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -9854,7 +9854,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -10023,7 +10023,7 @@
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,

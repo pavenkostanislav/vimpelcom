@@ -585,35 +585,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -737,35 +737,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -773,8 +773,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-huawei-p40-lite-e-nfc-64gb-polnochnyi-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-huawei-p40-lite-e-nfc-64gb-polnochnyi-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-huawei-p40-lite-e-nfc-64gb-polnochnyi-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-huawei-p40-lite-e-nfc-64gb-polnochnyi-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -801,7 +801,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -942,7 +942,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -950,8 +950,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-512gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -978,7 +978,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1111,7 +1111,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1119,8 +1119,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-256gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1147,28 +1147,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1301,28 +1301,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1330,8 +1330,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-ultra-128gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1358,7 +1358,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1491,7 +1491,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1499,8 +1499,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-256gb-black-2/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-256gb-black-2/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-256gb-black-2/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-256gb-black-2/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1527,7 +1527,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1660,7 +1660,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1668,8 +1668,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-128gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-128gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-128gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s21-plus-128gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -1696,35 +1696,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1932,35 +1932,35 @@
             ],
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": "10:00",
                 "endTime": "18:00"
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -1979,35 +1979,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2015,8 +2015,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-xiaomi-redmi-note-9-64gb-onyx-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-xiaomi-redmi-note-9-64gb-onyx-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-xiaomi-redmi-note-9-64gb-onyx-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-xiaomi-redmi-note-9-64gb-onyx-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -2043,35 +2043,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2204,35 +2204,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2240,8 +2240,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-a21s-32gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-a21s-32gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-a21s-32gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-a21s-32gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -2268,14 +2268,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -2416,14 +2416,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -2431,8 +2431,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-a71-128gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-a71-128gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-a71-128gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-a71-128gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -2459,35 +2459,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2620,35 +2620,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2656,8 +2656,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-a51-128gb-chiornyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-a51-128gb-chiornyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-a51-128gb-chiornyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-a51-128gb-chiornyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -2684,35 +2684,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2845,35 +2845,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -2881,8 +2881,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-a51-64gb-chiornyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-a51-64gb-chiornyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-a51-64gb-chiornyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-a51-64gb-chiornyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -2909,35 +2909,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3070,35 +3070,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3106,8 +3106,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-a21s-64gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-a21s-64gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-a21s-64gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-a21s-64gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -3134,35 +3134,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3286,35 +3286,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3322,8 +3322,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-zte-blade-20-128gb-smart-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-zte-blade-20-128gb-smart-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-zte-blade-20-128gb-smart-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-zte-blade-20-128gb-smart-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -3350,14 +3350,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -3498,14 +3498,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -3513,8 +3513,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-a11-32gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-a11-32gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-a11-32gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-a11-32gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -3541,14 +3541,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -3680,14 +3680,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -3695,8 +3695,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-xiaomi-redmi-note-8t-128gb-moonshadow-gray/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-xiaomi-redmi-note-8t-128gb-moonshadow-gray/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-xiaomi-redmi-note-8t-128gb-moonshadow-gray/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-xiaomi-redmi-note-8t-128gb-moonshadow-gray/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -3723,28 +3723,28 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3876,28 +3876,28 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -3905,8 +3905,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-12-64gb-chrnyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-12-64gb-chrnyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-12-64gb-chrnyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-12-64gb-chrnyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -3933,14 +3933,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4064,14 +4064,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4079,8 +4079,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-honor-20s-128gb-midnight-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-honor-20s-128gb-midnight-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-honor-20s-128gb-midnight-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-honor-20s-128gb-midnight-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -4107,35 +4107,35 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4267,35 +4267,35 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "courier",
+                "type": "Курьерская доставка",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "pvz_postamat",
+                "type": "Постамат IML",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "movements",
+                "type": "Доставка за 2 часа",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4303,8 +4303,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-se-64gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-se-64gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-se-64gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-se-64gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -4331,14 +4331,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4471,14 +4471,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4486,8 +4486,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-huawei-y8p-128gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-huawei-y8p-128gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-huawei-y8p-128gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-huawei-y8p-128gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -4514,14 +4514,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4654,14 +4654,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -4669,8 +4669,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-huawei-y6p-64gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-huawei-y6p-64gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-huawei-y6p-64gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-huawei-y6p-64gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -4697,7 +4697,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4830,7 +4830,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4838,8 +4838,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-huawei-y5p-32gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-huawei-y5p-32gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-huawei-y5p-32gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-huawei-y5p-32gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         },
@@ -4866,7 +4866,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -4999,7 +4999,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5007,8 +5007,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-s20-ultra-chiornyi-3/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-samsung-galaxy-s20-ultra-chiornyi-3/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-samsung-galaxy-s20-ultra-chiornyi-3/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-samsung-galaxy-s20-ultra-chiornyi-3/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -5035,7 +5035,7 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5167,7 +5167,7 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
@@ -5175,8 +5175,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-apple-iphone-11-64gb-chiornyi/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-apple-iphone-11-64gb-chiornyi/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-apple-iphone-11-64gb-chiornyi/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-apple-iphone-11-64gb-chiornyi/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": true }
         },
@@ -5203,14 +5203,14 @@
             "promotionId": null,
             "deliveryMethods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -5334,14 +5334,14 @@
           "delivery": {
             "methods": [
               {
-                "type": "pickup",
+                "type": "Самовывоз",
                 "price": 0.0,
                 "delay": null,
                 "startTime": null,
                 "endTime": null
               },
               {
-                "type": "fast_delivery",
+                "type": "Бесплатная доставка",
                 "price": 300.0,
                 "delay": 2,
                 "startTime": null,
@@ -5349,8 +5349,8 @@
               }
             ],
             "useMethods": true,
-            "pickupUrl": "/shop/details/smartfon-huawei-p30-lite-128gb-black/delivery/takeaway/",
-            "courierUrl": "/shop/details/smartfon-huawei-p30-lite-128gb-black/delivery/courier/"
+            "СамовывозUrl": "/shop/details/smartfon-huawei-p30-lite-128gb-black/delivery/takeaway/",
+            "Курьерская доставкаUrl": "/shop/details/smartfon-huawei-p30-lite-128gb-black/delivery/Курьерская доставка/"
           },
           "esim": { "hasESim": false }
         }
