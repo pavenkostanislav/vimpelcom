@@ -18,12 +18,12 @@
                 let item of getFormArray(filters[k].key).controls;
                 index as i
               "
+              (focusout)="setFilter()"
             >
               <input
                 type="checkbox"
                 class="form-check-input btn-outline-warning"
                 [formControlName]="i"
-                (input)="setFilter()"
               />
               <label class="form-check-label">
                 <span [ngStyle]="{ color: getOption(k, i, 'color') }">

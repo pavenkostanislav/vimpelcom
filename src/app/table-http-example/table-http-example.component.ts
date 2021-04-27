@@ -1,13 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   AbstractControl,
   FormArray,
   FormControl,
   FormGroup,
 } from '@angular/forms';
-import { MatAccordion } from '@angular/material/expansion';
-import { MatSort } from '@angular/material/sort';
 import { Store } from '@ngrx/store';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable, of as observableOf } from 'rxjs';

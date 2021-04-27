@@ -30,22 +30,13 @@ export class MockDboService {
           this.findBy(data.body.filters, 'price').valueTo = +_.last(
             mockDboData.filterForm.price
           );
+        } else if (_.first(mockDboData.filterForm.actions)) {
+          this.findBy(data.body.filters, 'actions').options[0].isChecked = true;
+        } else if (_.first(mockDboData.filterForm.colors)) {
+          this.findBy(data.body.filters, 'colors').options[0].isChecked = true;
+        } else if (_.first(mockDboData.filterForm.rams)) {
+          this.findBy(data.body.filters, 'rams').options[0].isChecked = true;
         }
-
-        if (_.first(mockDboData.filterForm.actions)) {
-          this.findBy(
-            data.body.filters,
-            'actions'
-          ).options[0].isChecked = _.first(mockDboData.filterForm.actions);
-        }
-
-        // if (_.first(filterForm.colors)) {
-        //   return './assets/test_1_3.json';
-        // }
-
-        // if (_.first(filterForm.rams)) {
-        //   return './assets/test_1_4.json';
-        // }
 
         data.body.products.paging = {
           perPage: +mockDboData.paging.itemsPerPage,
