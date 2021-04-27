@@ -18,6 +18,6 @@ COPY gzip.conf /etc/nginx/gzip.conf
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-EXPOSE  9015/tcp
+EXPOSE  9001/tcp
 
 CMD [ "/usr/sbin/nginx" ]
