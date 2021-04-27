@@ -1,4 +1,4 @@
-<code>{{ filterForm.value | json }}</code>
+<!-- <code>{{ filterForm.value | json }}</code> -->Ï
 <div class="container-fluid">
   <div class="row row flex-xl-nowrap">
     <div class="col-12 col-md-3 col-xl-3 bd-sidebar" [formGroup]="filterForm">
@@ -163,14 +163,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-4">
                   <img
                     src="{{ row.thumbImageUrlConverted }}"
                     class="rounded mx-auto d-block float-left"
                     alt="{{ row.name }}"
                   />
                 </div>
-                <div class="col d-none d-sm-block d-md-block">
+                <div class="col-5 d-none d-sm-block d-md-block">
                   <div class="card-body">
                     <h3 class="card-title">{{ row.name }}</h3>
                     <div class="col w-100">
@@ -188,7 +188,7 @@
                     </table>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-3">
                   <div class="card-body">
                     <h1 class="card-title">
                       {{ row.regionProduct.price | number: "1.1-1" }}
