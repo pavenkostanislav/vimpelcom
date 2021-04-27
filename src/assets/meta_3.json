@@ -1,0 +1,3850 @@
+{
+  "body": {
+    "filters": [
+      {
+        "name": "Цена",
+        "slug": "price",
+        "type": "range",
+        "valueFrom": 58265.0,
+        "valueTo": 131820.0,
+        "options": null,
+        "isOpen": true,
+        "min": 44990.0,
+        "max": 119990.0,
+        "isSeoUrlAllowed": false
+      },
+      {
+        "name": "Акция",
+        "slug": "promotion-slug",
+        "type": "common",
+        "isOpen": true,
+        "intagId": "00000000-0000-0000-0000-000000000000",
+        "options": [
+          {
+            "name": "Скидка 10 000 рублей по промокоду",
+            "color": null,
+            "slug": "skidka-10-000-rublei-po-promokodu-10000sg",
+            "isChecked": true,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "Беспроводные наушники в подарок",
+            "color": null,
+            "slug": "besprovodnye-naushniki-v-podarok",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 1
+          },
+          {
+            "name": "Скидка 2 000 рублей по промокоду 2000AP",
+            "color": null,
+            "slug": "skidka-2-000-rublei-po-promokodu-2000ap",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 5
+          },
+          {
+            "name": "Скидка 2 100 рублей по промокоду 2100AP",
+            "color": null,
+            "slug": "skidka-2-100-rublei-po-promokodu-2100ap",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 5
+          },
+          {
+            "name": "Скидка 1 900 рублей по промокоду 1900AP",
+            "color": null,
+            "slug": "skidka-1-900-rublei-po-promokodu-1900ap",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 5
+          },
+          {
+            "name": "Скидка 1 800 рублей по промокоду",
+            "color": null,
+            "slug": "skidka-1-800-rublei-po-promokodu-1800ap",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 5
+          },
+          {
+            "name": "Скидка 31 990 рублей при оплате онлайн",
+            "color": null,
+            "slug": "skidka-31-990-rublei-pri-oplate-onlain",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 2
+          },
+          {
+            "name": "Скидка 5 000 рублей по промокоду BEE5000",
+            "color": null,
+            "slug": "skidka-5-000-rublei-po-promokodu-bee5000",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 1
+          },
+          {
+            "name": "Скидка 1 000 рублей по промокоду",
+            "color": null,
+            "slug": "skidka-1-000-rublei-po-promokodu-1000sg-2",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 10% при покупке с товарами Xiaomi",
+            "color": null,
+            "slug": "skidka-10-pri-pokupke-s-tovarami-xiaomi",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 3 800 рублей по промокоду 3800AP",
+            "color": null,
+            "slug": "skidka-3-800-rublei-po-promokodu-3800ap",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 3 100 рублей по промокоду 3100AP",
+            "color": null,
+            "slug": "skidka-3-100-rublei-po-promokodu-3100ap",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 3 500 рублей по промокоду 3500AP",
+            "color": null,
+            "slug": "skidka-3-500-rublei-po-promokodu-3500ap",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 4 300 рублей по промокоду 4300AP",
+            "color": null,
+            "slug": "skidka-4-300-rublei-po-promokodu-4300ap",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 1 000 рублей по промокоду VESNA1000",
+            "color": null,
+            "slug": "skidka-1-000-rublei-po-promokodu-vesna1000",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 1 000 рублей по промокоду BEE1000",
+            "color": null,
+            "slug": "skidka-1-000-rublei-po-promokodu-bee1000",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "За 7 990 рублей при покупке с услугами связи и аксессуарами",
+            "color": null,
+            "slug": "vot-eto-vygoda-vsego-za-7-990-rublei-pri-pokupke-s-uslugami-sviazi-i-aksess",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "За 8 990 рублей при покупке с услугами связи и аксессуарами",
+            "color": null,
+            "slug": "vot-eto-vygoda-vsego-za-8-990-rublei-pri-pokupke-s-uslugami-sviazi-i-aksess",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "За 9 990 рублей при покупке с услугами связи и аксессуарами",
+            "color": null,
+            "slug": "vot-eto-vygoda-vsego-za-9-990-rublei-pri-pokupke-s-uslugami-sviazi-i-aksess",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "За 8 490 рублей при покупке с услугами связи и аксессуарами",
+            "color": null,
+            "slug": "vot-eto-vygoda-vsego-za-8-490-rublei-pri-pokupke-s-uslugami-sviazi-i-aksess",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 4 000 рублей по промокоду 4000SG",
+            "color": null,
+            "slug": "skidka-4-000-rublei-po-promokodu-4000sg",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 1 000 рублей при покупке с услугами связи",
+            "color": null,
+            "slug": "skidka-1-000-rublei-pri-pokupke-s-uslugami-sviazi",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 2 000 рублей при покупке с услугами связи",
+            "color": null,
+            "slug": "skidka-2-000-rublei-pri-pokupke-s-uslugami-sviazi",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 2 000 рублей по промокоду",
+            "color": null,
+            "slug": "skidka-2-000-rublei-po-promokodu-2000sg",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Скидка 1000 рублей по промокоду 1000REALME",
+            "color": null,
+            "slug": "skidka-1000-rublei-po-promokodu-1000realme",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": false
+      },
+      {
+        "name": "Производитель",
+        "slug": "proizvoditel",
+        "type": "common",
+        "isOpen": true,
+        "intagId": "b0b3b0a4-c45a-40a5-89ba-d8f640c2b0c8",
+        "options": [
+          {
+            "name": "Samsung",
+            "color": null,
+            "slug": "proizvoditel-samsung",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "Apple",
+            "color": null,
+            "slug": "proizvoditel-apple",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Huawei",
+            "color": null,
+            "slug": "proizvoditel-huawei",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Xiaomi",
+            "color": null,
+            "slug": "proizvoditel-xiaomi",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Honor",
+            "color": null,
+            "slug": "proizvoditel-honor",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Nokia",
+            "color": null,
+            "slug": "proizvoditel-nokia",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "ZTE",
+            "color": null,
+            "slug": "proizvoditel-zte",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "BQ",
+            "color": null,
+            "slug": "proizvoditel-bq",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Alcatel",
+            "color": null,
+            "slug": "proizvoditel-alcatel",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Asus",
+            "color": null,
+            "slug": "proizvoditel-asus",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Black Fox",
+            "color": null,
+            "slug": "proizvoditel-black-fox",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Vsmart",
+            "color": null,
+            "slug": "proizvoditel-vsmart",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "OPPO",
+            "color": null,
+            "slug": "proizvoditel-oppo",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Vivo",
+            "color": null,
+            "slug": "proizvoditel-vivo",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Tecno",
+            "color": null,
+            "slug": "proizvoditel-tecno",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Realme",
+            "color": null,
+            "slug": "proizvoditel-realme",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Модель устройства",
+        "slug": "model-ustroistva",
+        "type": "common",
+        "isOpen": true,
+        "intagId": "548e086c-96a4-4552-9cf1-407270ae3d53",
+        "options": [
+          {
+            "name": "Galaxy Note 20 Ultra",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-note-20-ultra",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "B4",
+            "color": null,
+            "slug": "model-ustroistva-b4-nfc-16gb-gold",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Blade 20",
+            "color": null,
+            "slug": "model-ustroistva-blade-20-128gb-smart-black",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Blade A5",
+            "color": null,
+            "slug": "model-ustroistva-blade-a5-2020-32gb-black",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A20s",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a20s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy Note 10+",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-note-10+",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y91C",
+            "color": null,
+            "slug": "model-ustroistva-y91c",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "ZenFone ROG Phone",
+            "color": null,
+            "slug": "model-ustroistva-zenfone-rog-phone",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S20 Plus",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s20-plus",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "iPhone XR",
+            "color": null,
+            "slug": "model-ustroistva-iphone-xr",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "iPhone SE",
+            "color": null,
+            "slug": "model-ustroistva-iphone-se",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "B7",
+            "color": null,
+            "slug": "model-ustroistva-b7",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "9X",
+            "color": null,
+            "slug": "model-ustroistva-9x",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "10 Lite",
+            "color": null,
+            "slug": "model-ustroistva-10-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "7A",
+            "color": null,
+            "slug": "model-ustroistva-7a",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "P smart Z",
+            "color": null,
+            "slug": "model-ustroistva-p-smart-z",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1",
+            "color": null,
+            "slug": "model-ustroistva-1",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y7",
+            "color": null,
+            "slug": "model-ustroistva-y7-2019",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y6",
+            "color": null,
+            "slug": "model-ustroistva-y6-2019",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "B5Fox+",
+            "color": null,
+            "slug": "model-ustroistva-b5fox",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8A",
+            "color": null,
+            "slug": "model-ustroistva-8a",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y5 Lite",
+            "color": null,
+            "slug": "model-ustroistva-y5-lite-2018",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y5",
+            "color": null,
+            "slug": "model-ustroistva-y5",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.4",
+            "color": null,
+            "slug": "model-ustroistva-54",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "C21",
+            "color": null,
+            "slug": "model-ustroistva-c21",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Reno4 Lite",
+            "color": null,
+            "slug": "model-ustroistva-reno4-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "S20 FE",
+            "color": null,
+            "slug": "model-ustroistva-s20-fe",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "B7r Fox",
+            "color": null,
+            "slug": "model-ustroistva-b7r-fox",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8.3",
+            "color": null,
+            "slug": "model-ustroistva-83",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "20S",
+            "color": null,
+            "slug": "model-ustroistva-20s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A01",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a01",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "20 lite",
+            "color": null,
+            "slug": "model-ustroistva-20-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y8p",
+            "color": null,
+            "slug": "model-ustroistva-y8p",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy Note 10 Lite",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-note-10-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 9 Pro",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-9-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S10+",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s10-2",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S10 Lite",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s10-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi 9C",
+            "color": null,
+            "slug": "model-ustroistva-redmi-9c",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "30 Pro+",
+            "color": null,
+            "slug": "model-ustroistva-30-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "C11",
+            "color": null,
+            "slug": "model-ustroistva-c11",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Joy 4",
+            "color": null,
+            "slug": "model-ustroistva-joy-4",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Oppo A52",
+            "color": null,
+            "slug": "model-ustroistva-oppo-a52",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "10X Lite",
+            "color": null,
+            "slug": "model-ustroistva-10x-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi 9",
+            "color": null,
+            "slug": "model-ustroistva-redmi-9",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "P30 lite",
+            "color": null,
+            "slug": "model-ustroistva-p30-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2.4",
+            "color": null,
+            "slug": "model-ustroistva-24",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Apple iPhone 12 Pro",
+            "color": null,
+            "slug": "model-ustroistva-apple-iphone-12-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi 9T",
+            "color": null,
+            "slug": "model-ustroistva-redmi-9t",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Blade A3 2020 NFC",
+            "color": null,
+            "slug": "model-ustroistva-blade-a3-2020-nfc",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "7S",
+            "color": null,
+            "slug": "model-ustroistva-7s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 8 Pro",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-8-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi 9A",
+            "color": null,
+            "slug": "model-ustroistva-redmi-9a",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "P Smart 2021",
+            "color": null,
+            "slug": "model-ustroistva-p-smart-2021",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 10 Pro",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-10-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A72",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a72",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy M21",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-m21",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "7A Prime",
+            "color": null,
+            "slug": "model-ustroistva-7a-prime",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Apple iPhone 12 mini",
+            "color": null,
+            "slug": "model-ustroistva-apple-iphone-12-mini",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Mi 10T",
+            "color": null,
+            "slug": "model-ustroistva-mi-10t",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A71",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a71",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Oppo A53",
+            "color": null,
+            "slug": "model-ustroistva-oppo-a53",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8A Prime",
+            "color": null,
+            "slug": "model-ustroistva-8a-prime",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "30 Premium",
+            "color": null,
+            "slug": "model-ustroistva-30-premium",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "9A",
+            "color": null,
+            "slug": "model-ustroistva-9a",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "B7Fox+",
+            "color": null,
+            "slug": "model-ustroistva-b7fox-16gb-black",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Camon 11S",
+            "color": null,
+            "slug": "model-ustroistva-camon-11s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "B8 Fox",
+            "color": null,
+            "slug": "model-ustroistva-b8-fox",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y6p",
+            "color": null,
+            "slug": "model-ustroistva-y6p",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A21s",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a21s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Reno5",
+            "color": null,
+            "slug": "model-ustroistva-reno5",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y30",
+            "color": null,
+            "slug": "model-ustroistva-y30",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y1S",
+            "color": null,
+            "slug": "model-ustroistva-y1s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "9C",
+            "color": null,
+            "slug": "model-ustroistva-9c",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 10",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-10",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "ZenFone 7 Pro",
+            "color": null,
+            "slug": "model-ustroistva-zenfone-7-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Apple iPhone 12",
+            "color": null,
+            "slug": "model-ustroistva-apple-iphone-12",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S21",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s21",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1B 5002H",
+            "color": null,
+            "slug": "model-ustroistva-1b-5002h",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "30S",
+            "color": null,
+            "slug": "model-ustroistva-30s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1.4",
+            "color": null,
+            "slug": "model-ustroistva-14",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "A15",
+            "color": null,
+            "slug": "model-ustroistva-a15",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Oppo A31",
+            "color": null,
+            "slug": "model-ustroistva-oppo-a31",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy Z Fold2",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-z-fold2",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Spark 3 Pro",
+            "color": null,
+            "slug": "model-ustroistva-spark-3-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1.3",
+            "color": null,
+            "slug": "model-ustroistva-13",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "C3",
+            "color": null,
+            "slug": "model-ustroistva-c3",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A01 Core",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a01-core",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S21+",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s21-2",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A12",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a12",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy Z Flip",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-z-flip",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1A 5002F",
+            "color": null,
+            "slug": "model-ustroistva-1a-5002f",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A30s",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a30s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A02s",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a02s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Reno5 Lite",
+            "color": null,
+            "slug": "model-ustroistva-reno5-lite",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Joy 3+",
+            "color": null,
+            "slug": "model-ustroistva-joy-3",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "iPhone 11 Pro Max",
+            "color": null,
+            "slug": "model-ustroistva-iphone-11-pro-max",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y12",
+            "color": null,
+            "slug": "model-ustroistva-y12",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A52",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a52",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Apple iPhone 12 Pro Max",
+            "color": null,
+            "slug": "model-ustroistva-apple-iphone-12-pro-max",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "A15s",
+            "color": null,
+            "slug": "model-ustroistva-a15s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "30",
+            "color": null,
+            "slug": "model-ustroistva-30",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A11",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a11",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8S Prime",
+            "color": null,
+            "slug": "model-ustroistva-8s-prime",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "iPhone 11 Pro",
+            "color": null,
+            "slug": "model-ustroistva-iphone-11-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi 7",
+            "color": null,
+            "slug": "model-ustroistva-redmi-7",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 9",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-9",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Blade 20 Smart",
+            "color": null,
+            "slug": "model-ustroistva-blade-20",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y6S",
+            "color": null,
+            "slug": "model-ustroistva-y6s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "B8 Fox+",
+            "color": null,
+            "slug": "model-ustroistva-b8-fox-2",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy Note 9",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-note-9",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A32",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a32",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A02",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a02",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S20 Ultra",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s20-ultra",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "P40",
+            "color": null,
+            "slug": "model-ustroistva-p40",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S21 Ultra",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s21-ultra",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y20",
+            "color": null,
+            "slug": "model-ustroistva-y20",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6 Pro",
+            "color": null,
+            "slug": "model-ustroistva-6-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A41",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a41",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "C1 Plus",
+            "color": null,
+            "slug": "model-ustroistva-c1-plus",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "30i",
+            "color": null,
+            "slug": "model-ustroistva-30i",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "9S",
+            "color": null,
+            "slug": "model-ustroistva-9s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1 2020 5033D",
+            "color": null,
+            "slug": "model-ustroistva-1-2020-5033d",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A51",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a51",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy A31",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-a31",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Mi 10T Pro",
+            "color": null,
+            "slug": "model-ustroistva-mi-10t-pro",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Nubia Red Magic 5S",
+            "color": null,
+            "slug": "model-ustroistva-nubia-red-magic-5s",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Galaxy S20",
+            "color": null,
+            "slug": "model-ustroistva-galaxy-s20",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Y5p",
+            "color": null,
+            "slug": "model-ustroistva-y5p",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 8T",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-8t",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3.4",
+            "color": null,
+            "slug": "model-ustroistva-34",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Redmi Note 9T",
+            "color": null,
+            "slug": "model-ustroistva-redmi-note-9t",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "P40 lite E",
+            "color": null,
+            "slug": "model-ustroistva-p40-lite-e",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "iPhone 11",
+            "color": null,
+            "slug": "model-ustroistva-iphone-11",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Объем встроенной памяти",
+        "slug": "obem-vstroennoi-pamiati",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "aef63820-a69c-4434-926a-c0e73f6d2023",
+        "options": [
+          {
+            "name": "512 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-512-gb",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "256 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-256-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "128 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-128-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-64-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "32 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-32-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-16-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8 Гб",
+            "color": null,
+            "slug": "obem-vstroennoi-pamiati-8-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Объем оперативной памяти",
+        "slug": "obem-operativnoi-pamiati",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "3a7ae88d-9280-4cd7-9601-9df46ae6e6db",
+        "options": [
+          {
+            "name": "12 Гб",
+            "color": null,
+            "slug": "obem-operativnoi-pamiati-12-gb",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "16 Гб",
+            "color": null,
+            "slug": "obem-operativnoi-pamiati-16-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8 Гб",
+            "color": null,
+            "slug": "obem-operativnoi-pamiati-8-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6 Гб",
+            "color": null,
+            "slug": "obem-operativnoi-pamiati-6-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4 Гб",
+            "color": null,
+            "slug": "obem-operativnoi-pamiati-4-gb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3 Гб",
+            "color": null,
+            "slug": "obem-operativnoj-pamyati-3072-mb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2 Гб",
+            "color": null,
+            "slug": "obem-operativnoj-pamyati-2048-mb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "1 Гб",
+            "color": null,
+            "slug": "obem-operativnoj-pamyati-1024-mb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Операционная система",
+        "slug": "operatsionnaia-sistema",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "c427e757-bc62-4e5d-aa0f-8248b67ef179",
+        "options": [
+          {
+            "name": "Android",
+            "color": null,
+            "slug": "operatsionnaya-sistema-android",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "iOS",
+            "color": null,
+            "slug": "operatsionnaya-sistema-ios",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Основная камера",
+        "slug": "osnovnaia-kamera",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "a49f1653-2c4f-4ca9-a628-7b32dc752cef",
+        "options": [
+          {
+            "name": "108+12+12 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1081212-mpiks",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "13 Мпикс",
+            "color": null,
+            "slug": "osnovnaya-kamera-13-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12 Мпикс",
+            "color": null,
+            "slug": "osnovnaya-kamera-12-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8 Мпикс",
+            "color": null,
+            "slug": "osnovnaya-kamera-8-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5 Мпикс",
+            "color": null,
+            "slug": "osnovnaya-kamera-5-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+8+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-64822-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1682-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-4822-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+12+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-48125-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-162-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+8+5+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-64855-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+13+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-64135-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+12+8+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-641285-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-122-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "50+16+8 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-50168-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+8+5+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-13852-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1322-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "108+8+5+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-108852-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+8+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-16822-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+8+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-4885-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+8+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-48822-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+8+5+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-48852-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+12+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-641222-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+12+5+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-641255-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+12+12 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-641212-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+12+64 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-121264-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+12+5+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-481255-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+12+8 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-64128-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-132-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-482-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1222-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+8+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-12822-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+12 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1212-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+5+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-48522-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "25+8+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-2585-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "24+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-2482-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+12+12 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-121212-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1382-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+8+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1385-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+8 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-128-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5+0.3 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-503-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-6482-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+8+2+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-13822-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+8+5+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-64852-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+12+11 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-161211-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "40+8+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-40882-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8+0.3 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-803-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "108+48+12 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1084812-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "48+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-4882-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64+12+8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-641282-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "108+13+5 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-108135-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+108+10+10 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-121081010-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+12+12 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-121216-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13+5+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-1352-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8+2 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-82-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12+12+8 Мпикс",
+            "color": null,
+            "slug": "osnovnaia-kamera-12128-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Цвет",
+        "slug": "tsvet",
+        "type": "color",
+        "isOpen": false,
+        "intagId": "fb3ffb8a-215a-486c-9632-c78fbe585a8f",
+        "options": [
+          {
+            "name": "черный",
+            "color": "#000000",
+            "slug": "tsvet-chernyij000000",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 1
+          },
+          {
+            "name": "белый",
+            "color": "#ededed",
+            "slug": "tsvet-belyijffffff",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 1
+          },
+          {
+            "name": "бронзовый",
+            "color": "#ab6119",
+            "slug": "tsvet-bronzovyij917754",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 1
+          },
+          {
+            "name": "коралловый",
+            "color": "#FF7F50",
+            "slug": "tsvet-korallovyi",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "мятный",
+            "color": "#aaf0d1",
+            "slug": "tsvet-miatnyi-99f2da",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "салатовый",
+            "color": "#7bfe7b",
+            "slug": "tsvet-salatovyi-99ff99",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "серый",
+            "color": "#808080",
+            "slug": "tsvet-seryij808080",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "золотой",
+            "color": "#FFD700",
+            "slug": "tsvet-zolotojffd700",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "серебристый",
+            "color": "#C0C0C0",
+            "slug": "tsvet-serebristyijc0c0c0",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "коричневый",
+            "color": "#753313",
+            "slug": "tsvet-korichnevyij7b3f00",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "зеленый",
+            "color": "#1ea41e",
+            "slug": "tsvet-zelenyij03c03c",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "бирюзовый",
+            "color": "#06c2ac",
+            "slug": "tsvet-biriuzovyi06c2ac",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "синий",
+            "color": "#2f74ca",
+            "slug": "tsvet-sinij0000ff",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "голубой",
+            "color": "#77d0fa",
+            "slug": "tsvet-goluboj00bfff",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "красный",
+            "color": "#FF0000",
+            "slug": "tsvet-krasnyijff0000",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "оранжевый",
+            "color": "#FFA500",
+            "slug": "tsvet-oranzhevyijffa500",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "желтый",
+            "color": "#FFFF00",
+            "slug": "tsvet-zheltyijffff00",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "розовый",
+            "color": "#ffc0cb",
+            "slug": "tsvet-rozovyijffc0cb",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "пурпурный",
+            "color": "#960496",
+            "slug": "tsvet-purpurnyiff00ff",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "фиолетовый",
+            "color": "#640cc7",
+            "slug": "tsvet-fioletovyij8b00ff",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Диагональ экрана",
+        "slug": "diagonal-ekrana",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "a8c8a777-a211-4753-8607-e892dc6a1c1f",
+        "options": [
+          {
+            "name": "6.9 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-69-diuim",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "6.50 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-65-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.4 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-64-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.3 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-63-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-6-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.8 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-58-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.7 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-57-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.5 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-55-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.3 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-53-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-5-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4.7 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-47-dyujm",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.35 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-635-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.21 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-621-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.1 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-61-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.65 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-665-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.8 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-68-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.09 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-609-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.81 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-681-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.4 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-54-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.52 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-652-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.67 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-667-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.26 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-626-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.53 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-653-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.45 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-545-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5.71 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-571-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.39 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-639-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.47 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-647-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.08 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-608-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.22 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-622-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.088 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-6088-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.59 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-659-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.6 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-66-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.7 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-67-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.49 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-649-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.2 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-62-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.51 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-651-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "7.6 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-76-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.43 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-643-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.57 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-657-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6.15 дюйм",
+            "color": null,
+            "slug": "diagonal-ekrana-615-diuim",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Двойная основная камера",
+        "slug": "dvoinaia-osnovnaia-kamera",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "476946ca-b12a-41dd-aec4-0cf13246e4bf",
+        "options": [
+          {
+            "name": "да",
+            "color": null,
+            "slug": "osnovnaia-kamera-s-dvumia-obektivami-da",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Количество модулей основной камеры",
+        "slug": "kolichestvo-modulei-osnovnoi-kamery",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "a0363b7e-7ff6-4004-aa64-151a8f5420a1",
+        "options": [
+          {
+            "name": "3",
+            "color": null,
+            "slug": "troinaia-osnovnaia-kamera-da",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "4",
+            "color": null,
+            "slug": "kolichestvo-modulei-osnovnoi-kamery-4",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Количество SIM-карт",
+        "slug": "kolichestvo-sim-kart",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "49d7cc9e-38d5-472d-a6fa-55915a6b4811",
+        "options": [
+          {
+            "name": "2",
+            "color": null,
+            "slug": "kolichestvo-sim-kart-2",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "1",
+            "color": null,
+            "slug": "kolichestvo-sim-kart-1",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "eSIM",
+        "slug": "esim",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "f01ba7fa-553b-44c9-af90-bb5b4c727ed8",
+        "options": [
+          {
+            "name": "да",
+            "color": null,
+            "slug": "esim-da",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Тип экрана",
+        "slug": "tip-ekrana",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "36b95b75-4482-40ac-a8d9-8394f98d6ae3",
+        "options": [
+          {
+            "name": "Dynamic AMOLED 2X",
+            "color": null,
+            "slug": "tip-ekrana-dynamic-amoled-2x",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "Retina HD",
+            "color": null,
+            "slug": "tip-ekrana-retina-hd",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "AMOLED",
+            "color": null,
+            "slug": "tip-ekrana-amoled",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "LCD",
+            "color": null,
+            "slug": "tip-ekrana-lcd",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "IPS",
+            "color": null,
+            "slug": "tip-ekrana-ips",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Super AMOLED",
+            "color": null,
+            "slug": "tip-ekrana-super-amoled",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "OLED",
+            "color": null,
+            "slug": "tip-ekrana-oled",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "TFT",
+            "color": null,
+            "slug": "tip-ekrana-tft",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "TFT IPS",
+            "color": null,
+            "slug": "tip-ekrana-tft-ips",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "TN",
+            "color": null,
+            "slug": "tip-ekrana-tn",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "LTPS",
+            "color": null,
+            "slug": "tip-ekrana-ltps",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Super Retina XDR",
+            "color": null,
+            "slug": "tip-ekrana-super-retina-xdr",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Liquid Retina HD",
+            "color": null,
+            "slug": "tip-ekrana-liquid-retina-hd",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Super Retina HD",
+            "color": null,
+            "slug": "tip-ekrana-super-retina-hd",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "Super IPS",
+            "color": null,
+            "slug": "tip-ekrana-super-ips",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Фронтальная камера",
+        "slug": "frontalnaia-kamera",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "d3245250-ae92-4156-bff3-6e8e31f11a86",
+        "options": [
+          {
+            "name": "10 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-10-mpiks",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "32 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-32-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "25 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-25-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "24 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-24-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "20 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-20-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-16-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "13 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-13-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "12 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-12-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "10+8 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-108-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "8 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-8-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "7 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-7-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5 Мпикс",
+            "color": null,
+            "slug": "frontalnaya-kamera-5-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2 Мпикс",
+            "color": null,
+            "slug": "frontalnaya-kamera-2-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+8 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-168-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "64 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-64-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "40 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-40-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "16+2 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-162-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "32+8 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-328-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "44 Мпикс",
+            "color": null,
+            "slug": "frontalnaia-kamera-44-mpiks",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Количество ядер",
+        "slug": "kolichestvo-iader",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "e7d65693-d4e2-4beb-b12f-be42baf6c653",
+        "options": [
+          {
+            "name": "8",
+            "color": null,
+            "slug": "kolichestvo-yader-8",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "4",
+            "color": null,
+            "slug": "kolichestvo-yader-4",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6",
+            "color": null,
+            "slug": "kolichestvo-yader-6",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "NFC",
+        "slug": "nfc",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "cf8dbfcc-a08f-4267-9a03-ec7596fe899c",
+        "options": [
+          {
+            "name": "да",
+            "color": null,
+            "slug": "nfc-da",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "нет",
+            "color": null,
+            "slug": "nfc-net",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Двойная фронтальная камера",
+        "slug": "dvoinaia-frontalnaia-kamera",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "689a1741-4d2e-4030-abc8-9b308bb72851",
+        "options": [
+          {
+            "name": "да",
+            "color": null,
+            "slug": "dvoinaia-peredniaia-kamera-da",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      },
+      {
+        "name": "Емкость аккумулятора",
+        "slug": "emkost-akkumuliatora",
+        "type": "common",
+        "isOpen": false,
+        "intagId": "4a217154-5949-46fa-a188-927db5c214b8",
+        "options": [
+          {
+            "name": "4500 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4500-mach",
+            "isChecked": false,
+            "isDisabled": false,
+            "productsCount": 3
+          },
+          {
+            "name": "2000 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-2000-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2500 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-2500-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2600 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-2600-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2800 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-2800-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "2900 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-2900-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3000 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3000-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3200 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3200-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3300 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3300-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3400 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3400-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3500 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3500-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3800 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3800-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4000 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4000-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4100 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4100-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4200 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4200-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4300 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4300-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4800 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4800-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4900 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4900-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5000 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-5000-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "6000 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-6000-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3340 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3340-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "5020 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-5020-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "3020 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-3020-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4030 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4030-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4230 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4230-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          },
+          {
+            "name": "4310 мА*ч",
+            "color": null,
+            "slug": "emkost-akkumuliatora-4310-mach",
+            "isChecked": false,
+            "isDisabled": true,
+            "productsCount": 0
+          }
+        ],
+        "isSeoUrlAllowed": true
+      }
+    ],
+    "products": {
+      "list": [
+        {
+          "hasLeasing": false,
+          "id": 227308,
+          "isTariff": false,
+          "dpcId": 0,
+          "name": "Смартфон Samsung Galaxy Note 20 Ultra 512GB Белый",
+          "article": "1400010720",
+          "brandName": "Samsung",
+          "thumbImageUrlConverted": "//static.beeline.ru/shop/media/goods/196x302/0d593907-73c8-4c1a-ad3d-e6074b518ece.png",
+          "oldPriceIfBundle": 0.0,
+          "oldPriceIfBundleFormatted": "  0",
+          "isPromoPriceMoreThanLimit": false,
+          "regionProduct": {
+            "price": 119990.0,
+            "soc": "",
+            "oldPrice": null,
+            "remain": 4,
+            "remainOp": false,
+            "label": null,
+            "marketingTag": null,
+            "promotionId": null,
+            "deliveryMethods": [
+              {
+                "type": "courier",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "pvz_postamat",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "movements",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              }
+            ],
+            "dpcId": null,
+            "discount": 0.0,
+            "discountFormatted": "  0",
+            "hideOldPrice": false,
+            "hasOldPrice": false,
+            "shopActionIsAuthorized": null,
+            "shopActionRelatedIds": null,
+            "shopRelatedServices": null,
+            "shopActionCampaigns": null,
+            "bonusCount": 0,
+            "regionId": 98140
+          },
+          "isPreorder": false,
+          "contentPromotion": {
+            "description": "<div class=\"simple-sale\">    <style> \t#promoContent .mceItemTable img[src*=\"static.beeline.ru/upload/images/Icon_gift.png\"] {  \t\tdisplay: none;  \t}        .simple-sale__title {            padding-bottom: 10px;            border-bottom: 1px solid #e6e6e6;            font-size: 21px; }        .simple-sale__text, .simple-sale__link {            color: #282828;            font-size: 15px; }        .simple-sale__tip {            margin-top: 15px;            font-size: 13px;            color: #787878; }        .simple-sale__details {            display: inline-block;            margin-top: 15px;            font-family: \"Officina Serif\", serif;            font-size: 15px; }    </style>    <h3 class=\"simple-sale__title\">Скидка 10 000 рублей по промокоду 10000SG</h3>    <div class=\"simple-sale__text\"><p>Акция проводится для покупателей интернет-магазина Билайн и действует отдельно от других акций.&nbsp;</p></div><br><div class=\"simple-sale__text\"><span style=\"color: rgb(0, 0, 0); font-size: 11.9px; font-style: italic;\">Количество товаров ограничено. Цены указаны с учётом НДС. Организатор акции — ПАО «ВымпелКом», РФ, 127083, г. Москва, ул. 8 Марта, д. 10, стр. 14, ОГРН 1027700166636. Организатор вправе изменять порядок, условия и сроки проведения акции, а также стоимость оборудования, участвующего в акции, в одностороннем порядке, при этом информация об изменениях публикуется на сайте beeline.ru.&nbsp;</span></div></div>",
+            "title": "Скидка 10 000 рублей по промокоду 10000SG",
+            "badge": null,
+            "hasTitle": true,
+            "isIndexed": false,
+            "descriptionHtml": "<noindex><div class=\"simple-sale\">    <style> \t#promoContent .mceItemTable img[src*=\"static.beeline.ru/upload/images/Icon_gift.png\"] {  \t\tdisplay: none;  \t}        .simple-sale__title {            padding-bottom: 10px;            border-bottom: 1px solid #e6e6e6;            font-size: 21px; }        .simple-sale__text, .simple-sale__link {            color: #282828;            font-size: 15px; }        .simple-sale__tip {            margin-top: 15px;            font-size: 13px;            color: #787878; }        .simple-sale__details {            display: inline-block;            margin-top: 15px;            font-family: \"Officina Serif\", serif;            font-size: 15px; }    </style>    <h3 class=\"simple-sale__title\">Скидка 10 000 рублей по промокоду 10000SG</h3>    <div class=\"simple-sale__text\"><p>Акция проводится для покупателей интернет-магазина Билайн и действует отдельно от других акций. </p></div><br><div class=\"simple-sale__text\"><span style=\"color: rgb(0, 0, 0); font-size: 11.9px; font-style: italic;\">Количество товаров ограничено. Цены указаны с учётом НДС. Организатор акции — ПАО «ВымпелКом», РФ, 127083, г. Москва, ул. 8 Марта, д. 10, стр. 14, ОГРН 1027700166636. Организатор вправе изменять порядок, условия и сроки проведения акции, а также стоимость оборудования, участвующего в акции, в одностороннем порядке, при этом информация об изменениях публикуется на сайте beeline.ru. </span></div></div></noindex>",
+            "url": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/promo/"
+          },
+          "benefits": [],
+          "urlSlug": "smartfon-samsung-galaxy-note-20-ultra-512gb-belyi",
+          "hasPreorderAnnouncement": false,
+          "preorderAnnouncement": null,
+          "showPreorderDate": false,
+          "showPreorderPriceOnView": false,
+          "preorderStartDate": "2021-04-26T22:06:31.5520548+03:00",
+          "parameters": [
+            {
+              "id": "63ef0543-55b3-4802-9eba-d6fbfb689964",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "512 Гб",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "obem-vstroennoi-pamiati",
+              "intagWeight": 3010.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Современные портативные устройства оснащаются накопителями для хранения файлов и установки приложений, реализованными в виде микросхем <span style=\"font-weight: bold;\">Flash</span>. Размер встроенной памяти имеет ключевое значение при выборе портативного устройства, особенно, если оно не оснащено слотом для установки карт памяти.</p>",
+              "name": "Объем памяти",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            },
+            {
+              "id": "5a73c9c5-7337-4c1e-8a60-80a932cf41ff",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "108+12+12 Мпикс",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "osnovnaia-kamera",
+              "intagWeight": 3000.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Подавляющее большинство современных смартфонов и планшетов оснащаются камерами для съемки фото и видео. Это средство всегда под рукой, благодаря чему можно запечатлеть важную информацию или поймать интересный момент. Качество отснятого материала можно условно определить исходя из количества мегапикселей матрицы встроенной камеры. Однако, из-за невозможности установки полноценной оптики (объектива), которая играет одну из ключевых ролей для получения качественного изображения, встроенные устройства значительно уступают по характеристикам самостоятельным цифровым камерам.&nbsp;</p>",
+              "name": "Камера",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            },
+            {
+              "id": "61adfdb8-112e-4dc0-b61d-cd5001c3ba31",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "6.9 дюйм",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "diagonal-ekrana",
+              "intagWeight": 2800.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Традиционно для всех современных устройств указывается в дюймах. <span style=\"font-weight: bold;\">1 дюйм</span> равен <span style=\"font-weight: bold;\">2.54 см</span>. Чем крупнее экран, тем удобнее пользоваться устройством, однако, вместе с тем увеличиваются габариты корпуса и энергопотребление.</p>",
+              "name": "Экран",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            }
+          ],
+          "showPreorderDateOnly": false,
+          "badges": [],
+          "rate": 0.0,
+          "feedbackCount": 0,
+          "hasRemainsShop": true,
+          "hasRemainsOffice": false,
+          "isPromotionBundle": false,
+          "productPromotion": null,
+          "mainEquipmentBundleNote": "",
+          "additionalEquipmentBundleNote": null,
+          "isOutOfStock": false,
+          "outOfStockReasonSlug": null,
+          "outOfStockMessageTemplate": null,
+          "isMultiCard": false,
+          "multiProductId": null,
+          "partnerSlug": null,
+          "delivery": {
+            "methods": [
+              {
+                "type": "courier",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "pvz_postamat",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "movements",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              }
+            ],
+            "useMethods": true,
+            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/takeaway/",
+            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-belyi/delivery/courier/"
+          },
+          "esim": { "hasESim": true }
+        },
+        {
+          "hasLeasing": false,
+          "id": 227307,
+          "isTariff": false,
+          "dpcId": 0,
+          "name": "Смартфон Samsung Galaxy Note 20 Ultra 512GB «Бронза»",
+          "article": "1400010710",
+          "brandName": "Samsung",
+          "thumbImageUrlConverted": "//static.beeline.ru/shop/media/goods/196x302/35d6c6f8-af7e-4d39-85dc-c7e1b7cb8ee0.png",
+          "oldPriceIfBundle": 0.0,
+          "oldPriceIfBundleFormatted": "  0",
+          "isPromoPriceMoreThanLimit": false,
+          "regionProduct": {
+            "price": 119990.0,
+            "soc": "",
+            "oldPrice": null,
+            "remain": 4,
+            "remainOp": false,
+            "label": null,
+            "marketingTag": null,
+            "promotionId": null,
+            "deliveryMethods": [
+              {
+                "type": "courier",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "pvz_postamat",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "movements",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              }
+            ],
+            "dpcId": null,
+            "discount": 0.0,
+            "discountFormatted": "  0",
+            "hideOldPrice": false,
+            "hasOldPrice": false,
+            "shopActionIsAuthorized": null,
+            "shopActionRelatedIds": null,
+            "shopRelatedServices": null,
+            "shopActionCampaigns": null,
+            "bonusCount": 0,
+            "regionId": 98140
+          },
+          "isPreorder": false,
+          "contentPromotion": {
+            "description": "<div class=\"simple-sale\">    <style> \t#promoContent .mceItemTable img[src*=\"static.beeline.ru/upload/images/Icon_gift.png\"] {  \t\tdisplay: none;  \t}        .simple-sale__title {            padding-bottom: 10px;            border-bottom: 1px solid #e6e6e6;            font-size: 21px; }        .simple-sale__text, .simple-sale__link {            color: #282828;            font-size: 15px; }        .simple-sale__tip {            margin-top: 15px;            font-size: 13px;            color: #787878; }        .simple-sale__details {            display: inline-block;            margin-top: 15px;            font-family: \"Officina Serif\", serif;            font-size: 15px; }    </style>    <h3 class=\"simple-sale__title\">Скидка 10 000 рублей по промокоду 10000SG</h3>    <div class=\"simple-sale__text\"><p>Акция проводится для покупателей интернет-магазина Билайн и действует отдельно от других акций.&nbsp;</p></div><br><div class=\"simple-sale__text\"><span style=\"color: rgb(0, 0, 0); font-size: 11.9px; font-style: italic;\">Количество товаров ограничено. Цены указаны с учётом НДС. Организатор акции — ПАО «ВымпелКом», РФ, 127083, г. Москва, ул. 8 Марта, д. 10, стр. 14, ОГРН 1027700166636. Организатор вправе изменять порядок, условия и сроки проведения акции, а также стоимость оборудования, участвующего в акции, в одностороннем порядке, при этом информация об изменениях публикуется на сайте beeline.ru.&nbsp;</span></div></div>",
+            "title": "Скидка 10 000 рублей по промокоду 10000SG",
+            "badge": null,
+            "hasTitle": true,
+            "isIndexed": false,
+            "descriptionHtml": "<noindex><div class=\"simple-sale\">    <style> \t#promoContent .mceItemTable img[src*=\"static.beeline.ru/upload/images/Icon_gift.png\"] {  \t\tdisplay: none;  \t}        .simple-sale__title {            padding-bottom: 10px;            border-bottom: 1px solid #e6e6e6;            font-size: 21px; }        .simple-sale__text, .simple-sale__link {            color: #282828;            font-size: 15px; }        .simple-sale__tip {            margin-top: 15px;            font-size: 13px;            color: #787878; }        .simple-sale__details {            display: inline-block;            margin-top: 15px;            font-family: \"Officina Serif\", serif;            font-size: 15px; }    </style>    <h3 class=\"simple-sale__title\">Скидка 10 000 рублей по промокоду 10000SG</h3>    <div class=\"simple-sale__text\"><p>Акция проводится для покупателей интернет-магазина Билайн и действует отдельно от других акций. </p></div><br><div class=\"simple-sale__text\"><span style=\"color: rgb(0, 0, 0); font-size: 11.9px; font-style: italic;\">Количество товаров ограничено. Цены указаны с учётом НДС. Организатор акции — ПАО «ВымпелКом», РФ, 127083, г. Москва, ул. 8 Марта, д. 10, стр. 14, ОГРН 1027700166636. Организатор вправе изменять порядок, условия и сроки проведения акции, а также стоимость оборудования, участвующего в акции, в одностороннем порядке, при этом информация об изменениях публикуется на сайте beeline.ru. </span></div></div></noindex>",
+            "url": "/shop/details/tsamsunggalnote20ult512gbbr/promo/"
+          },
+          "benefits": [],
+          "urlSlug": "tsamsunggalnote20ult512gbbr",
+          "hasPreorderAnnouncement": false,
+          "preorderAnnouncement": null,
+          "showPreorderDate": false,
+          "showPreorderPriceOnView": false,
+          "preorderStartDate": "2021-04-26T22:06:31.5520548+03:00",
+          "parameters": [
+            {
+              "id": "63ef0543-55b3-4802-9eba-d6fbfb689964",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "512 Гб",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "obem-vstroennoi-pamiati",
+              "intagWeight": 3010.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Современные портативные устройства оснащаются накопителями для хранения файлов и установки приложений, реализованными в виде микросхем <span style=\"font-weight: bold;\">Flash</span>. Размер встроенной памяти имеет ключевое значение при выборе портативного устройства, особенно, если оно не оснащено слотом для установки карт памяти.</p>",
+              "name": "Объем памяти",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            },
+            {
+              "id": "5a73c9c5-7337-4c1e-8a60-80a932cf41ff",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "108+12+12 Мпикс",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "osnovnaia-kamera",
+              "intagWeight": 3000.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Подавляющее большинство современных смартфонов и планшетов оснащаются камерами для съемки фото и видео. Это средство всегда под рукой, благодаря чему можно запечатлеть важную информацию или поймать интересный момент. Качество отснятого материала можно условно определить исходя из количества мегапикселей матрицы встроенной камеры. Однако, из-за невозможности установки полноценной оптики (объектива), которая играет одну из ключевых ролей для получения качественного изображения, встроенные устройства значительно уступают по характеристикам самостоятельным цифровым камерам.&nbsp;</p>",
+              "name": "Камера",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            },
+            {
+              "id": "61adfdb8-112e-4dc0-b61d-cd5001c3ba31",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "6.9 дюйм",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "diagonal-ekrana",
+              "intagWeight": 2800.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Традиционно для всех современных устройств указывается в дюймах. <span style=\"font-weight: bold;\">1 дюйм</span> равен <span style=\"font-weight: bold;\">2.54 см</span>. Чем крупнее экран, тем удобнее пользоваться устройством, однако, вместе с тем увеличиваются габариты корпуса и энергопотребление.</p>",
+              "name": "Экран",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            }
+          ],
+          "showPreorderDateOnly": false,
+          "badges": [],
+          "rate": 0.0,
+          "feedbackCount": 0,
+          "hasRemainsShop": true,
+          "hasRemainsOffice": false,
+          "isPromotionBundle": false,
+          "productPromotion": null,
+          "mainEquipmentBundleNote": "",
+          "additionalEquipmentBundleNote": null,
+          "isOutOfStock": false,
+          "outOfStockReasonSlug": null,
+          "outOfStockMessageTemplate": null,
+          "isMultiCard": false,
+          "multiProductId": null,
+          "partnerSlug": null,
+          "delivery": {
+            "methods": [
+              {
+                "type": "courier",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "pvz_postamat",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "movements",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              }
+            ],
+            "useMethods": true,
+            "pickupUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/takeaway/",
+            "courierUrl": "/shop/details/tsamsunggalnote20ult512gbbr/delivery/courier/"
+          },
+          "esim": { "hasESim": true }
+        },
+        {
+          "hasLeasing": false,
+          "id": 227306,
+          "isTariff": false,
+          "dpcId": 0,
+          "name": "Смартфон Samsung Galaxy Note 20 Ultra 512GB Чёрный",
+          "article": "1400010700",
+          "brandName": "Samsung",
+          "thumbImageUrlConverted": "//static.beeline.ru/shop/media/goods/196x302/d29f8aaf-56f0-4af2-b6c9-f60a8102c3a6.png",
+          "oldPriceIfBundle": 0.0,
+          "oldPriceIfBundleFormatted": "  0",
+          "isPromoPriceMoreThanLimit": false,
+          "regionProduct": {
+            "price": 119990.0,
+            "soc": "",
+            "oldPrice": null,
+            "remain": 3,
+            "remainOp": true,
+            "label": null,
+            "marketingTag": null,
+            "promotionId": null,
+            "deliveryMethods": [
+              {
+                "type": "pickup",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "courier",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "pvz_postamat",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "movements",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              }
+            ],
+            "dpcId": null,
+            "discount": 0.0,
+            "discountFormatted": "  0",
+            "hideOldPrice": false,
+            "hasOldPrice": false,
+            "shopActionIsAuthorized": null,
+            "shopActionRelatedIds": null,
+            "shopRelatedServices": null,
+            "shopActionCampaigns": null,
+            "bonusCount": 0,
+            "regionId": 98140
+          },
+          "isPreorder": false,
+          "contentPromotion": {
+            "description": "<div class=\"simple-sale\">    <style> \t#promoContent .mceItemTable img[src*=\"static.beeline.ru/upload/images/Icon_gift.png\"] {  \t\tdisplay: none;  \t}        .simple-sale__title {            padding-bottom: 10px;            border-bottom: 1px solid #e6e6e6;            font-size: 21px; }        .simple-sale__text, .simple-sale__link {            color: #282828;            font-size: 15px; }        .simple-sale__tip {            margin-top: 15px;            font-size: 13px;            color: #787878; }        .simple-sale__details {            display: inline-block;            margin-top: 15px;            font-family: \"Officina Serif\", serif;            font-size: 15px; }    </style>    <h3 class=\"simple-sale__title\">Скидка 10 000 рублей по промокоду 10000SG</h3>    <div class=\"simple-sale__text\"><p>Акция проводится для покупателей интернет-магазина Билайн и действует отдельно от других акций.&nbsp;</p></div><br><div class=\"simple-sale__text\"><span style=\"color: rgb(0, 0, 0); font-size: 11.9px; font-style: italic;\">Количество товаров ограничено. Цены указаны с учётом НДС. Организатор акции — ПАО «ВымпелКом», РФ, 127083, г. Москва, ул. 8 Марта, д. 10, стр. 14, ОГРН 1027700166636. Организатор вправе изменять порядок, условия и сроки проведения акции, а также стоимость оборудования, участвующего в акции, в одностороннем порядке, при этом информация об изменениях публикуется на сайте beeline.ru.&nbsp;</span></div></div>",
+            "title": "Скидка 10 000 рублей по промокоду 10000SG",
+            "badge": null,
+            "hasTitle": true,
+            "isIndexed": false,
+            "descriptionHtml": "<noindex><div class=\"simple-sale\">    <style> \t#promoContent .mceItemTable img[src*=\"static.beeline.ru/upload/images/Icon_gift.png\"] {  \t\tdisplay: none;  \t}        .simple-sale__title {            padding-bottom: 10px;            border-bottom: 1px solid #e6e6e6;            font-size: 21px; }        .simple-sale__text, .simple-sale__link {            color: #282828;            font-size: 15px; }        .simple-sale__tip {            margin-top: 15px;            font-size: 13px;            color: #787878; }        .simple-sale__details {            display: inline-block;            margin-top: 15px;            font-family: \"Officina Serif\", serif;            font-size: 15px; }    </style>    <h3 class=\"simple-sale__title\">Скидка 10 000 рублей по промокоду 10000SG</h3>    <div class=\"simple-sale__text\"><p>Акция проводится для покупателей интернет-магазина Билайн и действует отдельно от других акций. </p></div><br><div class=\"simple-sale__text\"><span style=\"color: rgb(0, 0, 0); font-size: 11.9px; font-style: italic;\">Количество товаров ограничено. Цены указаны с учётом НДС. Организатор акции — ПАО «ВымпелКом», РФ, 127083, г. Москва, ул. 8 Марта, д. 10, стр. 14, ОГРН 1027700166636. Организатор вправе изменять порядок, условия и сроки проведения акции, а также стоимость оборудования, участвующего в акции, в одностороннем порядке, при этом информация об изменениях публикуется на сайте beeline.ru. </span></div></div></noindex>",
+            "url": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/promo/"
+          },
+          "benefits": [],
+          "urlSlug": "smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi",
+          "hasPreorderAnnouncement": false,
+          "preorderAnnouncement": null,
+          "showPreorderDate": false,
+          "showPreorderPriceOnView": false,
+          "preorderStartDate": "2021-04-26T22:06:31.5520548+03:00",
+          "parameters": [
+            {
+              "id": "63ef0543-55b3-4802-9eba-d6fbfb689964",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "512 Гб",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "obem-vstroennoi-pamiati",
+              "intagWeight": 3010.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Современные портативные устройства оснащаются накопителями для хранения файлов и установки приложений, реализованными в виде микросхем <span style=\"font-weight: bold;\">Flash</span>. Размер встроенной памяти имеет ключевое значение при выборе портативного устройства, особенно, если оно не оснащено слотом для установки карт памяти.</p>",
+              "name": "Объем памяти",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            },
+            {
+              "id": "5a73c9c5-7337-4c1e-8a60-80a932cf41ff",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "108+12+12 Мпикс",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "osnovnaia-kamera",
+              "intagWeight": 3000.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Подавляющее большинство современных смартфонов и планшетов оснащаются камерами для съемки фото и видео. Это средство всегда под рукой, благодаря чему можно запечатлеть важную информацию или поймать интересный момент. Качество отснятого материала можно условно определить исходя из количества мегапикселей матрицы встроенной камеры. Однако, из-за невозможности установки полноценной оптики (объектива), которая играет одну из ключевых ролей для получения качественного изображения, встроенные устройства значительно уступают по характеристикам самостоятельным цифровым камерам.&nbsp;</p>",
+              "name": "Камера",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            },
+            {
+              "id": "61adfdb8-112e-4dc0-b61d-cd5001c3ba31",
+              "detailsSlugOrId": null,
+              "productName": null,
+              "productId": 0,
+              "shopProductId": null,
+              "value": "6.9 дюйм",
+              "link": null,
+              "weight": null,
+              "childValues": null,
+              "isMultiple": false,
+              "filterKind": 0,
+              "intagSlug": "diagonal-ekrana",
+              "intagWeight": 2800.0,
+              "isColor": false,
+              "isUnlimited": false,
+              "unitDisplay": null,
+              "numValue": null,
+              "hint": "<p>Традиционно для всех современных устройств указывается в дюймах. <span style=\"font-weight: bold;\">1 дюйм</span> равен <span style=\"font-weight: bold;\">2.54 см</span>. Чем крупнее экран, тем удобнее пользоваться устройством, однако, вместе с тем увеличиваются габариты корпуса и энергопотребление.</p>",
+              "name": "Экран",
+              "seoKeywords": null,
+              "seoDescriptions": null,
+              "seoTitle": null,
+              "isIndexing": true
+            }
+          ],
+          "showPreorderDateOnly": false,
+          "badges": [],
+          "rate": 0.0,
+          "feedbackCount": 0,
+          "hasRemainsShop": true,
+          "hasRemainsOffice": true,
+          "isPromotionBundle": false,
+          "productPromotion": null,
+          "mainEquipmentBundleNote": "",
+          "additionalEquipmentBundleNote": null,
+          "isOutOfStock": false,
+          "outOfStockReasonSlug": null,
+          "outOfStockMessageTemplate": null,
+          "isMultiCard": false,
+          "multiProductId": null,
+          "partnerSlug": null,
+          "delivery": {
+            "methods": [
+              {
+                "type": "pickup",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "courier",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "pvz_postamat",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              },
+              {
+                "type": "movements",
+                "price": 0.0,
+                "delay": null,
+                "startTime": null,
+                "endTime": null
+              }
+            ],
+            "useMethods": true,
+            "pickupUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/takeaway/",
+            "courierUrl": "/shop/details/smartfon-samsung-galaxy-note-20-ultra-512gb-chrnyi/delivery/courier/"
+          },
+          "esim": { "hasESim": true }
+        }
+      ],
+      "updateMethodUrl": "/shop/getproductslistbyfilters/",
+      "paging": { "perPage": 24, "currentPage": 1, "totalCount": 3 },
+      "requestUnexpectedErrorMessage": "Что-то пошло не так, фильтрация не применена",
+      "requestEmptyListErrorMessage": "Нет товаров, удовлетворяющих условиям поиска"
+    }
+  }
+}
