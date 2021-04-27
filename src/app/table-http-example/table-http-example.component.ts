@@ -6,6 +6,7 @@ import {
   FormControl,
   FormGroup,
 } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable, of as observableOf } from 'rxjs';
@@ -78,8 +79,17 @@ export class TableHttpExampleComponent implements OnInit {
 
   constructor(
     private store$: Store<smartphonesState>,
-    private _httpClient: HttpClient
+    private _httpClient: HttpClient,
+    public dialog: MatDialog
   ) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
     this.isLoadingResults = true;
@@ -157,13 +167,13 @@ export class TableHttpExampleComponent implements OnInit {
   setSortRate() {
     this.orderRate = !this.orderRate;
     this.sort = { key: 'rate', order: this.orderRate ? 'asc' : 'desc' };
-    this.setFilter()
+    this.setFilter();
   }
 
   setSortPrice() {
     this.orderPrice = !this.orderPrice;
     this.sort = { key: 'price', order: this.orderPrice ? 'asc' : 'desc' };
-    this.setFilter()
+    this.setFilter();
   }
 
   setFilter(): void {
@@ -173,3 +183,11 @@ export class TableHttpExampleComponent implements OnInit {
     this.store$.dispatch(new MockDboAction({ paging, filterForm, sort }));
   }
 }
+
+@Component({
+  selector: 'dialog-content-example-dialog',
+  template: `<div mat-dialog-content style="overflow: scroll;">
+    <img width="1024px" src="./assets/screenshot.png" />
+  </div>`,
+})
+export class DialogContentExampleDialog {}
