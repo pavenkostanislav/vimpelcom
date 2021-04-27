@@ -8,7 +8,7 @@ RUN rm -rf ./package-lock.json
 RUN npm run build
 RUN apk add nginx
 
-RUN cp -r /app/dist/* /app
+RUN cp -r /app/dist/vimpelcom/* /app
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
