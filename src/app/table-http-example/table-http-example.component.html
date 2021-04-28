@@ -1,9 +1,15 @@
 <!-- <code>{{ filterForm.value | json }}</code> -->
 <div class="container-fluid">
   <div class="row row flex-xl-nowrap">
-    <div class="col-12 col-md-3 col-xl-3 bd-sidebar" [formGroup]="filterForm">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Фильтры<mat-icon>tune</mat-icon></li>
+    <div class="col-12 col-md-3 col-xl-3 py-md-3 pl-md-5">
+      <div class="bd-example">
+        <div class="btn-group">
+          <h1 class="btn link-outline-warning">
+            Фильтры<mat-icon>tune</mat-icon>
+          </h1>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush" [formGroup]="filterForm">
         <li class="list-group-item" *ngFor="let f of filters; index as k">
           <!-- <code>{{ filterForm.value[filters[k].key] | json }}</code> -->
           <!-- <code>expanded = {{ filters[k].isOpen }}</code> -->
@@ -104,39 +110,45 @@
         </li>
       </ul>
     </div>
-    <main class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
-      Смартфоны
-      <div class="btn-toolbar btn-group-sm" role="toolbar">
-        <button
-          type="button"
-          class="btn btn-outline-warning"
-          (click)="showGrid = false"
-        >
-          <mat-icon>format_list_bulleted</mat-icon>
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-warning"
-          (click)="showGrid = true"
-        >
-          <mat-icon>apps</mat-icon>
-        </button>
-        <span>Cортировать по</span>
-        <button
-          type="button"
-          class="btn btn-outline-warning"
-          (click)="setSortRate()"
-        >
-          Популярности
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-warning"
-          (click)="setSortPrice()"
-        >
-          <mat-icon>sort</mat-icon>Цене
-        </button>
-        <!-- <code>{{ sort | json }}</code> -->
+
+    <div class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
+      <div class="bd-example">
+        <div class="btn-group">
+          <h1 class="btn link-outline-warning">Смартфоны</h1>
+        </div>
+      </div>
+      <div class="bd-example">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            (click)="showGrid = false"
+          >
+            <mat-icon>format_list_bulleted</mat-icon>
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            (click)="showGrid = true"
+          >
+            <mat-icon>apps</mat-icon>
+          </button>
+          <span class="btn link-outline-warning">Cортировать по</span>
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            (click)="setSortRate()"
+          >
+            популярности
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            (click)="setSortPrice()"
+          >
+            <mat-icon>sort</mat-icon>Цене
+          </button>
+        </div>
       </div>
 
       <div *ngIf="isLoadingResults || isRateLimitReached">
@@ -180,7 +192,11 @@
                   <div class="card-body">
                     <h3 class="card-title">{{ row.name }}</h3>
                     <div class="col w-100">
-                      <button type="button" class="btn link-dashed" (click)="openDialog()">
+                      <button
+                        type="button"
+                        class="btn link-dashed"
+                        (click)="openDialog()"
+                      >
                         <mat-icon class="link-warning">star</mat-icon
                         ><mat-icon class="link-warning">star</mat-icon
                         ><mat-icon class="link-warning">star</mat-icon
@@ -307,24 +323,36 @@
         (pageChange)="setPage($event)"
         id="server"
       ></pagination-controls>
-    </main>
+    </div>
   </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
+      <div class="modal-body">...</div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
