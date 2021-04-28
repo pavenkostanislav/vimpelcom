@@ -14,13 +14,11 @@
         id="accordionFlushExample"
         [formGroup]="filterForm"
       >
-        <div
-          class="accordion-item"
-          *ngFor="let f of filters; index as k"
-        >
+        <div class="accordion-item" *ngFor="let f of filters; index as k">
           <h2 class="accordion-header" id="flush-heading{{ k }}">
             <button
-              class="accordion-button btn-warning collapsed"
+              class="accordion-button btn-warning"
+              [ngClass]="{ collapsed: !filters[k].isOpen }"
               type="button"
               data-bs-toggle="collapse"
               [attr.data-bs-target]="'#flush-collapse' + k"
@@ -35,6 +33,7 @@
           <div
             id="flush-collapse{{ k }}"
             class="accordion-collapse collapse"
+            [ngClass]="{ show: filters[k].isOpen }"
             [attr.aria-labelledby]="'flush-heading' + k"
             data-bs-parent="#accordionFlushExample"
           >
@@ -45,10 +44,11 @@
                 "
                 [formArrayName]="filters[k].key"
               >
+                <input #h type="hidden" value="5" />
                 <div
                   class="form-check"
                   *ngFor="
-                    let item of getFormArray(filters[k].key).controls;
+                    let item of getFormArray(filters[k].key, +h.value);
                     index as i
                   "
                   (focusout)="setFilter()"
@@ -71,6 +71,15 @@
                       {{ getOption(k, i, "productsCount") }}
                     </span>
                   </label>
+                </div>
+                <div class="col w-100" *ngIf="h.value==='5'">
+                  <button
+                    type="button"
+                    class="btn link-dashed"
+                    (click)="h.value = this.filterForm.get(filters[k].key)['controls'].length"
+                  >
+                    Показать все
+                  </button>
                 </div>
               </div>
 

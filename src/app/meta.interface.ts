@@ -21,16 +21,10 @@ export interface MockDboData {
 export interface Filter {
   name: string;
   key: string;
-  slug: string;
   type: string;
   isOpen: boolean;
   options: Array<FilterOption> | null;
-  isSeoUrlAllowed: boolean;
-
-  //selector
-  intagId?: string;
-
-  //slider
+  hideAll?: boolean;
   valueFrom?: number | null;
   valueTo?: number | null;
   min?: number;

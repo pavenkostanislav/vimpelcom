@@ -8,6 +8,7 @@ import {
 } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
+import * as _ from 'lodash';
 import { PaginatePipeArgs } from 'ngx-pagination/dist/paginate.pipe';
 import { Observable, of as observableOf } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
@@ -144,8 +145,9 @@ export class TableHttpExampleComponent implements OnInit {
     this.paging$.subscribe();
   }
 
-  getFormArray(key: string): FormArray {
-    return this.filterForm.get(key) as FormArray;
+  getFormArray(key: string, n: number): AbstractControl[] {
+    const arr = this.filterForm.get(key) as FormArray;
+    return _.take(arr.controls, n);
   }
 
   getFormControl(key: string): FormControl {
