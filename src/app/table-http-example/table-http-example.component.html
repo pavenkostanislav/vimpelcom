@@ -9,106 +9,135 @@
           </h1>
         </div>
       </div>
-      <ul class="list-group list-group-flush" [formGroup]="filterForm">
-        <li class="list-group-item" *ngFor="let f of filters; index as k">
-          <!-- <code>{{ filterForm.value[filters[k].key] | json }}</code> -->
-          <!-- <code>expanded = {{ filters[k].isOpen }}</code> -->
-          <span class="bottom-dashed">{{ filters[k].name }}</span>
-          <div
-            *ngIf="filters[k].type === 'common' || filters[k].type === 'color'"
-            [formArrayName]="filters[k].key"
-          >
-            <div
-              class="form-check"
-              *ngFor="
-                let item of getFormArray(filters[k].key).controls;
-                index as i
-              "
-              (focusout)="setFilter()"
+      <div
+        class="accordion accordion-flush"
+        id="accordionFlushExample"
+        [formGroup]="filterForm"
+      >
+        <div
+          class="accordion-item"
+          *ngFor="let f of filters; index as k"
+        >
+          <h2 class="accordion-header" id="flush-heading{{ k }}">
+            <button
+              class="accordion-button btn-warning collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#flush-collapse' + k"
+              aria-expanded="false"
+              [attr.aria-controls]="'flush-collapse' + k"
             >
-              <input
-                type="checkbox"
-                class="form-check-input btn-outline-warning"
-                [formControlName]="i"
-              />
-              <label class="form-check-label">
-                <span [ngStyle]="{ color: getOption(k, i, 'color') }">
-                  <mat-icon *ngIf="filters[k].type === 'color'">
-                    palette
-                  </mat-icon>
-                </span>
-                <span class="text-dark">
-                  {{ getOption(k, i, "name") }}
-                </span>
-                <span class="text-secondary">
-                  {{ getOption(k, i, "productsCount") }}
-                </span>
-              </label>
-            </div>
-          </div>
-
-          <div *ngIf="filters[k].type === 'range'" (blur)="setFilter()">
-            <bm-range-slider
-              ngDefaultControl
-              [formControlName]="filters[k].key"
-              [value]="filters[k].min || 0"
-              [highValue]="filters[k].max || 100000"
-              [options]="{
-                floor: filters[k].min || 0,
-                ceil: filters[k].max || 100000,
-                animate: true,
-                hideLimitLabels: true,
-                hidePointerLabels: true
-              }"
-            >
-            </bm-range-slider>
-            <!-- (valueChange)="setFilter()"
-              (highValueChange)="setFilter()" -->
-            <div
-              class="input-group text-warning d-flex justify-content-between"
-            >
-              <input
-                type="number"
-                class="form-control text-warning"
-                [value]="getFormControl(filters[k].key).value[0]"
-                (focusout)="
-                  getFormControl(filters[k].key).setValue([
-                    $event.target['value'],
-                    getFormControl(filters[k].key).value[1]
-                  ])
-                "
-                (keydown.enter)="
-                  getFormControl(filters[k].key).setValue([
-                    $event.target['value'],
-                    getFormControl(filters[k].key).value[1]
-                  ])
-                "
-              />
-              <span class="input-group-text text-warning">
-                <mat-icon>horizontal_rule</mat-icon>
+              <span class="bottom-dashed">
+                {{ filters[k].name }}
               </span>
-              <input
-                type="number"
-                class="form-control text-warning"
-                [value]="getFormControl(filters[k].key).value[1]"
-                (focusout)="
-                  getFormControl(filters[k].key).setValue([
-                    getFormControl(filters[k].key).value[0],
-                    $event.target['value']
-                  ])
+            </button>
+          </h2>
+          <div
+            id="flush-collapse{{ k }}"
+            class="accordion-collapse collapse"
+            [attr.aria-labelledby]="'flush-heading' + k"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <div
+                *ngIf="
+                  filters[k].type === 'common' || filters[k].type === 'color'
                 "
-                (keydown.enter)="
-                  getFormControl(filters[k].key).setValue([
-                    getFormControl(filters[k].key).value[0],
-                    $event.target['value']
-                  ])
-                "
-              />
-              <span class="input-group-text text-warning">₽</span>
+                [formArrayName]="filters[k].key"
+              >
+                <div
+                  class="form-check"
+                  *ngFor="
+                    let item of getFormArray(filters[k].key).controls;
+                    index as i
+                  "
+                  (focusout)="setFilter()"
+                >
+                  <input
+                    type="checkbox"
+                    class="form-check-input btn-outline-warning"
+                    [formControlName]="i"
+                  />
+                  <label class="form-check-label">
+                    <span [ngStyle]="{ color: getOption(k, i, 'color') }">
+                      <mat-icon *ngIf="filters[k].type === 'color'">
+                        palette
+                      </mat-icon>
+                    </span>
+                    <span class="text-dark">
+                      {{ getOption(k, i, "name") }}
+                    </span>
+                    <span class="text-secondary">
+                      {{ getOption(k, i, "productsCount") }}
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div *ngIf="filters[k].type === 'range'" (blur)="setFilter()">
+                <bm-range-slider
+                  ngDefaultControl
+                  [formControlName]="filters[k].key"
+                  [value]="filters[k].min || 0"
+                  [highValue]="filters[k].max || 100000"
+                  [options]="{
+                    floor: filters[k].min || 0,
+                    ceil: filters[k].max || 100000,
+                    animate: true,
+                    hideLimitLabels: true,
+                    hidePointerLabels: true
+                  }"
+                >
+                </bm-range-slider>
+                <!-- (valueChange)="setFilter()"
+              (highValueChange)="setFilter()" -->
+                <div
+                  class="input-group text-warning d-flex justify-content-between"
+                >
+                  <input
+                    type="number"
+                    class="form-control text-warning"
+                    [value]="getFormControl(filters[k].key).value[0]"
+                    (focusout)="
+                      getFormControl(filters[k].key).setValue([
+                        $event.target['value'],
+                        getFormControl(filters[k].key).value[1]
+                      ])
+                    "
+                    (keydown.enter)="
+                      getFormControl(filters[k].key).setValue([
+                        $event.target['value'],
+                        getFormControl(filters[k].key).value[1]
+                      ])
+                    "
+                  />
+                  <span class="input-group-text text-warning">
+                    <mat-icon>horizontal_rule</mat-icon>
+                  </span>
+                  <input
+                    type="number"
+                    class="form-control text-warning"
+                    [value]="getFormControl(filters[k].key).value[1]"
+                    (focusout)="
+                      getFormControl(filters[k].key).setValue([
+                        getFormControl(filters[k].key).value[0],
+                        $event.target['value']
+                      ])
+                    "
+                    (keydown.enter)="
+                      getFormControl(filters[k].key).setValue([
+                        getFormControl(filters[k].key).value[0],
+                        $event.target['value']
+                      ])
+                    "
+                  />
+                  <span class="input-group-text text-warning">₽</span>
+                </div>
+              </div>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <div class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
