@@ -210,11 +210,11 @@
             class="btn btn-outline-warning"
             (click)="setSortPrice()"
           >
-            <i class="fa fa-sort-amount-{{sort.order}}">Цене</i>
+            <i class="fa fa-sort-amount-{{ sort.order }}">Цене</i>
           </button>
         </div>
       </div>
-      <!--/buttons menu-->
+      <!--/buttons toolbar-->
 
       <!--errors load REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
       <div *ngIf="isLoadingResults || isRateLimitReached">
@@ -260,21 +260,45 @@
                   <div class="card-body">
                     <h3 class="card-title">{{ row.name }}</h3>
                     <div class="col w-100">
-                      <button
-                        type="button"
-                        class="btn link-dashed"
-                        (click)="openDialog()"
-                      >
-                        <mat-icon class="link-warning">star</mat-icon
-                        ><mat-icon class="link-warning">star</mat-icon
-                        ><mat-icon class="link-warning">star</mat-icon
-                        ><mat-icon class="link-warning">star</mat-icon
-                        ><mat-icon class="link-warning">star</mat-icon>отзывов
+                      <button type="button" class="btn" (click)="openDialog()">
+                        <small>
+                          <i
+                            class="fa fa-2x fa-star{{
+                              rate(row.rate, 1)
+                            }} link-warning"
+                          ></i>
+                          <i
+                            class="fa fa-2x fa-star{{
+                              rate(row.rate, 2)
+                            }} link-warning"
+                          ></i>
+                          <i
+                            class="fa fa-2x fa-star{{
+                              rate(row.rate, 3)
+                            }} link-warning"
+                          ></i>
+                          <i
+                            class="fa fa-2x fa-star{{
+                              rate(row.rate, 4)
+                            }} link-warning"
+                          ></i>
+                          <i
+                            class="fa fa-2x fa-star{{
+                              rate(row.rate, 5)
+                            }} link-warning"
+                          ></i>
+                        </small>
+                        <i class="mx-1 fa link-dashed">
+                          <small> {{ row.rate }} отзывов </small>
+                        </i>
                       </button>
                     </div>
-                    <div class="col w-100">
-                      <button type="button" class="btn link-dashed">
-                        <mat-icon>assessment</mat-icon> Добавить в сравнение
+                    <div class="col w-100 btn-group-sm">
+                      <button type="button" class="btn">
+                        <small><i class="fa fa-2x fa-balance-scale"></i></small>
+                        <i class="mx-1 fa link-dashed">
+                          <small> Добавить&nbsp;в&nbsp;сравнение </small>
+                        </i>
                       </button>
                     </div>
                     <table class="table">
@@ -305,19 +329,38 @@
                       <button type="button" class="btn buttom-warning">
                         Купить
                       </button>
-                      <button type="button" class="btn link-dashed">
-                        Быстрый заказ
+                      <button type="button" class="btn">
+                        <i class="fa link-dashed">
+                          <small>Быстрый&nbsp;заказ</small>
+                        </i>
                       </button>
                     </div>
                     <div class="col">
                       <button
-                        class="btn link-dashed"
+                        class="btn btn-group-sm d-flex justify-content-start"
                         *ngFor="
                           let deliveryMethod of row.regionProduct
                             .deliveryMethods
                         "
                       >
-                        {{ deliveryMethod.type }}
+                        <i
+                          class="me-2 fa fa-2x fa-map-marker text-warning"
+                          *ngIf="deliveryMethod.type === 'Самовывоз'"
+                        >
+                        </i>
+                        <i
+                          class="me-2 fa fa-2x fa-truck text-warning"
+                          *ngIf="deliveryMethod.type === 'Доставка за 2 часа'"
+                        >
+                        </i>
+                        <i
+                          class="me-2 fa fa-2x fa-car text-warning"
+                          *ngIf="deliveryMethod.type === 'Бесплатная доставка'"
+                        >
+                        </i>
+                        <i class="fa">
+                          <small>{{ deliveryMethod.type }}</small>
+                        </i>
                       </button>
                     </div>
                   </div>
@@ -370,35 +413,41 @@
                     <button type="button" class="btn buttom-warning">
                       Купить
                     </button>
-                    <button type="button" class="btn link-dashed">
-                      Быстрый заказ
+                    <button type="button" class="btn">
+                      <i class="fa link-dashed">
+                        <small>Быстрый&nbsp;заказ</small>
+                      </i>
                     </button>
                   </div>
                   <div class="col">
-                    <button
-                      class="btn link-dashed"
-                      *ngFor="
-                        let deliveryMethod of row.regionProduct.deliveryMethods
-                      "
-                    >
-                      <mat-icon
-                        *ngIf="deliveryMethod.type === 'Самовывоз'"
-                        class="btn-outline-warning"
+                    <div class="btn-group btn-group-vertical" role="group">
+                      <button
+                        class="btn btn-group-sm d-flex justify-content-start"
+                        *ngFor="
+                          let deliveryMethod of row.regionProduct
+                            .deliveryMethods
+                        "
                       >
-                        location_on</mat-icon
-                      >
-                      <mat-icon
-                        *ngIf="deliveryMethod.type === 'Доставка за 2 часа'"
-                        class="btn-outline-warning"
-                      >
-                        local_shipping
-                      </mat-icon>
-                      <mat-icon
-                        *ngIf="deliveryMethod.type === 'Бесплатная доставка'"
-                        class="btn-outline-warning"
-                        >markunread_mailbox</mat-icon
-                      >{{ deliveryMethod.type }}
-                    </button>
+                        <i
+                          class="me-2 fa fa-2x fa-map-marker text-warning"
+                          *ngIf="deliveryMethod.type === 'Самовывоз'"
+                        >
+                        </i>
+                        <i
+                          class="me-2 fa fa-2x fa-truck text-warning"
+                          *ngIf="deliveryMethod.type === 'Доставка за 2 часа'"
+                        >
+                        </i>
+                        <i
+                          class="me-2 fa fa-2x fa-car text-warning"
+                          *ngIf="deliveryMethod.type === 'Бесплатная доставка'"
+                        >
+                        </i>
+                        <i class="fa">
+                          <small>{{ deliveryMethod.type }}</small>
+                        </i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -410,8 +459,15 @@
 
       <!--pagination-->
       <pagination-controls
-        (pageChange)="setPage($event)"
         id="server"
+        [directionLinks]="true"
+        [autoHide]="false"
+        [previousLabel]="''"
+        [nextLabel]="''"
+        [screenReaderPaginationLabel]="''"
+        [screenReaderPageLabel]="''"
+        [screenReaderCurrentLabel]="''"
+        (pageChange)="setPage($event)"
       ></pagination-controls>
       <!--/pagination-->
     </div>

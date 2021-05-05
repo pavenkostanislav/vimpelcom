@@ -30,7 +30,7 @@ enum Design {
   selector: 'app-table-http-example',
   templateUrl: './table-http-example.component.html',
   styleUrls: ['./table-http-example.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TableHttpExampleComponent implements OnInit {
   productList$: Observable<Array<ProductListApi>> = this.store$
@@ -193,6 +193,9 @@ export class TableHttpExampleComponent implements OnInit {
     const sort: Sort = this.sort;
     this.store$.dispatch(new MockDboAction({ paging, filterForm, sort }));
   }
+
+  rate = (rate: number, num: number): string =>
+    rate >= num ? '' : rate > num - 1 ? '-half-o' : '-o';
 }
 
 @Component({
