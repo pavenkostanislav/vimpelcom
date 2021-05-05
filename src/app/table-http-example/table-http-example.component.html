@@ -226,150 +226,145 @@
       <!--/errors load-->
 
       <!--list view REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
-      <div *ngIf="view !== design.list" class="list-group list-group-flush">
-        <a
-          class="list-group-item list-group-item-action d-flex justify-content-between"
-          *ngFor="
-            let row of productList$
-              | async
-              | paginate: (paging$ | async) || pagingConfig
-          "
-        >
-          <form>
-            <div class="form-group">
-              <div class="row w-100 d-block d-sm-none d-md-none">
+      <table *ngIf="view !== design.list" class="table table-hover">
+        <tbody>
+          <tr
+            *ngFor="
+              let row of productList$
+                | async
+                | paginate: (paging$ | async) || pagingConfig
+            "
+          >
+            <td>
+              <!--<div class="row w-100 d-block d-sm-none d-md-none">
                 <div class="col">
                   <h3 class="card-title">{{ row.name }}</h3>
                 </div>
-              </div>
+              </div>-->
               <span
                 *ngIf="row.badges.length > 0"
                 class="badge badge-secondary"
                 [ngStyle]="{ 'background-color': row.badges[0].color }"
-                >{{ row.badges[0].title }}</span
               >
-              <div class="row">
-                <div class="col-4">
-                  <img
-                    src="{{ row.thumbImageUrlConverted }}"
-                    class="rounded mx-auto d-block float-left"
-                    alt="{{ row.name }}"
-                  />
+                {{ row.badges[0].title }}
+              </span>
+              <img
+                src="{{ row.thumbImageUrlConverted }}"
+                class="rounded mx-auto d-block float-left"
+                alt="{{ row.name }}"
+              />
+            </td>
+            <td style="width: 40%">
+              <div class="card-body">
+                <h3 class="card-title">{{ row.name }}</h3>
+                <div class="col w-100">
+                  <button type="button" class="btn" (click)="openDialog()">
+                    <small>
+                      <i
+                        class="fa fa-2x fa-star{{
+                          rate(row.rate, 1)
+                        }} link-warning"
+                      ></i>
+                      <i
+                        class="fa fa-2x fa-star{{
+                          rate(row.rate, 2)
+                        }} link-warning"
+                      ></i>
+                      <i
+                        class="fa fa-2x fa-star{{
+                          rate(row.rate, 3)
+                        }} link-warning"
+                      ></i>
+                      <i
+                        class="fa fa-2x fa-star{{
+                          rate(row.rate, 4)
+                        }} link-warning"
+                      ></i>
+                      <i
+                        class="fa fa-2x fa-star{{
+                          rate(row.rate, 5)
+                        }} link-warning"
+                      ></i>
+                    </small>
+                    <i class="mx-1 fa link-dashed">
+                      <small> {{ row.rate }} отзывов </small>
+                    </i>
+                  </button>
                 </div>
-                <div class="col-5 d-none d-sm-block d-md-block">
-                  <div class="card-body">
-                    <h3 class="card-title">{{ row.name }}</h3>
-                    <div class="col w-100">
-                      <button type="button" class="btn" (click)="openDialog()">
-                        <small>
-                          <i
-                            class="fa fa-2x fa-star{{
-                              rate(row.rate, 1)
-                            }} link-warning"
-                          ></i>
-                          <i
-                            class="fa fa-2x fa-star{{
-                              rate(row.rate, 2)
-                            }} link-warning"
-                          ></i>
-                          <i
-                            class="fa fa-2x fa-star{{
-                              rate(row.rate, 3)
-                            }} link-warning"
-                          ></i>
-                          <i
-                            class="fa fa-2x fa-star{{
-                              rate(row.rate, 4)
-                            }} link-warning"
-                          ></i>
-                          <i
-                            class="fa fa-2x fa-star{{
-                              rate(row.rate, 5)
-                            }} link-warning"
-                          ></i>
-                        </small>
-                        <i class="mx-1 fa link-dashed">
-                          <small> {{ row.rate }} отзывов </small>
-                        </i>
-                      </button>
-                    </div>
-                    <div class="col w-100 btn-group-sm">
-                      <button type="button" class="btn">
-                        <small><i class="fa fa-2x fa-balance-scale"></i></small>
-                        <i class="mx-1 fa link-dashed">
-                          <small> Добавить&nbsp;в&nbsp;сравнение </small>
-                        </i>
-                      </button>
-                    </div>
-                    <table class="table">
-                      <tbody>
-                        <tr *ngFor="let parameter of row.parameters">
-                          <th scope="row">{{ parameter.name }}</th>
-                          <td>{{ parameter.value }}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                <div class="col w-100 btn-group-sm">
+                  <button type="button" class="btn">
+                    <small><i class="fa fa-2x fa-balance-scale"></i></small>
+                    <i class="mx-1 fa link-dashed">
+                      <small> Добавить&nbsp;в&nbsp;сравнение </small>
+                    </i>
+                  </button>
                 </div>
-                <div class="col-3">
-                  <div class="card-body">
-                    <h3
-                      *ngIf="row.regionProduct.oldPrice"
-                      class="card-title"
-                      style="text-decoration: line-through"
+                <table class="table">
+                  <tbody>
+                    <tr *ngFor="let parameter of row.parameters">
+                      <th scope="row">{{ parameter.name }}</th>
+                      <td>{{ parameter.value }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+            <td>
+              <div class="card-body">
+                <h3
+                  *ngIf="row.regionProduct.oldPrice"
+                  class="card-title"
+                  style="text-decoration: line-through"
+                >
+                  {{ row.regionProduct.oldPrice | numberSpace: "1.0-0" }}
+                  <span>₽</span>
+                </h3>
+                <h1 class="card-title">
+                  {{ row.regionProduct.price | numberSpace: "1.0-0" }}
+                  <span>₽</span>
+                </h1>
+                <div class="col w-100 d-flex justify-content-between">
+                  <button type="button" class="btn buttom-warning">
+                    Купить
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fa link-dashed">
+                      <small>Быстрый&nbsp;заказ</small>
+                    </i>
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    class="btn btn-group-sm d-flex justify-content-start"
+                    *ngFor="
+                      let deliveryMethod of row.regionProduct.deliveryMethods
+                    "
+                  >
+                    <i
+                      class="me-2 fa fa-2x fa-map-marker text-warning"
+                      *ngIf="deliveryMethod.type === 'Самовывоз'"
                     >
-                      {{ row.regionProduct.oldPrice | numberSpace: "1.0-0" }}
-                      <span>₽</span>
-                    </h3>
-                    <h1 class="card-title">
-                      {{ row.regionProduct.price | numberSpace: "1.0-0" }}
-                      <span>₽</span>
-                    </h1>
-                    <div class="col w-100 d-flex justify-content-between">
-                      <button type="button" class="btn buttom-warning">
-                        Купить
-                      </button>
-                      <button type="button" class="btn">
-                        <i class="fa link-dashed">
-                          <small>Быстрый&nbsp;заказ</small>
-                        </i>
-                      </button>
-                    </div>
-                    <div class="col">
-                      <button
-                        class="btn btn-group-sm d-flex justify-content-start"
-                        *ngFor="
-                          let deliveryMethod of row.regionProduct
-                            .deliveryMethods
-                        "
-                      >
-                        <i
-                          class="me-2 fa fa-2x fa-map-marker text-warning"
-                          *ngIf="deliveryMethod.type === 'Самовывоз'"
-                        >
-                        </i>
-                        <i
-                          class="me-2 fa fa-2x fa-truck text-warning"
-                          *ngIf="deliveryMethod.type === 'Доставка за 2 часа'"
-                        >
-                        </i>
-                        <i
-                          class="me-2 fa fa-2x fa-car text-warning"
-                          *ngIf="deliveryMethod.type === 'Бесплатная доставка'"
-                        >
-                        </i>
-                        <i class="fa">
-                          <small>{{ deliveryMethod.type }}</small>
-                        </i>
-                      </button>
-                    </div>
-                  </div>
+                    </i>
+                    <i
+                      class="me-2 fa fa-2x fa-truck text-warning"
+                      *ngIf="deliveryMethod.type === 'Доставка за 2 часа'"
+                    >
+                    </i>
+                    <i
+                      class="me-2 fa fa-2x fa-car text-warning"
+                      *ngIf="deliveryMethod.type === 'Бесплатная доставка'"
+                    >
+                    </i>
+                    <i class="fa">
+                      <small>{{ deliveryMethod.type }}</small>
+                    </i>
+                  </button>
                 </div>
               </div>
-            </div>
-          </form>
-        </a>
-      </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <!--/list view-->
 
       <!--grid view REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
