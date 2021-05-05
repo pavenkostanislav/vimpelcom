@@ -21,6 +21,11 @@ import {
 } from '../mock-dbo.selectors';
 import { smartphonesState } from '../reducers/list.reducer';
 
+enum Design {
+  list,
+  grid,
+}
+
 @Component({
   selector: 'app-table-http-example',
   templateUrl: './table-http-example.component.html',
@@ -72,7 +77,10 @@ export class TableHttpExampleComponent implements OnInit {
   isRateLimitReached = false;
 
   showFiller = false;
-  showGrid = true;
+
+  design = Design;
+  view: Design = Design.list;
+
   filterForm = new FormGroup({});
   orderRate = true;
   orderPrice = true;

@@ -1,6 +1,7 @@
 <!-- <code>{{ filterForm.value | json }}</code> -->
 <div class="container-fluid">
   <div class="row row flex-xl-nowrap">
+    <!--filters REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
     <div class="col-12 col-md-3 col-xl-3 py-md-3 pl-md-5">
       <div class="bd-example">
         <div class="btn-group">
@@ -72,11 +73,15 @@
                     </span>
                   </label>
                 </div>
-                <div class="col w-100" *ngIf="h.value==='5'">
+                <div class="col w-100" *ngIf="h.value === '5'">
                   <button
                     type="button"
                     class="btn link-dashed"
-                    (click)="h.value = this.filterForm.get(filters[k].key)['controls'].length"
+                    (click)="
+                      h.value = this.filterForm.get(filters[k].key)[
+                        'controls'
+                      ].length
+                    "
                   >
                     Показать все
                   </button>
@@ -148,8 +153,10 @@
         </div>
       </div>
     </div>
+    <!--/filters-->
 
     <div class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
+      <!--buttons menu REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
       <div class="bd-example">
         <div class="btn-group">
           <h1 class="btn link-outline-warning">Смартфоны</h1>
@@ -160,14 +167,14 @@
           <button
             type="button"
             class="btn btn-outline-warning"
-            (click)="showGrid = false"
+            (click)="view = design.grid"
           >
             <mat-icon>format_list_bulleted</mat-icon>
           </button>
           <button
             type="button"
             class="btn btn-outline-warning"
-            (click)="showGrid = true"
+            (click)="view = design.list"
           >
             <mat-icon>apps</mat-icon>
           </button>
@@ -188,15 +195,18 @@
           </button>
         </div>
       </div>
+      <!--/buttons menu-->
 
+      <!--errors load REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
       <div *ngIf="isLoadingResults || isRateLimitReached">
         <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
         <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
           Something went wrong....
         </div>
       </div>
+      <!--/errors load-->
 
-      <div *ngIf="!showGrid" class="list-group list-group-flush">
+      <div *ngIf="view !== design.list" class="list-group list-group-flush">
         <a
           class="list-group-item list-group-item-action d-flex justify-content-between"
           *ngFor="
@@ -289,7 +299,7 @@
         </a>
       </div>
 
-      <div class="row" *ngIf="showGrid">
+      <div class="row" *ngIf="view !== design.grid">
         <div
           class="row list-group-item list-group-item-action"
           *ngFor="
@@ -357,10 +367,12 @@
         </div>
       </div>
 
+      <!--pagination-->
       <pagination-controls
         (pageChange)="setPage($event)"
         id="server"
       ></pagination-controls>
+      <!--/pagination-->
     </div>
   </div>
 </div>
