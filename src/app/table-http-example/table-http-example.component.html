@@ -270,6 +270,13 @@
                 </div>
                 <div class="col-3">
                   <div class="card-body">
+                    <h3
+                      *ngIf="row.regionProduct.oldPrice"
+                      class="card-title"
+                      style="text-decoration: line-through"
+                    >
+                      {{ row.regionProduct.oldPrice | numberSpace: "1.0-0" }}
+                    </h3>
                     <h1 class="card-title">
                       {{ row.regionProduct.price | numberSpace: "1.0-0" }}
                     </h1>
@@ -326,6 +333,13 @@
               </div>
               <div class="col w-100">
                 <div class="card-body">
+                  <h3
+                    *ngIf="row.regionProduct.oldPrice"
+                    class="card-title"
+                    style="text-decoration: line-through"
+                  >
+                    {{ row.regionProduct.oldPrice | numberSpace: "1.0-0" }}
+                  </h3>
                   <h1 class="card-title">
                     {{ row.regionProduct.price | numberSpace: "1.0-0" }}
                   </h1>

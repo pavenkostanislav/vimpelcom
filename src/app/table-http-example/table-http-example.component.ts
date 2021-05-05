@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import {
   AbstractControl,
   FormArray,
@@ -30,6 +30,7 @@ enum Design {
   selector: 'app-table-http-example',
   templateUrl: './table-http-example.component.html',
   styleUrls: ['./table-http-example.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TableHttpExampleComponent implements OnInit {
   productList$: Observable<Array<ProductListApi>> = this.store$
