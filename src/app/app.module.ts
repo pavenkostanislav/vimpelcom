@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,9 +14,11 @@ import { AppComponent } from './app.component';
 import { MockDboEffects } from './mock-dbo.effects';
 import { metaReducers, reducerProvider, REDUCERS_TOKEN } from './reducers';
 import { TableHttpExampleComponent } from './table-http-example/table-http-example.component';
+import { NumberSpacePipe } from './number-space.pipe';
+import { DecimalPipe } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, TableHttpExampleComponent],
+  declarations: [AppComponent, TableHttpExampleComponent, NumberSpacePipe],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,9 +38,14 @@ import { TableHttpExampleComponent } from './table-http-example/table-http-examp
     EffectsModule.forRoot([MockDboEffects]),
   ],
   providers: [
+    DecimalPipe,
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { appearance: 'fill' },
+    },
+    {
+      provide: LOCALE_ID,
+      useValue: 'en-RU',
     },
     reducerProvider,
   ],

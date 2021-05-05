@@ -156,7 +156,7 @@
     <!--/filters-->
 
     <div class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content">
-      <!--buttons menu REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
+      <!--buttons menu REVIEW: remove to new component-->
       <div class="bd-example">
         <div class="btn-group">
           <h1 class="btn link-outline-warning">Смартфоны</h1>
@@ -206,6 +206,7 @@
       </div>
       <!--/errors load-->
 
+      <!--list view REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
       <div *ngIf="view !== design.list" class="list-group list-group-flush">
         <a
           class="list-group-item list-group-item-action d-flex justify-content-between"
@@ -270,7 +271,7 @@
                 <div class="col-3">
                   <div class="card-body">
                     <h1 class="card-title">
-                      {{ row.regionProduct.price | number: "1.1-1" }}
+                      {{ row.regionProduct.price | numberSpace: "1.0-0" }}
                     </h1>
                     <div class="col w-100 d-flex justify-content-between">
                       <button type="button" class="btn buttom-warning">
@@ -298,7 +299,9 @@
           </form>
         </a>
       </div>
+      <!--/list view-->
 
+      <!--grid view REVIEW: remove to new component ChangeDetectionStrategy.OnPush-->
       <div class="row" *ngIf="view !== design.grid">
         <div
           class="row list-group-item list-group-item-action"
@@ -324,7 +327,7 @@
               <div class="col w-100">
                 <div class="card-body">
                   <h1 class="card-title">
-                    {{ row.regionProduct.price | number: "1.1-1" }}
+                    {{ row.regionProduct.price | numberSpace: "1.0-0" }}
                   </h1>
                   <div class="col w-100 d-flex justify-content-between">
                     <button type="button" class="btn buttom-warning">
@@ -366,6 +369,7 @@
           </form>
         </div>
       </div>
+      <!--/grid view-->
 
       <!--pagination-->
       <pagination-controls
