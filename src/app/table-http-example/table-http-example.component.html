@@ -105,47 +105,57 @@
                 </bm-range-slider>
                 <!-- (valueChange)="setFilter()"
               (highValueChange)="setFilter()" -->
-                <div
-                  class="input-group text-warning d-flex justify-content-between"
-                >
-                  <input
-                    type="number"
-                    class="form-control text-warning"
-                    [value]="getFormControl(filters[k].key).value[0]"
-                    (focusout)="
-                      getFormControl(filters[k].key).setValue([
-                        $event.target['value'],
-                        getFormControl(filters[k].key).value[1]
-                      ])
-                    "
-                    (keydown.enter)="
-                      getFormControl(filters[k].key).setValue([
-                        $event.target['value'],
-                        getFormControl(filters[k].key).value[1]
-                      ])
-                    "
-                  />
-                  <span class="input-group-text text-warning">
-                    <mat-icon>horizontal_rule</mat-icon>
-                  </span>
-                  <input
-                    type="number"
-                    class="form-control text-warning"
-                    [value]="getFormControl(filters[k].key).value[1]"
-                    (focusout)="
-                      getFormControl(filters[k].key).setValue([
-                        getFormControl(filters[k].key).value[0],
-                        $event.target['value']
-                      ])
-                    "
-                    (keydown.enter)="
-                      getFormControl(filters[k].key).setValue([
-                        getFormControl(filters[k].key).value[0],
-                        $event.target['value']
-                      ])
-                    "
-                  />
-                  <span class="input-group-text text-warning">₽</span>
+                <div class="mx-0 px-0 row">
+                  <div class="mx-0 px-0 col-sm-4">
+                    <input
+                      type="number"
+                      [value]="getFormControl(filters[k].key).value[0]"
+                      (focusout)="
+                        getFormControl(filters[k].key).setValue([
+                          $event.target['value'],
+                          getFormControl(filters[k].key).value[1]
+                        ])
+                      "
+                      (keydown.enter)="
+                        getFormControl(filters[k].key).setValue([
+                          $event.target['value'],
+                          getFormControl(filters[k].key).value[1]
+                        ])
+                      "
+                      class="form-control form-control-sm"
+                      id="{{ 'start' + filters[k].key }}"
+                    />
+                  </div>
+                  <label
+                    for="{{ 'start' + filters[k].key }}"
+                    class="mx-0 px-0 col-sm-1 col-form-label"
+                    ><mat-icon>horizontal_rule</mat-icon></label
+                  >
+                  <div class="mx-0 px-0 col-sm-4">
+                    <input
+                      type="number"
+                      [value]="getFormControl(filters[k].key).value[1]"
+                      (focusout)="
+                        getFormControl(filters[k].key).setValue([
+                          getFormControl(filters[k].key).value[0],
+                          $event.target['value']
+                        ])
+                      "
+                      (keydown.enter)="
+                        getFormControl(filters[k].key).setValue([
+                          getFormControl(filters[k].key).value[0],
+                          $event.target['value']
+                        ])
+                      "
+                      class="form-control form-control-sm"
+                      id="{{ 'end' + filters[k].key }}"
+                    />
+                  </div>
+                  <label
+                    for="{{ 'end' + filters[k].key }}"
+                    class="mx-0 px-1 col-sm-1 col-form-label"
+                    >₽</label
+                  >
                 </div>
               </div>
             </div>
